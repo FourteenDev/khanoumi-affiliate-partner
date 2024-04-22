@@ -1,13 +1,13 @@
 <?php
 
-namespace WordPressBoilerplatePlugin;
+namespace KhanoumiAffiliatePartner;
 
 class Setting
 {
 	public static $instance = null;
 
-	private $menuSlug    = FDWPBP_SETTINGS_SLUG . '_settings';
-	private $optionsName = FDWPBP_SETTINGS_SLUG . '_options';
+	private $menuSlug    = KAPP_SETTINGS_SLUG . '_settings';
+	private $optionsName = KAPP_SETTINGS_SLUG . '_options';
 
 	public static function getInstance()
 	{
@@ -20,7 +20,7 @@ class Setting
 		add_action('admin_menu', [$this, 'createAdminMenu']);
 		add_action('admin_init', [$this, 'registerSettings']);
 
-		add_filter('plugin_action_links_' . FDWPBP_BASENAME, [$this, 'actionLinks']);
+		add_filter('plugin_action_links_' . KAPP_BASENAME, [$this, 'actionLinks']);
 	}
 
 	/**
@@ -33,12 +33,12 @@ class Setting
 	public function createAdminMenu()
 	{
 		add_menu_page(
-			esc_html__('WordPress Boilerplate Plugin', FDWPBP_TEXT_DOMAIN),
-			esc_html__('Boilerplate Plugin', FDWPBP_TEXT_DOMAIN),
+			esc_html__('Khanoumi Affiliate Partner Settings', KAPP_TEXT_DOMAIN),
+			esc_html__('Khanoumi Affiliate', KAPP_TEXT_DOMAIN),
 			'manage_options',
 			$this->menuSlug,
 			[$this, 'displaySettingsContent'],
-			'dashicons-wordpress'
+			'dashicons-products'
 		);
 	}
 
@@ -49,7 +49,7 @@ class Setting
 	 */
 	public function displaySettingsContent()
 	{
-		FDWPBP()->view('admin.settings.wrapper');
+		KAPP()->view('admin.settings.wrapper');
 	}
 
 	/**
@@ -63,17 +63,17 @@ class Setting
 	{
 		register_setting("{$this->menuSlug}_group", $this->optionsName);
 
-		add_settings_section("{$this->menuSlug}_general", esc_html__('General Settings', FDWPBP_TEXT_DOMAIN), null, $this->menuSlug);
+		add_settings_section("{$this->menuSlug}_general", esc_html__('General Settings', KAPP_TEXT_DOMAIN), null, $this->menuSlug);
 
 		$fields = [
 			'example_field' => [
 				'id'      => 'example_field',
-				'label'   => esc_html__('Example Field', FDWPBP_TEXT_DOMAIN),
+				'label'   => esc_html__('Example Field', KAPP_TEXT_DOMAIN),
 				'section' => 'general',
 				'type'    => 'text',
 				'default' => '',
 				'args'    => [
-					'description' => esc_html__('Example Description.', FDWPBP_TEXT_DOMAIN),
+					'description' => esc_html__('Example Description.', KAPP_TEXT_DOMAIN),
 				],
 			],
 		];
@@ -105,7 +105,7 @@ class Setting
 		$id = !empty($args['id']) ? $args['id'] : '';
 		if (empty($id)) return;
 
-		FDWPBP()->view('admin.settings.fields.text', $this->getSettingsValue($id, $args));
+		KAPP()->view('admin.settings.fields.text', $this->getSettingsValue($id, $args));
 	}
 
 	/**
@@ -120,7 +120,7 @@ class Setting
 	{
 		$default = !empty($args['default']) ? $args['default'] : '';
 
-		$value = FDWPBP()->option($key);
+		$value = KAPP()->option($key);
 		if (empty($value)) $value = $default;
 
 		return [
@@ -138,11 +138,11 @@ class Setting
 	 *
 	 * @return	array
 	 *
-	 * @hooked	filter: `plugin_action_links_{FDWPBP_BASENAME}` - 10
+	 * @hooked	filter: `plugin_action_links_{KAPP_BASENAME}` - 10
 	 */
 	public function actionLinks($links)
 	{
-		$links[] = '<a href="' . get_admin_url(null, "admin.php?page={$this->menuSlug}") . '">' . esc_html__('Settings', FDWPBP_TEXT_DOMAIN) . '</a>';
+		$links[] = '<a href="' . get_admin_url(null, "admin.php?page={$this->menuSlug}") . '">' . esc_html__('Settings', KAPP_TEXT_DOMAIN) . '</a>';
 		return $links;
 	}
 }

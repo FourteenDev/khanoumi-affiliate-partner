@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressBoilerplatePlugin;
+namespace KhanoumiAffiliatePartner;
 
 class View
 {
@@ -26,7 +26,7 @@ class View
 	{
 		$file = rtrim($file, '.php');
 		$file = str_replace('.', DIRECTORY_SEPARATOR, trim($file));
-		$file = FDWPBP_DIR . 'views' . DIRECTORY_SEPARATOR . $file . '.php';
+		$file = KAPP_DIR . 'views' . DIRECTORY_SEPARATOR . $file . '.php';
 		if (!file_exists($file)) return '';
 
 		extract($data);

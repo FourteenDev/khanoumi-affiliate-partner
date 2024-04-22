@@ -17,9 +17,9 @@
  * - `RequiresPHP` => *(string)* Minimum required version of PHP.
  * - `UpdateURI`   => *(string)* ID of the plugin for update purposes, should be a URI.
  */
-function fdwpbpGetPluginData()
+function kappGetPluginData()
 {
 	if (!is_admin()) return [];
 	if (!function_exists('get_plugin_data')) require_once ABSPATH . 'wp-admin/includes/plugin.php';
-	return get_plugin_data(FDWPBP_FILE);
+	return get_plugin_data(KAPP_FILE);
 }

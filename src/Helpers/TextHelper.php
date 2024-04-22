@@ -1,12 +1,12 @@
 <?php
 
-namespace WordPressBoilerplatePlugin\Helpers;
+namespace KhanoumiAffiliatePartner\Helpers;
 
 /**
  * This is an example helper class as a showcase.
  *
  * You call these methods in other classes of the plugin (or anywhere else in WordPress), like this:
- * `\WordPressBoilerplatePlugin\Helpers\TextHelper::replaceEnglishDigits('123');`
+ * `\KhanoumiAffiliatePartner\Helpers\TextHelper::replaceEnglishDigits('123');`
  */
 class TextHelper
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressBoilerplatePlugin;
+namespace KhanoumiAffiliatePartner;
 
 class Model
 {
@@ -32,7 +32,7 @@ class Model
 	 */
 	public function initializeTables()
 	{
-		if (trim(get_option(FDWPBP_OPTIONS_KEY_DB_VERSION, '')) === trim(FDWPBP_VERSION)) return;
+		if (trim(get_option(KAPP_OPTIONS_KEY_DB_VERSION, '')) === trim(KAPP_VERSION)) return;
 
 		// Example query:
 		/* $this->wpdb->query(
@@ -41,6 +41,6 @@ class Model
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;"
 		); */
 
-		update_option(FDWPBP_OPTIONS_KEY_DB_VERSION, trim(FDWPBP_VERSION));
+		update_option(KAPP_OPTIONS_KEY_DB_VERSION, trim(KAPP_VERSION));
 	}
 }

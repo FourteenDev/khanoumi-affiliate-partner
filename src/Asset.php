@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressBoilerplatePlugin;
+namespace KhanoumiAffiliatePartner;
 
 class Asset
 {
@@ -27,7 +27,7 @@ class Asset
 	 */
 	public function enqueueAdminScripts()
 	{
-		wp_enqueue_style('fdwpbp_admin', FDWPBP()->url('assets/admin/css/admin.css'), [], FDWPBP_VERSION);
+		wp_enqueue_style('kapp_admin', KAPP()->url('assets/admin/css/admin.css'), [], KAPP_VERSION);
 	}
 
 	/**
@@ -39,6 +39,6 @@ class Asset
 	 */
 	public function enqueuePublicScripts()
 	{
-		wp_enqueue_style('fdwpbp_public', FDWPBP()->url('assets/public/css/public.css'), [], FDWPBP_VERSION);
+		wp_enqueue_style('kapp_public', KAPP()->url('assets/public/css/public.css'), [], KAPP_VERSION);
 	}
 }

@@ -3,7 +3,7 @@
 	{
 		"psr-4": 
 		{
-			"WordPressBoilerplatePlugin\\": "src/"
+			"KhanoumiAffiliatePartner\\": "src/"
 		}
 	}
 }

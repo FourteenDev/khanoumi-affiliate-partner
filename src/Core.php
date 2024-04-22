@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressBoilerplatePlugin;
+namespace KhanoumiAffiliatePartner;
 
 class Core
 {
@@ -32,7 +32,7 @@ class Core
 	 */
 	public function url($path = '')
 	{
-		return untrailingslashit(FDWPBP_URL . $path);
+		return untrailingslashit(KAPP_URL . $path);
 	}
 
 	/**
@@ -44,7 +44,7 @@ class Core
 	 */
 	public function dir($path = '')
 	{
-		return untrailingslashit(FDWPBP_DIR . $path);
+		return untrailingslashit(KAPP_DIR . $path);
 	}
 
 	/**
@@ -83,7 +83,7 @@ class Core
 	public function option($optionName)
 	{
 		if (empty($this->options))
-			$this->options = get_option(FDWPBP_SETTINGS_SLUG . '_options');
+			$this->options = get_option(KAPP_SETTINGS_SLUG . '_options');
 
 		return (isset($this->options[$optionName]) && !empty($this->options[$optionName])) ? $this->options[$optionName] : null;
 	}

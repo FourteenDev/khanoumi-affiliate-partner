@@ -1,36 +1,34 @@
 <?php
 
 /**
- * Plugin Name:     WordPress Plugin Boilerplate
- * Plugin URI:      https://GitHub.com/FourteenDev/wordpress-plugin-boilerplate
- * Description:     A boilerplate plugin for WordPress.
+ * Plugin Name:     Khanoumi Affiliate Partner Plugin
+ * Plugin URI:      https://Khanoumi.com/
+ * Description:     Fetch Khanoumi products and display them in your WordPress website.
  * Version:         1.0.0
  * Author:          Fourteen Development
  * Author URI:      https://Fourteen.dev/
- * License:         MIT
- * License URI:     https://opensource.org/license/mit/
- * Text Domain:     wordpress-boilerplate-plugin
+ * Text Domain:     khanoumi-affiliate-partner
  * Domain Path:     /languages
  */
 
-use WordPressBoilerplatePlugin\Core;
+use KhanoumiAffiliatePartner\Core;
 
 if (!defined('ABSPATH')) return;
 
-define('FDWPBP_VERSION', '1.0.0');
-define('FDWPBP_FILE', __FILE__);
-define('FDWPBP_URL', plugin_dir_url(FDWPBP_FILE));
-define('FDWPBP_DIR', plugin_dir_path(FDWPBP_FILE));
-define('FDWPBP_BASENAME', plugin_basename(FDWPBP_FILE));
-define('FDWPBP_TEXT_DOMAIN', 'wordpress-boilerplate-plugin');
-define('FDWPBP_SETTINGS_SLUG', 'fdwpbp');
-define('FDWPBP_OPTIONS_KEY_DB_VERSION', 'fdwpbp_db_version');
+define('KAPP_VERSION', '1.0.0');
+define('KAPP_FILE', __FILE__);
+define('KAPP_URL', plugin_dir_url(KAPP_FILE));
+define('KAPP_DIR', plugin_dir_path(KAPP_FILE));
+define('KAPP_BASENAME', plugin_basename(KAPP_FILE));
+define('KAPP_TEXT_DOMAIN', 'khanoumi-affiliate-partner');
+define('KAPP_SETTINGS_SLUG', 'kapp');
+define('KAPP_OPTIONS_KEY_DB_VERSION', 'kapp_db_version');
 
 require_once 'vendor/autoload.php';
 require_once 'functions.php';
 
-function FDWPBP()
+function KAPP()
 {
 	return Core::getInstance();
 }
-FDWPBP();
+KAPP();
