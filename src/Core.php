@@ -21,6 +21,8 @@ class Core
 
 		if (is_admin())
 			Setting::getInstance();
+		else
+			Shortcode::getInstance();
 	}
 
 	/**
