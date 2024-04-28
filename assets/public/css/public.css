@@ -1,0 +1,57 @@
+.bd-placeholder-img {
+	object-fit: cover;
+}
+
+.carousel__item .container {
+	direction: rtl;
+}
+
+.carousel-indicators {
+	display: none;
+}
+
+.slick-slider {
+	direction: ltr;
+}
+
+#productsCarousel .slick-arrow {
+	position: absolute;
+	z-index: 9;
+	transform: translateY(150px);
+	background-color: transparent !important;
+	color: black;
+}
+
+#productsCarousel .carousel-control-prev {
+	left: -22px;
+}
+
+#productsCarousel .carousel-control-next {
+	right: -22px;
+}
+
+.carousel-caption h3 {
+	text-align: center;
+	font-size: 16px;
+}
+
+.carousel-caption .price {
+	font-size: 14px;
+	color: #cea554;
+	float: right;
+}
+
+.carousel-caption .view-more {
+	float: left;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+	.carousel-control-prev {
+		left: 10px;
+	}
+
+	.carousel-control-next {
+		right: 10px;
+	}
+}

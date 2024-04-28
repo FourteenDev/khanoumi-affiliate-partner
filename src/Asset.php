@@ -39,6 +39,11 @@ class Asset
 	 */
 	public function enqueuePublicScripts()
 	{
-		wp_enqueue_style('kapp_public', KAPP()->url('assets/public/css/public.css'), [], KAPP_VERSION);
+		wp_enqueue_style('slick_theme', KAPP()->url('assets/public/css/slick-theme.css'), [], KAPP_VERSION, '');
+		wp_enqueue_style('slick', KAPP()->url('assets/public/css/slick.css'), [], KAPP_VERSION, '');
+		wp_enqueue_style('kapp_public', KAPP()->url('assets/public/css/public.css'), [], KAPP_VERSION, '');
+
+		wp_enqueue_script('slick', KAPP()->url('assets/public/js/slick.min.js'), ['jquery'], KAPP_VERSION, true);
+		wp_enqueue_script('kapp_public', KAPP()->url('assets/public/js/public.js'), [], KAPP_VERSION, true);
 	}
 }
