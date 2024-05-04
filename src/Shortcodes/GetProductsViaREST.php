@@ -51,9 +51,13 @@ class GetProductsViaREST
 			set_transient('khanoumi_products', $products, 12 * HOUR_IN_SECONDS);
 		}
 
-		if (empty($products)) return '';
-		if (empty($products['isSuccess'])) return '';
-		if (empty($products['data']) || empty($products['data']['products'])) return '';
+		if (empty($products)) return __('No products were found!', KAPP_TEXT_DOMAIN);
+
+		if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']))
+		{
+			error_log(print_r($products, true));
+			return __('Invalid products! See log file for more details.', KAPP_TEXT_DOMAIN);
+		}
 
 		if ($atts['show'] === 'album')
 			return KAPP()->view('public.shortcodes.get-products-album', ['products' => $products['data']['products']], false);

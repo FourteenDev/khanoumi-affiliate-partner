@@ -19,10 +19,18 @@ class HttpHelper
 		$response = \wp_remote_get($url, $args);
 		remove_filter('http_request_timeout', [HttpHelper::class, 'getHttpRequestTimeout']);
 
-		if (is_wp_error($response)) return null;
+		if (is_wp_error($response))
+		{
+			error_log('Invalid response from Khanoumi API: ' . print_r($response, true));
+			return null;
+		}
 
 		$results = wp_remote_retrieve_body($response);
-		if (is_wp_error($results)) return null;
+		if (is_wp_error($results))
+		{
+			error_log('Invalid response from Khanoumi API: ' . print_r($response, true));
+			return null;
+		}
 
 		if ($isJSON) $results = json_decode($results, true);
 		if (empty($results)) return null;
