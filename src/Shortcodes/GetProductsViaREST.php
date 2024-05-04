@@ -76,15 +76,15 @@ class GetProductsViaREST
 	{
 		$requestURL = 'https://khanoumi.com/api/ntl/v1/products?';
 		if (intval($category))
-			$requestURL .= 'cat_id=' . intval($category);
+			$requestURL .= 'cat_id=' . intval($category) . '&';
 		if (intval($tag))
-			$requestURL .= 'tag_id=' . intval($tag);
+			$requestURL .= 'tag_id=' . intval($tag) . '&';
 		if (intval($brand))
-			$requestURL .= 'brand_id=' . intval($brand);
+			$requestURL .= 'brand_id=' . intval($brand) . '&';
 		if (intval($limit))
-			$requestURL .= 'page_size=' . intval($limit);
+			$requestURL .= 'page_size=' . intval($limit) . '&';
 		if (intval($page))
-			$requestURL .= 'page_number=' . intval($page);
+			$requestURL .= 'page_number=' . intval($page) . '&';
 
 		return HttpHelper::wpRemoteGet($requestURL, [], true);
 	}
