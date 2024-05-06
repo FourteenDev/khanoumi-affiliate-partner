@@ -1,6 +1,6 @@
 (function($)
 {
-	setProductsSlickCarousel($('#productsCarousel'));
+	setProductsSlickCarousel($('#khanoumi-carousel'));
 	function setProductsSlickCarousel($parentElement)
 	{
 		var $slickArgs = {
@@ -9,9 +9,9 @@
 			speed: 300,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			prevArrow: $parentElement.find('.carousel-control-prev'),
-			nextArrow: $parentElement.find('.carousel-control-next'),
+			prevArrow: $parentElement.find('.khanoumi-carousel__control-prev'),
+			nextArrow: $parentElement.find('.khanoumi-carousel__control-next'),
 		};
-		$parentElement.find('.carousel__content').slick($slickArgs);
+		$parentElement.find('.khanoumi-carousel__content').slick($slickArgs);
 	}
 })(jQuery);
