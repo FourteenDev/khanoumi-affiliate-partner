@@ -51,7 +51,7 @@ class GetProductsViaREST
 			$products = $this->getProductsViaREST($atts['cat'], $atts['tag'], $atts['brand'], $atts['limit'], $atts['page']);
 			if (empty($products)) return __('No products were found!', KAPP_TEXT_DOMAIN);
 
-			if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']))
+			if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']) || empty($products['data']['products']['items']))
 			{
 				error_log(print_r($products, true));
 				return __('Invalid products! See log file for more details.', KAPP_TEXT_DOMAIN);
@@ -68,9 +68,9 @@ class GetProductsViaREST
 		}
 
 		if ($atts['show'] === 'album')
-			return KAPP()->view('public.shortcodes.get-products-album', ['products' => $products['data']['products']], false);
+			return KAPP()->view('public.shortcodes.get-products-album', ['products' => $products['data']['products']['items']], false);
 		else
-			return KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']], false);
+			return KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items']], false);
 	}
 
 	/**

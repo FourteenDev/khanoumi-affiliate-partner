@@ -5,7 +5,7 @@
 		</svg>
 	</button>
 	<div class="khanoumi-carousel__content">
-		<?php for ($i = 0; $i < count($products['items']); $i++) : $product = $products['items'][$i]; ?>
+		<?php for ($i = 0; $i < count($products); $i++) : $product = $products[$i]; ?>
 			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
 				<div class="khanoumi-carousel__item">
 					<a href="<?php echo $product['deemaLink']; ?>">
