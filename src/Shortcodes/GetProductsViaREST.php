@@ -48,15 +48,15 @@ class GetProductsViaREST
 		if (empty($products))
 		{
 			$products = $this->getProductsViaREST($atts['cat'], $atts['tag'], $atts['brand'], $atts['limit'], $atts['page']);
+			if (empty($products)) return __('No products were found!', KAPP_TEXT_DOMAIN);
+
+			if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']))
+			{
+				error_log(print_r($products, true));
+				return __('Invalid products! See log file for more details.', KAPP_TEXT_DOMAIN);
+			}
+
 			set_transient('khanoumi_products', $products, 12 * HOUR_IN_SECONDS);
-		}
-
-		if (empty($products)) return __('No products were found!', KAPP_TEXT_DOMAIN);
-
-		if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']))
-		{
-			error_log(print_r($products, true));
-			return __('Invalid products! See log file for more details.', KAPP_TEXT_DOMAIN);
 		}
 
 		if ($atts['show'] === 'album')
