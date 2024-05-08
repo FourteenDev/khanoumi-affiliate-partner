@@ -1,11 +1,4 @@
 <div id="khanoumi-carousel" class="khanoumi-carousel slide" data-bs-ride="carousel">
-	<div class="khanoumi-carousel__indicators">
-		<?php for ($i = 0; $i < count($products['items']); $i++) : $product = $products['items'][$i]; ?>
-			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
-				<button type="button" class="<?php if ($i == 0) echo 'active'; ?>" data-bs-target="#khanoumi-carousel" data-bs-slide-to="<?php echo $i; ?>" aria-label="Slide <?php echo ($i + 1); ?>" aria-current="<?php if ($i == 0) echo 'true'; ?>"></button>
-			<?php endif; ?>
-		<?php endfor; ?>
-	</div>
 	<button type="button" class="khanoumi-carousel__control-next" data-bs-target="#khanoumi-carousel" data-bs-slide="next">
 		<svg xmlns="http://www.w3.org/2000/svg" class="feather feather-chevron-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 			<polyline points="9 18 15 12 9 6"></polyline>

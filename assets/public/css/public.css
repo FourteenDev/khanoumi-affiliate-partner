@@ -2,10 +2,6 @@
 	display: flex;
 }
 
-.khanoumi-carousel__indicators {
-	display: none;
-}
-
 .khanoumi-carousel .slick-arrow {
 	height: 100%;
 	width: 10%;
