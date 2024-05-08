@@ -2,6 +2,7 @@
 
 namespace KhanoumiAffiliatePartner\Shortcodes;
 
+use KhanoumiAffiliatePartner\Helpers\DeemaHelper;
 use KhanoumiAffiliatePartner\Helpers\HttpHelper;
 
 class GetProductsViaREST
@@ -54,6 +55,13 @@ class GetProductsViaREST
 			{
 				error_log(print_r($products, true));
 				return __('Invalid products! See log file for more details.', KAPP_TEXT_DOMAIN);
+			}
+
+			$products = DeemaHelper::addProductLinksToApiResponse($products);
+			if (empty($products))
+			{
+				error_log(print_r($products, true));
+				return __('Unable to process products! See log file for more details.', KAPP_TEXT_DOMAIN);
 			}
 
 			set_transient('khanoumi_products', $products, 12 * HOUR_IN_SECONDS);

@@ -8,12 +8,12 @@
 		<?php for ($i = 0; $i < count($products['items']); $i++) : $product = $products['items'][$i]; ?>
 			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
 				<div class="khanoumi-carousel__item">
-					<a href="https://khanoumi.com/products/<?php echo $product['slug']; ?>">
+					<a href="<?php echo $product['deemaLink']; ?>">
 						<img alt="<?php echo $product['nameEn']; ?>" class="khanoumi-carousel__item-image" width="100%" height="100%" src="<?php echo $product['imageUrl']; ?>" />
 					</a>
 					<div class="khanoumi-carousel__item-container">
 						<div class="khanoumi-carousel__item-caption">
-							<a href="https://khanoumi.com/products/<?php echo $product['slug']; ?>">
+							<a href="<?php echo $product['deemaLink']; ?>">
 								<h3><?php echo $product['nameFa']; ?></h3>
 							</a>
 							<p class="khanoumi-carousel__item-price">
@@ -29,7 +29,7 @@
 								<?php endif; ?>
 								تومان
 							</p>
-							<a class="khanoumi-carousel__item-view-more" href="https://khanoumi.com/products/<?php echo $product['slug']; ?>" rel="nofollow">
+							<a class="khanoumi-carousel__item-view-more" href="<?php echo $product['deemaLink']; ?>" rel="nofollow">
 								<button class="khanoumi-carousel__item-button">مشاهده و خرید »</button>
 							</a>
 						</div>
