@@ -133,3 +133,8 @@
 	position: relative;
 	z-index: 2;
 }
+
+.khanoumi-products-grid__item-caption h3 {
+	text-align: center;
+	font-size: 1em;
+}

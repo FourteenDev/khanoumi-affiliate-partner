@@ -6,8 +6,8 @@
 					<div class="khanoumi-products-grid__item-container">
 						<img src="<?php echo $product['imageUrl']; ?>" width="100%" height="225" />
 						<div class="khanoumi-products-grid__item-body">
-							<?php echo $product['name']; ?>
 							<div class="khanoumi-products-grid__item-caption">
+								<h3><?php echo $product['nameFa']; ?></h3>
 								<p class="khanoumi-products-grid__item-price">
 									<?php if (isset($product['basePrice']) && intval($product['basePrice'])) : ?>
 										<?php if (isset($product['effectivePrice']) && intval($product['effectivePrice'])) : ?>
