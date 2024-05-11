@@ -1,3 +1,7 @@
+/************/
+/* Carousel */
+/************/
+
 .khanoumi-carousel {
 	display: flex;
 }
@@ -47,18 +51,21 @@
 	font-size: 14px;
 }
 
-.khanoumi-carousel__item-price span {
+.khanoumi-carousel__item-price span,
+.khanoumi-products-album__item-price span {
 	color: gray;
 	text-decoration: line-through;
 }
 
-.khanoumi-carousel__item-button {
+.khanoumi-carousel__item-button,
+.khanoumi-products-album__item-button {
 	color: white;
 	background-color: rgba(240, 150, 165, 0.9);
 	transition: all 0.3s ease;
 }
 
-.khanoumi-carousel__item-button:hover {
+.khanoumi-carousel__item-button:hover,
+.khanoumi-products-album__item-button:hover {
 	background: transparent !important;
 	color: rgba(240, 150, 165, 0.9) !important;
 	text-decoration: none;
@@ -72,4 +79,57 @@
 	.khanoumi-carousel__control-next {
 		right: 10px;
 	}
+}
+
+/*********/
+/* Album */
+/*********/
+
+.khanoumi-products-album__content {
+	display: grid;
+	width: 80%;
+	margin: auto;
+	grid-template-columns: auto auto auto auto;
+	gap: 50px;
+	justify-content: space-evenly;
+	text-align: center;
+	transition: transform .7s;
+}
+
+.khanoumi-products-album__item {
+	display: flex;
+	position: relative;
+	padding: 5px;
+	align-items: end;
+}
+
+.khanoumi-products-album__item:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+
+.khanoumi-products-album__item-container img {
+	width: 100%;
+	height: auto;
+	opacity: 0.8;
+	transition: 0.5s !important;
+}
+
+.khanoumi-products-album__item:hover img {
+	opacity: 1;
+	transform: scale(1.6);
+}
+
+.khanoumi-products-album__item-body {
+	position: relative;
+	z-index: 2;
 }

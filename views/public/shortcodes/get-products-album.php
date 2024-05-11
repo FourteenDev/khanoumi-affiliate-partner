@@ -1,32 +1,32 @@
-<div class="album py-5 bg-light">
-	<div class="container">
-		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-			<?php foreach ($products['items'] as $product) : ?>
-				<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
-					<div class="col">
-						<div class="card shadow-sm">
-							<img class="bd-placeholder-img" width="100%" height="225" src="<?php echo $product['imageUrl']; ?>" />
-							<div class="card-body">
-								<?php echo $product['name']; ?>
-								<div class="d-flex justify-content-between align-items-center">
-									<button type="button" class="btn btn-outline-secondary">مشاهده‌ی جزییات »</button>
+<div class="khanoumi-products-album">
+	<div class="khanoumi-products-album__content">
+		<?php foreach ($products as $product) : ?>
+			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
+				<div class="khanoumi-products-album__item">
+					<div class="khanoumi-products-album__item-container">
+						<img src="<?php echo $product['imageUrl']; ?>" width="100%" height="225" />
+						<div class="khanoumi-products-album__item-body">
+							<?php echo $product['name']; ?>
+							<div class="khanoumi-products-album__item-caption">
+								<p class="khanoumi-products-album__item-price">
 									<?php if (isset($product['basePrice']) && intval($product['basePrice'])) : ?>
 										<?php if (isset($product['effectivePrice']) && intval($product['effectivePrice'])) : ?>
-											<p class="text-muted"><strike><?php echo number_format($product['basePrice']); ?></strike>
-												<?php echo number_format($product['effectivePrice']); ?>
-											<p>
+											<span><?php echo number_format($product['basePrice']); ?></span>
+											<?php echo number_format($product['effectivePrice']); ?>
 										<?php else : ?>
-											<p><?php echo number_format($product['basePrice']); ?><p>
+											<?php echo number_format($product['basePrice']); ?>
 										<?php endif; ?>
 									<?php else : ?>
-										<p><?php echo number_format($product['basePrice']); ?><p>
+										<?php echo number_format($product['basePrice']); ?>
 									<?php endif; ?>
-								</div>
+									تومان
+								</p>
+								<button type="button" class="khanoumi-products-album__item-button">مشاهده و خرید »</button>
 							</div>
 						</div>
 					</div>
-				<?php endif; ?>
-			<?php endforeach; ?>
-		</div>
+				</div>
+			<?php endif; ?>
+		<?php endforeach; ?>
 	</div>
 </div>
