@@ -1,14 +1,14 @@
-<div class="khanoumi-products-album">
-	<div class="khanoumi-products-album__content">
+<div class="khanoumi-products-grid">
+	<div class="khanoumi-products-grid__content">
 		<?php foreach ($products as $product) : ?>
 			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
-				<div class="khanoumi-products-album__item">
-					<div class="khanoumi-products-album__item-container">
+				<div class="khanoumi-products-grid__item">
+					<div class="khanoumi-products-grid__item-container">
 						<img src="<?php echo $product['imageUrl']; ?>" width="100%" height="225" />
-						<div class="khanoumi-products-album__item-body">
+						<div class="khanoumi-products-grid__item-body">
 							<?php echo $product['name']; ?>
-							<div class="khanoumi-products-album__item-caption">
-								<p class="khanoumi-products-album__item-price">
+							<div class="khanoumi-products-grid__item-caption">
+								<p class="khanoumi-products-grid__item-price">
 									<?php if (isset($product['basePrice']) && intval($product['basePrice'])) : ?>
 										<?php if (isset($product['effectivePrice']) && intval($product['effectivePrice'])) : ?>
 											<span><?php echo number_format($product['basePrice']); ?></span>
@@ -21,7 +21,7 @@
 									<?php endif; ?>
 									تومان
 								</p>
-								<button type="button" class="khanoumi-products-album__item-button">مشاهده و خرید »</button>
+								<button type="button" class="khanoumi-products-grid__item-button">مشاهده و خرید »</button>
 							</div>
 						</div>
 					</div>

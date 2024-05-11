@@ -67,8 +67,8 @@ class GetProductsViaREST
 			set_transient('khanoumi_products', $products, 12 * HOUR_IN_SECONDS);
 		}
 
-		if ($atts['show'] === 'album')
-			return KAPP()->view('public.shortcodes.get-products-album', ['products' => $products['data']['products']['items']], false);
+		if ($atts['show'] === 'grid')
+			return KAPP()->view('public.shortcodes.get-products-grid', ['products' => $products['data']['products']['items']], false);
 		else
 			return KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items']], false);
 	}
