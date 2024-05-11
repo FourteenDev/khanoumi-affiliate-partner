@@ -4,10 +4,14 @@
 			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
 				<div class="khanoumi-products-grid__item">
 					<div class="khanoumi-products-grid__item-container">
-						<img src="<?php echo $product['imageUrl']; ?>" width="100%" height="225" />
+						<a href="<?php echo $product['deemaLink']; ?>" target="_blank" rel="sponsored nofollow">
+							<img src="<?php echo $product['imageUrl']; ?>" width="100%" height="225" />
+						</a>
 						<div class="khanoumi-products-grid__item-body">
 							<div class="khanoumi-products-grid__item-caption">
-								<h3><?php echo $product['nameFa']; ?></h3>
+								<a href="<?php echo $product['deemaLink']; ?>" target="_blank" rel="sponsored nofollow">
+									<h3><?php echo $product['nameFa']; ?></h3>
+								</a>
 								<p class="khanoumi-products-grid__item-price">
 									<?php if (isset($product['basePrice']) && intval($product['basePrice'])) : ?>
 										<?php if (isset($product['effectivePrice']) && intval($product['effectivePrice'])) : ?>
@@ -21,7 +25,9 @@
 									<?php endif; ?>
 									تومان
 								</p>
-								<button type="button" class="khanoumi-products-grid__item-button">مشاهده و خرید »</button>
+								<a href="<?php echo $product['deemaLink']; ?>" target="_blank" rel="sponsored nofollow">
+									<button type="button" class="khanoumi-products-grid__item-button">مشاهده و خرید »</button>
+								</a>
 							</div>
 						</div>
 					</div>
