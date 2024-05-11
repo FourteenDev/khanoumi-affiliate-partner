@@ -5,7 +5,7 @@
 				<div class="khanoumi-products-grid__item">
 					<div class="khanoumi-products-grid__item-container">
 						<a href="<?php echo $product['deemaLink']; ?>" target="_blank" rel="sponsored nofollow">
-							<img src="<?php echo $product['imageUrl']; ?>" width="100%" height="225" />
+							<img src="<?php echo $product['imageUrl']; ?>" alt="<?php echo $product['nameEn']; ?>" width="100%" height="225" />
 						</a>
 						<div class="khanoumi-products-grid__item-body">
 							<div class="khanoumi-products-grid__item-caption">
