@@ -23,6 +23,8 @@ class Core
 			Setting::getInstance();
 		else
 			Shortcode::getInstance();
+
+		Widget::getInstance();
 	}
 
 	/**
