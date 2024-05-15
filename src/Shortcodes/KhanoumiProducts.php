@@ -4,7 +4,7 @@ namespace KhanoumiAffiliatePartner\Shortcodes;
 
 use KhanoumiAffiliatePartner\Helpers\ProductsHelper;
 
-class GetProductsViaREST
+class KhanoumiProducts
 {
 	public static $instance = null;
 

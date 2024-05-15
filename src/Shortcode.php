@@ -2,7 +2,7 @@
 
 namespace KhanoumiAffiliatePartner;
 
-use KhanoumiAffiliatePartner\Shortcodes\GetProductsViaREST;
+use KhanoumiAffiliatePartner\Shortcodes\KhanoumiProducts;
 
 class Shortcode
 {
@@ -16,6 +16,6 @@ class Shortcode
 
 	public function __construct()
 	{
-		GetProductsViaREST::getInstance();
+		KhanoumiProducts::getInstance();
 	}
 }
