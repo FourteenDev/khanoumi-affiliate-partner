@@ -66,14 +66,14 @@ class Setting
 		add_settings_section("{$this->menuSlug}_general", esc_html__('General Settings', KAPP_TEXT_DOMAIN), null, $this->menuSlug);
 
 		$fields = [
-			'example_field' => [
-				'id'      => 'example_field',
-				'label'   => esc_html__('Example Field', KAPP_TEXT_DOMAIN),
+			'deema_general_link' => [
+				'id'      => 'deema_general_link',
+				'label'   => esc_html__('Deema General Link', KAPP_TEXT_DOMAIN),
 				'section' => 'general',
 				'type'    => 'text',
 				'default' => '',
 				'args'    => [
-					'description' => esc_html__('Example Description.', KAPP_TEXT_DOMAIN),
+					'description' => esc_html__('Deema Affiliate General Link. If you leave this field empty, carousel/grid products will have direct links to the Khanoumi website.', KAPP_TEXT_DOMAIN),
 				],
 			],
 		];
