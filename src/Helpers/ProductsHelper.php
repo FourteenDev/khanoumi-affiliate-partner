@@ -8,15 +8,15 @@ class ProductsHelper
 	 * Returns Khanoumi products in carousel or grid form.
 	 *
 	 * @param	string	$display	Accetable values are `carousel` and `grid`.
-	 * @param	string	$category
-	 * @param	string	$tag
-	 * @param	string	$brand
+	 * @param	int		$category
+	 * @param	int		$tag
+	 * @param	int		$brand
 	 * @param	int		$limit
 	 * @param	int		$page
 	 *
 	 * @return	string				The HTML code of the products view (or the error).
 	 */
-	public static function getProducts($display = 'carousel', $category = '', $tag = '', $brand = '', $limit = 10, $page = 1)
+	public static function getProducts($display = 'carousel', $category = 0, $tag = 0, $brand = 0, $limit = 10, $page = 1)
 	{
 		if (isset($_GET['refresh_products']))
 			delete_transient('khanoumi_products');
