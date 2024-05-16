@@ -38,11 +38,17 @@ class ProductsCarouselWidget extends \WP_Widget
 	 */
 	public function widget($args, $instance)
 	{
+		$title    = !empty($instance['title']) ? $instance['title'] : '';
+		$category = !empty($instance['category']) ? intval($instance['category']) : 0;
+		$tag      = !empty($instance['tag']) ? intval($instance['tag']) : 0;
+		$brand    = !empty($instance['brand']) ? intval($instance['brand']) : 0;
+		$limit    = !empty($instance['limit']) ? intval($instance['limit']) : 10;
+		// $page     = !empty($instance['page']) ? intval($instance['page']) : 1;
+
 		echo $args['before_widget'];
-			if (!empty($instance['title']))
-				echo $args['before_title'] . apply_filters('widget_title', $instance['title']) . $args['after_title'];
+			echo $args['before_title'] . apply_filters('widget_title', $title) . $args['after_title'];
 			echo '<div id="khanoumi-carousel-widget">';
-				echo ProductsHelper::getProducts();
+				echo ProductsHelper::getProducts('', $category, $tag, $brand, $limit);
 			echo '</div>';
 		echo $args['after_widget'];
 	}
@@ -56,13 +62,42 @@ class ProductsCarouselWidget extends \WP_Widget
 	 */
 	public function form($instance)
 	{
-		$title = !empty($instance['title']) ? $instance['title'] : '';
+		$title    = !empty($instance['title']) ? $instance['title'] : '';
+		$category = !empty($instance['category']) ? intval($instance['category']) : 0;
+		$tag      = !empty($instance['tag']) ? intval($instance['tag']) : 0;
+		$brand    = !empty($instance['brand']) ? intval($instance['brand']) : 0;
+		$limit    = !empty($instance['limit']) ? intval($instance['limit']) : 10;
+		// $page     = !empty($instance['page']) ? intval($instance['page']) : 1;
 		?>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('title')); ?>">
-				<?php echo __('Title: ', KAPP_TEXT_DOMAIN); ?>
+				<?php _e('Title: ', KAPP_TEXT_DOMAIN); ?>
 			</label>
 			<input type="text" id="<?php echo esc_attr($this->get_field_id('title')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('title')); ?>" value="<?php echo esc_attr($title); ?>" />
+		</p>
+		<p>
+			<label for="<?php echo esc_attr($this->get_field_id('category')); ?>">
+				<?php _e('Category: ', KAPP_TEXT_DOMAIN); ?>
+			</label>
+			<input type="number" id="<?php echo esc_attr($this->get_field_id('category')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('category')); ?>" value="<?php echo esc_attr($category); ?>" />
+		</p>
+		<p>
+			<label for="<?php echo esc_attr($this->get_field_id('tag')); ?>">
+				<?php _e('Tag: ', KAPP_TEXT_DOMAIN); ?>
+			</label>
+			<input type="number" id="<?php echo esc_attr($this->get_field_id('tag')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('tag')); ?>" value="<?php echo esc_attr($tag); ?>" />
+		</p>
+		<p>
+			<label for="<?php echo esc_attr($this->get_field_id('brand')); ?>">
+				<?php _e('Brand: ', KAPP_TEXT_DOMAIN); ?>
+			</label>
+			<input type="number" id="<?php echo esc_attr($this->get_field_id('brand')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('brand')); ?>" value="<?php echo esc_attr($brand); ?>" />
+		</p>
+		<p>
+			<label for="<?php echo esc_attr($this->get_field_id('limit')); ?>">
+				<?php _e('Limit: ', KAPP_TEXT_DOMAIN); ?>
+			</label>
+			<input type="number" id="<?php echo esc_attr($this->get_field_id('limit')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('limit')); ?>" value="<?php echo esc_attr($limit); ?>" />
 		</p>
 		<?php
 	}
@@ -70,15 +105,22 @@ class ProductsCarouselWidget extends \WP_Widget
 	/**
 	 * Updates the widget.
 	 *
-	 * @param	array		$new_instance	New settings for this instance as input by the user via `WP_Widget::form()`.
-	 * @param	array		$old_instance	Old settings for this instance.
+	 * @param	array		$newInstance	New settings for this instance as input by the user via `WP_Widget::form()`.
+	 * @param	array		$oldInstance	Old settings for this instance.
 	 *
-	 * @return	array|false					Saved settings or bool `false` if nothing was saved.
+	 * @return	array						Saved settings or bool `false` if nothing was saved.
 	 */
-	public function update($new_instance, $old_instance)
+	public function update($newInstance, $oldInstance)
 	{
-		$instance          = [];
-		$instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
+		$instance             = [];
+
+		$instance['title']    = !empty($newInstance['title']) ? strip_tags($newInstance['title']) : '';
+		$instance['category'] = !empty($newInstance['category']) ? intval($newInstance['category']) : 0;
+		$instance['tag']      = !empty($newInstance['tag']) ? intval($newInstance['tag']) : 0;
+		$instance['brand']    = !empty($newInstance['brand']) ? intval($newInstance['brand']) : 0;
+		$instance['limit']    = !empty($newInstance['limit']) ? intval($newInstance['limit']) : 10;
+		// $instance['page']     = !empty($newInstance['page']) ? intval($newInstance['page']) : 1;
+
 		return $instance;
 	}
 }
