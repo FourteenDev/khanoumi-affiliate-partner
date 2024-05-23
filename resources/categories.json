@@ -1,0 +1,2402 @@
+[
+	{
+		"id": 8,
+		"name": "آرایشی",
+		"parent_id": 0,
+		"slug": "makeup"
+	},
+	{
+		"id": 9,
+		"name": "آرایش صورت",
+		"parent_id": 8,
+		"slug": "face-makeup"
+	},
+	{
+		"id": 10,
+		"name": "کرم پودر",
+		"parent_id": 9,
+		"slug": "foundation-makeup"
+	},
+	{
+		"id": 12,
+		"name": "کانسیلر",
+		"parent_id": 9,
+		"slug": "concealer"
+	},
+	{
+		"id": 13,
+		"name": "رژ گونه",
+		"parent_id": 9,
+		"slug": "blush"
+	},
+	{
+		"id": 17,
+		"name": "آرایش چشم",
+		"parent_id": 8,
+		"slug": "eye-makeup"
+	},
+	{
+		"id": 18,
+		"name": "سایه چشم",
+		"parent_id": 17,
+		"slug": "eyeshadow"
+	},
+	{
+		"id": 20,
+		"name": "خط چشم",
+		"parent_id": 17,
+		"slug": "eyeliner"
+	},
+	{
+		"id": 23,
+		"name": "ریمل",
+		"parent_id": 17,
+		"slug": "mascara"
+	},
+	{
+		"id": 24,
+		"name": "آرایش لب",
+		"parent_id": 8,
+		"slug": "lips-makeup"
+	},
+	{
+		"id": 25,
+		"name": "رژ لب",
+		"parent_id": 24,
+		"slug": "lipstick"
+	},
+	{
+		"id": 27,
+		"name": "مراقبت پوست",
+		"parent_id": 0,
+		"slug": "skincare"
+	},
+	{
+		"id": 29,
+		"name": "شوینده صورت",
+		"parent_id": 128,
+		"slug": "face-wash-toner"
+	},
+	{
+		"id": 30,
+		"name": "شوینده  دست و بدن",
+		"parent_id": 370,
+		"slug": "hand-wash-body-wash"
+	},
+	{
+		"id": 35,
+		"name": "ژل بهداشتی بانوان",
+		"parent_id": 217,
+		"slug": "feminine-wash"
+	},
+	{
+		"id": 38,
+		"name": "کرم و لوسیون بدن",
+		"parent_id": 131,
+		"slug": "body-lotion-body-cream"
+	},
+	{
+		"id": 42,
+		"name": "کرم دست",
+		"parent_id": 131,
+		"slug": "hand-cream-foot-cream"
+	},
+	{
+		"id": 45,
+		"name": "مرطوب کننده لب",
+		"parent_id": 143,
+		"slug": "lip-treatment"
+	},
+	{
+		"id": 46,
+		"name": "مراقبت دور چشم",
+		"parent_id": 27,
+		"slug": "eye-treatments"
+	},
+	{
+		"id": 50,
+		"name": "رفع ترک و اسکار",
+		"parent_id": 131,
+		"slug": "stretch-marks"
+	},
+	{
+		"id": 58,
+		"name": "مراقبت مو",
+		"parent_id": 0,
+		"slug": "hair"
+	},
+	{
+		"id": 60,
+		"name": "شامپو",
+		"parent_id": 58,
+		"slug": "shampoo"
+	},
+	{
+		"id": 65,
+		"name": "اسپری مو",
+		"parent_id": 58,
+		"slug": "hair-spray"
+	},
+	{
+		"id": 66,
+		"name": "نرم کننده مو",
+		"parent_id": 58,
+		"slug": "hair-conditioner"
+	},
+	{
+		"id": 67,
+		"name": "ماسک مو",
+		"parent_id": 58,
+		"slug": "hair-mask"
+	},
+	{
+		"id": 73,
+		"name": "حالت دهنده مو",
+		"parent_id": 58,
+		"slug": "hair-styling"
+	},
+	{
+		"id": 85,
+		"name": "عطر و ادکلن",
+		"parent_id": 0,
+		"slug": "fragrance"
+	},
+	{
+		"id": 87,
+		"name": "اسپری بدن زنانه",
+		"parent_id": 172,
+		"slug": "body-spray-for-women"
+	},
+	{
+		"id": 88,
+		"name": "بادی اسپلش زنانه",
+		"parent_id": 172,
+		"slug": "body-mist-for-women"
+	},
+	{
+		"id": 94,
+		"name": "اکسسوری",
+		"parent_id": 0,
+		"slug": "accessoris"
+	},
+	{
+		"id": 95,
+		"name": "دستبند",
+		"parent_id": 251,
+		"slug": "bracelets"
+	},
+	{
+		"id": 96,
+		"name": "گردنبند",
+		"parent_id": 251,
+		"slug": "necklace"
+	},
+	{
+		"id": 100,
+		"name": "انگشتر",
+		"parent_id": 251,
+		"slug": "rings"
+	},
+	{
+		"id": 104,
+		"name": "گوشواره",
+		"parent_id": 251,
+		"slug": "earrings"
+	},
+	{
+		"id": 117,
+		"name": "ماسک صورت",
+		"parent_id": 143,
+		"slug": "face-mask"
+	},
+	{
+		"id": 118,
+		"name": "اسکراب و لایه بردار صورت",
+		"parent_id": 128,
+		"slug": "exfoliator-scrub"
+	},
+	{
+		"id": 119,
+		"name": "ست و نیم ست",
+		"parent_id": 251,
+		"slug": "jewelry-sets"
+	},
+	{
+		"id": 123,
+		"name": "سرم مو",
+		"parent_id": 58,
+		"slug": "hair-serum-tonic"
+	},
+	{
+		"id": 128,
+		"name": "پاک کننده",
+		"parent_id": 27,
+		"slug": "cleanser"
+	},
+	{
+		"id": 131,
+		"name": "مراقبت بدن",
+		"parent_id": 27,
+		"slug": "body-care"
+	},
+	{
+		"id": 132,
+		"name": "لیفت و سفت کننده بدن",
+		"parent_id": 131,
+		"slug": "lifting-for-body"
+	},
+	{
+		"id": 136,
+		"name": "بادی میکاپ",
+		"parent_id": 8,
+		"slug": "body-makeup"
+	},
+	{
+		"id": 141,
+		"name": "آرایش پاک کن و میسلار واتر صورت",
+		"parent_id": 128,
+		"slug": "makeup-remover"
+	},
+	{
+		"id": 143,
+		"name": "مراقبت صورت",
+		"parent_id": 27,
+		"slug": "face-care"
+	},
+	{
+		"id": 145,
+		"name": "آبرسان و مرطوب کننده",
+		"parent_id": 143,
+		"slug": "moisturizer"
+	},
+	{
+		"id": 146,
+		"name": "کرم شب و روز",
+		"parent_id": 143,
+		"slug": "day-cream-night-cream"
+	},
+	{
+		"id": 149,
+		"name": "ضد آفتاب",
+		"parent_id": 143,
+		"slug": "sun-block-sun-protecter"
+	},
+	{
+		"id": 151,
+		"name": "ضد چروک صورت",
+		"parent_id": 143,
+		"slug": "anti-wrinkle-for-face"
+	},
+	{
+		"id": 152,
+		"name": "ضد لک و روشن کننده صورت",
+		"parent_id": 143,
+		"slug": "lightening-for-face"
+	},
+	{
+		"id": 153,
+		"name": "لیفت و سفت کننده صورت",
+		"parent_id": 143,
+		"slug": "lifting-for-face"
+	},
+	{
+		"id": 157,
+		"name": "مرطوب کننده دور چشم",
+		"parent_id": 46,
+		"slug": "moisturizer-for-eyes"
+	},
+	{
+		"id": 158,
+		"name": "ضد تیرگی دور چشم",
+		"parent_id": 46,
+		"slug": "dark-circle-treatment"
+	},
+	{
+		"id": 159,
+		"name": "ضد پف دور چشم",
+		"parent_id": 46,
+		"slug": "anti-puff-for-eyes"
+	},
+	{
+		"id": 160,
+		"name": "ضد چروک دور چشم",
+		"parent_id": 46,
+		"slug": "anti-wrinkle-for-eyes"
+	},
+	{
+		"id": 162,
+		"name": "شامپو بدن و اسکراب",
+		"parent_id": 30,
+		"slug": "body-shampoo-scrub"
+	},
+	{
+		"id": 163,
+		"name": "ضد لک و روشن کننده بدن",
+		"parent_id": 131,
+		"slug": "lightening-for-body"
+	},
+	{
+		"id": 165,
+		"name": "مراقبت ناخن",
+		"parent_id": 27,
+		"slug": "nail-treatment"
+	},
+	{
+		"id": 166,
+		"name": "برنزه کردن و اتوبرنز",
+		"parent_id": 8,
+		"slug": "self-tanner-bronzer"
+	},
+	{
+		"id": 167,
+		"name": "آقایان",
+		"parent_id": 0,
+		"slug": "men"
+	},
+	{
+		"id": 168,
+		"name": "لوازم اصلاح آقایان",
+		"parent_id": 167,
+		"slug": "men-shaving"
+	},
+	{
+		"id": 170,
+		"name": "کرم مو",
+		"parent_id": 58,
+		"slug": "hair-cream"
+	},
+	{
+		"id": 171,
+		"name": "شامپو آقایان",
+		"parent_id": 267,
+		"slug": "men-shampoo"
+	},
+	{
+		"id": 172,
+		"name": "عطر و رایحه زنانه",
+		"parent_id": 85,
+		"slug": "fragrances-for-women"
+	},
+	{
+		"id": 173,
+		"name": "دئودورانت زنانه",
+		"parent_id": 172,
+		"slug": "deodorant-for-women"
+	},
+	{
+		"id": 175,
+		"name": "عطر و رایحه مردانه",
+		"parent_id": 85,
+		"slug": "fragrances-for-men"
+	},
+	{
+		"id": 177,
+		"name": "اسپری بدن مردانه",
+		"parent_id": 175,
+		"slug": "men-body-spray"
+	},
+	{
+		"id": 178,
+		"name": "اسپری بدن آقایان",
+		"parent_id": 286,
+		"slug": "men-body-sprays"
+	},
+	{
+		"id": 179,
+		"name": "عطر زنانه",
+		"parent_id": 172,
+		"slug": "perfume-for-women"
+	},
+	{
+		"id": 180,
+		"name": "عطر و ادکلن مردانه",
+		"parent_id": 175,
+		"slug": "men-perfume"
+	},
+	{
+		"id": 181,
+		"name": "عطر و ادکلن آقایان",
+		"parent_id": 286,
+		"slug": "men-fragrance"
+	},
+	{
+		"id": 182,
+		"name": "آرایش ناخن",
+		"parent_id": 8,
+		"slug": "nail-makeup"
+	},
+	{
+		"id": 183,
+		"name": "پرایمر آرایشی",
+		"parent_id": 9,
+		"slug": "makeup-primer"
+	},
+	{
+		"id": 184,
+		"name": "آرایش ابرو",
+		"parent_id": 8,
+		"slug": "eyebrow-makeup"
+	},
+	{
+		"id": 187,
+		"name": "ابزار آرایشی",
+		"parent_id": 8,
+		"slug": "makeup-accessories"
+	},
+	{
+		"id": 188,
+		"name": "رنگ مو",
+		"parent_id": 58,
+		"slug": "hair-makeup"
+	},
+	{
+		"id": 189,
+		"name": "رنگ مو تیوپی",
+		"parent_id": 188,
+		"slug": "hair-color"
+	},
+	{
+		"id": 190,
+		"name": "لوازم اصلاح زنانه",
+		"parent_id": 377,
+		"slug": "women-shaving-products"
+	},
+	{
+		"id": 193,
+		"name": "دئودورانت آقایان",
+		"parent_id": 286,
+		"slug": "men-deodorant"
+	},
+	{
+		"id": 194,
+		"name": "دئودورانت مردانه",
+		"parent_id": 175,
+		"slug": "men-deodorants"
+	},
+	{
+		"id": 195,
+		"name": "لوازم برقی شخصی",
+		"parent_id": 0,
+		"slug": "electrical-personal-care"
+	},
+	{
+		"id": 196,
+		"name": "سشوار",
+		"parent_id": 298,
+		"slug": "hair-drayer"
+	},
+	{
+		"id": 197,
+		"name": "اتو و صاف کننده مو",
+		"parent_id": 298,
+		"slug": "hair-iron"
+	},
+	{
+		"id": 198,
+		"name": "اصلاح مو صورت، سر و بدن",
+		"parent_id": 297,
+		"slug": "hair-trimmer"
+	},
+	{
+		"id": 199,
+		"name": "اصلاح موی گوش و بینی",
+		"parent_id": 297,
+		"slug": "nose-clipper"
+	},
+	{
+		"id": 200,
+		"name": "اکسیدان و پودر دکلره",
+		"parent_id": 188,
+		"slug": "oxidant"
+	},
+	{
+		"id": 201,
+		"name": "ساعت",
+		"parent_id": 256,
+		"slug": "watch"
+	},
+	{
+		"id": 202,
+		"name": "ست های آرایشی",
+		"parent_id": 8,
+		"slug": "makeup-set"
+	},
+	{
+		"id": 206,
+		"name": "هدیه",
+		"parent_id": 0,
+		"slug": "gift"
+	},
+	{
+		"id": 207,
+		"name": "ویژه آقایان",
+		"parent_id": 206,
+		"slug": "special-for-men"
+	},
+	{
+		"id": 208,
+		"name": "لباس زنانه",
+		"parent_id": 256,
+		"slug": "women-dresses"
+	},
+	{
+		"id": 209,
+		"name": "لباس خواب",
+		"parent_id": 208,
+		"slug": "night-dress"
+	},
+	{
+		"id": 210,
+		"name": "شومیز و تونیک",
+		"parent_id": 208,
+		"slug": "blouse"
+	},
+	{
+		"id": 211,
+		"name": "هدیه دخترانه",
+		"parent_id": 206,
+		"slug": "special-for-girls"
+	},
+	{
+		"id": 212,
+		"name": "مراقبت دهان و دندان",
+		"parent_id": 370,
+		"slug": "teeth-and-mouth-care"
+	},
+	{
+		"id": 213,
+		"name": "مسواک",
+		"parent_id": 212,
+		"slug": "brush"
+	},
+	{
+		"id": 214,
+		"name": "خمیر دندان",
+		"parent_id": 212,
+		"slug": "toothbrush"
+	},
+	{
+		"id": 215,
+		"name": "دهانشویه",
+		"parent_id": 212,
+		"slug": "mouthwash"
+	},
+	{
+		"id": 216,
+		"name": "نخ دندان",
+		"parent_id": 212,
+		"slug": "dental-floss"
+	},
+	{
+		"id": 217,
+		"name": "بهداشت بانوان و آقایان",
+		"parent_id": 370,
+		"slug": "women-men-care"
+	},
+	{
+		"id": 218,
+		"name": "نوار بهداشتی",
+		"parent_id": 217,
+		"slug": "sanitary-pad"
+	},
+	{
+		"id": 219,
+		"name": "تاتو موقت",
+		"parent_id": 136,
+		"slug": "tattoo"
+	},
+	{
+		"id": 220,
+		"name": "لنز",
+		"parent_id": 17,
+		"slug": "contact-lens"
+	},
+	{
+		"id": 221,
+		"name": "ست مراقبت پوست و بدن",
+		"parent_id": 27,
+		"slug": "skin-care-sets"
+	},
+	{
+		"id": 222,
+		"name": "ست مراقبت مو",
+		"parent_id": 58,
+		"slug": "hair-care-sets"
+	},
+	{
+		"id": 223,
+		"name": "ست عطر و رایحه",
+		"parent_id": 85,
+		"slug": "perfum-sets"
+	},
+	{
+		"id": 224,
+		"name": "ست زیورآلات",
+		"parent_id": 251,
+		"slug": "accessoris-sets"
+	},
+	{
+		"id": 225,
+		"name": "ست آقایان",
+		"parent_id": 167,
+		"slug": "men-sets"
+	},
+	{
+		"id": 226,
+		"name": "رنگ مو ترکیبی",
+		"parent_id": 188,
+		"slug": "hair-color-sets"
+	},
+	{
+		"id": 227,
+		"name": "ست آرایشی",
+		"parent_id": 202,
+		"slug": "makeup-package"
+	},
+	{
+		"id": 228,
+		"name": "ست آرایش عروس",
+		"parent_id": 202,
+		"slug": "bridal-makeup-set"
+	},
+	{
+		"id": 229,
+		"name": "مداد و خط لب",
+		"parent_id": 24,
+		"slug": "lip-liner"
+	},
+	{
+		"id": 230,
+		"name": "بالم لب",
+		"parent_id": 24,
+		"slug": "lip-balm"
+	},
+	{
+		"id": 233,
+		"name": "لاک ناخن",
+		"parent_id": 182,
+		"slug": "nail-polish"
+	},
+	{
+		"id": 234,
+		"name": "مراقبت ناخن",
+		"parent_id": 182,
+		"slug": "nail-treatment2"
+	},
+	{
+		"id": 235,
+		"name": "مادر و کودک",
+		"parent_id": 0,
+		"slug": "kids-care"
+	},
+	{
+		"id": 237,
+		"name": "کیت رنگ مو",
+		"parent_id": 58,
+		"slug": "hair-color-kit"
+	},
+	{
+		"id": 238,
+		"name": "کرم BB و کرم CC",
+		"parent_id": 9,
+		"slug": "bb-cream-cc-cream"
+	},
+	{
+		"id": 239,
+		"name": "لاک پاک کن",
+		"parent_id": 182,
+		"slug": "nail-polish-remover"
+	},
+	{
+		"id": 241,
+		"name": "ناخن مصنوعی",
+		"parent_id": 182,
+		"slug": "nail-accessories"
+	},
+	{
+		"id": 242,
+		"name": "مراقبت پوست آقایان",
+		"parent_id": 167,
+		"slug": "skin-care-men"
+	},
+	{
+		"id": 246,
+		"name": "ویژه تولد",
+		"parent_id": 206,
+		"slug": "birthday-gift"
+	},
+	{
+		"id": 247,
+		"name": "ویژه خانم ها",
+		"parent_id": 206,
+		"slug": "special-for-women"
+	},
+	{
+		"id": 248,
+		"name": "زیورآلات طلا",
+		"parent_id": 256,
+		"slug": "gold-jewelry"
+	},
+	{
+		"id": 249,
+		"name": "دستبند طلا",
+		"parent_id": 248,
+		"slug": "gold-bracelet"
+	},
+	{
+		"id": 251,
+		"name": "زیورآلات زنانه",
+		"parent_id": 256,
+		"slug": "jewelry"
+	},
+	{
+		"id": 252,
+		"name": "آویز ساعت طلا",
+		"parent_id": 248,
+		"slug": "gold-watch-pendant"
+	},
+	{
+		"id": 253,
+		"name": "گن و فرم دهنده بدن",
+		"parent_id": 208,
+		"slug": "women-shape-wear"
+	},
+	{
+		"id": 255,
+		"name": "بهداشت زناشویی",
+		"parent_id": 217,
+		"slug": "sexual-health"
+	},
+	{
+		"id": 256,
+		"name": "مد و اکسسوری",
+		"parent_id": 0,
+		"slug": "accessories"
+	},
+	{
+		"id": 258,
+		"name": "جوراب مردانه",
+		"parent_id": 284,
+		"slug": "mens-socks"
+	},
+	{
+		"id": 259,
+		"name": "جوراب زنانه",
+		"parent_id": 284,
+		"slug": "women-socks"
+	},
+	{
+		"id": 260,
+		"name": "ساپورت و جوراب شلواری",
+		"parent_id": 284,
+		"slug": "pantyhose-and-support"
+	},
+	{
+		"id": 261,
+		"name": "لگ و ساق شلواری",
+		"parent_id": 208,
+		"slug": "leggings"
+	},
+	{
+		"id": 262,
+		"name": "ابزار مراقبت پوست",
+		"parent_id": 195,
+		"slug": "skin-care-accessories"
+	},
+	{
+		"id": 263,
+		"name": "ابزار سلامت",
+		"parent_id": 195,
+		"slug": "health-care"
+	},
+	{
+		"id": 264,
+		"name": "ماساژور",
+		"parent_id": 263,
+		"slug": "massager"
+	},
+	{
+		"id": 265,
+		"name": "مسواک برقی",
+		"parent_id": 263,
+		"slug": "electric-brusher"
+	},
+	{
+		"id": 266,
+		"name": "دستگاه بخور و رطوبت ساز",
+		"parent_id": 263,
+		"slug": "humidifier"
+	},
+	{
+		"id": 267,
+		"name": "موی آقایان",
+		"parent_id": 167,
+		"slug": "hair-styling-for-men"
+	},
+	{
+		"id": 268,
+		"name": "رنگ موی آقایان",
+		"parent_id": 267,
+		"slug": "hair-color-for-men"
+	},
+	{
+		"id": 269,
+		"name": "حالت دهنده موی آقایان",
+		"parent_id": 267,
+		"slug": "men-hair-styling"
+	},
+	{
+		"id": 270,
+		"name": "مراقبت موی آقایان",
+		"parent_id": 267,
+		"slug": "men-hair-care"
+	},
+	{
+		"id": 271,
+		"name": "سالگرد ازدواج",
+		"parent_id": 206,
+		"slug": "anniversary-gift"
+	},
+	{
+		"id": 272,
+		"name": "برای مادر",
+		"parent_id": 206,
+		"slug": "motherly-gift"
+	},
+	{
+		"id": 273,
+		"name": "برای پدر",
+		"parent_id": 206,
+		"slug": "fatherly-gift"
+	},
+	{
+		"id": 274,
+		"name": "ویژه عشق",
+		"parent_id": 206,
+		"slug": "love-gift"
+	},
+	{
+		"id": 275,
+		"name": "ویژه همکار",
+		"parent_id": 206,
+		"slug": "special-for-colleague"
+	},
+	{
+		"id": 276,
+		"name": "مناسب فصل",
+		"parent_id": 206,
+		"slug": "seasonal-gift"
+	},
+	{
+		"id": 277,
+		"name": "هدیه ارزان قیمت",
+		"parent_id": 206,
+		"slug": "reasonable-gift"
+	},
+	{
+		"id": 279,
+		"name": "ست های هدیه",
+		"parent_id": 206,
+		"slug": "gift-set"
+	},
+	{
+		"id": 280,
+		"name": "عطر جیبی زنانه",
+		"parent_id": 172,
+		"slug": "women-pocket-perfume"
+	},
+	{
+		"id": 281,
+		"name": "عطر جیبی مردانه",
+		"parent_id": 175,
+		"slug": "men-pocket-perfume"
+	},
+	{
+		"id": 282,
+		"name": "بادی اسپلش مردانه",
+		"parent_id": 175,
+		"slug": "men-body-splash"
+	},
+	{
+		"id": 283,
+		"name": "عطر جیبی آقایان",
+		"parent_id": 286,
+		"slug": "pocket-perfume-for-men"
+	},
+	{
+		"id": 284,
+		"name": "جوراب",
+		"parent_id": 256,
+		"slug": "socks"
+	},
+	{
+		"id": 285,
+		"name": "شال و روسری",
+		"parent_id": 256,
+		"slug": "scarf"
+	},
+	{
+		"id": 286,
+		"name": "عطر و رایحه آقایان",
+		"parent_id": 167,
+		"slug": "mens-fragrance"
+	},
+	{
+		"id": 287,
+		"name": "کانتورینگ و هایلایتر",
+		"parent_id": 9,
+		"slug": "contour-and-highlight"
+	},
+	{
+		"id": 288,
+		"name": "دستمال مرطوب",
+		"parent_id": 385,
+		"slug": "wet-wipes"
+	},
+	{
+		"id": 289,
+		"name": "پنکک",
+		"parent_id": 9,
+		"slug": "compact-powder"
+	},
+	{
+		"id": 290,
+		"name": "ضد جوش صورت",
+		"parent_id": 143,
+		"slug": "anti-acne"
+	},
+	{
+		"id": 291,
+		"name": "ترمیم و بازسازی کننده صورت",
+		"parent_id": 143,
+		"slug": "repairing"
+	},
+	{
+		"id": 293,
+		"name": "روغن مو",
+		"parent_id": 58,
+		"slug": "hair-oil"
+	},
+	{
+		"id": 294,
+		"name": "روغن مراقبتی و زیبایی",
+		"parent_id": 143,
+		"slug": "beauty-oil"
+	},
+	{
+		"id": 297,
+		"name": "لوازم اصلاح برقی",
+		"parent_id": 195,
+		"slug": "shaver"
+	},
+	{
+		"id": 298,
+		"name": "ابزار برقی مو",
+		"parent_id": 195,
+		"slug": "electrical-hair-styling-tools"
+	},
+	{
+		"id": 300,
+		"name": "براش و پد آرایشی",
+		"parent_id": 187,
+		"slug": "cosmetic-brush-cosmetic-puff"
+	},
+	{
+		"id": 301,
+		"name": "تراش",
+		"parent_id": 187,
+		"slug": "sharpener"
+	},
+	{
+		"id": 302,
+		"name": "مژه مصنوعی و چسب مژه",
+		"parent_id": 187,
+		"slug": "false-eyelashes"
+	},
+	{
+		"id": 303,
+		"name": "فیکساتور آرایش",
+		"parent_id": 9,
+		"slug": "makeup-fixture"
+	},
+	{
+		"id": 305,
+		"name": "تزئینات مو",
+		"parent_id": 256,
+		"slug": "hair-accessories"
+	},
+	{
+		"id": 306,
+		"name": "کیف آرایش",
+		"parent_id": 187,
+		"slug": "makeup-bag"
+	},
+	{
+		"id": 307,
+		"name": "موچین و قیچی",
+		"parent_id": 187,
+		"slug": "tweezers-scissor"
+	},
+	{
+		"id": 308,
+		"name": "آینه جیبی و رومیزی",
+		"parent_id": 187,
+		"slug": "pocket-mirror"
+	},
+	{
+		"id": 309,
+		"name": "گوش پاک کن",
+		"parent_id": 385,
+		"slug": "cotton-swab"
+	},
+	{
+		"id": 310,
+		"name": "شیمر و هایلایت بدن",
+		"parent_id": 136,
+		"slug": "body-shimmer-highlight"
+	},
+	{
+		"id": 312,
+		"name": "ریمل ابرو",
+		"parent_id": 184,
+		"slug": "eyebrow-mascara"
+	},
+	{
+		"id": 313,
+		"name": "مداد و ماژیک ابرو",
+		"parent_id": 184,
+		"slug": "eyebrow-liner"
+	},
+	{
+		"id": 314,
+		"name": "سایه ابرو و ژل",
+		"parent_id": 184,
+		"slug": "eyebrow-powder"
+	},
+	{
+		"id": 315,
+		"name": "ضد آفتاب دورچشم",
+		"parent_id": 46,
+		"slug": "eye-sunblock"
+	},
+	{
+		"id": 316,
+		"name": "ضد آفتاب بدن",
+		"parent_id": 131,
+		"slug": "body-sunblock"
+	},
+	{
+		"id": 317,
+		"name": "کاپ قاعدگی",
+		"parent_id": 217,
+		"slug": "menstrual-cup"
+	},
+	{
+		"id": 318,
+		"name": "شامپو بچه و مراقبت مو کودک",
+		"parent_id": 433,
+		"slug": "baby-shampoo"
+	},
+	{
+		"id": 319,
+		"name": "ضد آفتاب کودک",
+		"parent_id": 235,
+		"slug": "baby-sunblock"
+	},
+	{
+		"id": 320,
+		"name": "کرم، لوسیون و روغن کودک",
+		"parent_id": 433,
+		"slug": "baby-body-lotion"
+	},
+	{
+		"id": 321,
+		"name": "مسواک کودک",
+		"parent_id": 433,
+		"slug": "baby-toothbrush"
+	},
+	{
+		"id": 322,
+		"name": "خمیردندان کودک",
+		"parent_id": 433,
+		"slug": "baby-toothpaste"
+	},
+	{
+		"id": 323,
+		"name": "اکسسوری",
+		"parent_id": 256,
+		"slug": "other-accessories"
+	},
+	{
+		"id": 324,
+		"name": "تقویت ابرو",
+		"parent_id": 184,
+		"slug": "eyebrow-treatment"
+	},
+	{
+		"id": 325,
+		"name": "ابزار مانیکور و پدیکور",
+		"parent_id": 182,
+		"slug": "nail-tools"
+	},
+	{
+		"id": 326,
+		"name": "افترسان",
+		"parent_id": 166,
+		"slug": "after-sun"
+	},
+	{
+		"id": 327,
+		"name": "روغن و لوسیون برنزه کننده",
+		"parent_id": 166,
+		"slug": "bronzer"
+	},
+	{
+		"id": 328,
+		"name": "اتو برنز",
+		"parent_id": 166,
+		"slug": "auto-bronze"
+	},
+	{
+		"id": 329,
+		"name": "برس و شانه مو",
+		"parent_id": 187,
+		"slug": "hair-brush-hair-comb"
+	},
+	{
+		"id": 330,
+		"name": "فیس براش و سری یدک",
+		"parent_id": 262,
+		"slug": "face-brush"
+	},
+	{
+		"id": 333,
+		"name": "شوینده و پاک کننده آرایش چشم",
+		"parent_id": 46,
+		"slug": "eye-makeup-removers"
+	},
+	{
+		"id": 334,
+		"name": "تونر صورت",
+		"parent_id": 128,
+		"slug": "toner"
+	},
+	{
+		"id": 336,
+		"name": "تقویت مژه",
+		"parent_id": 17,
+		"slug": "eyelash-treatment"
+	},
+	{
+		"id": 337,
+		"name": "ابزار رنگ مو",
+		"parent_id": 188,
+		"slug": "hair-color-tool"
+	},
+	{
+		"id": 338,
+		"name": "مراقبت پا",
+		"parent_id": 131,
+		"slug": "foot-treatment"
+	},
+	{
+		"id": 339,
+		"name": "حالت دهنده و فرکننده مو",
+		"parent_id": 298,
+		"slug": "hair-curler"
+	},
+	{
+		"id": 340,
+		"name": "میکرودرم",
+		"parent_id": 262,
+		"slug": "microderm"
+	},
+	{
+		"id": 341,
+		"name": "عطر کودک",
+		"parent_id": 235,
+		"slug": "baby-fragrance"
+	},
+	{
+		"id": 342,
+		"name": "ابزار آرایش چشم و ابرو",
+		"parent_id": 187,
+		"slug": "eye-eyebrow-accessories"
+	},
+	{
+		"id": 343,
+		"name": "لوازم تغذیه کودک",
+		"parent_id": 235,
+		"slug": "baby-feeding"
+	},
+	{
+		"id": 344,
+		"name": "شوینده و شامپو بدن کودک",
+		"parent_id": 433,
+		"slug": "baby-body-shampoo"
+	},
+	{
+		"id": 345,
+		"name": "پوشک بچه",
+		"parent_id": 433,
+		"slug": "baby-diaper"
+	},
+	{
+		"id": 346,
+		"name": "گوش پاک کن کودک",
+		"parent_id": 433,
+		"slug": "baby-care"
+	},
+	{
+		"id": 347,
+		"name": "پوشاننده بدن",
+		"parent_id": 136,
+		"slug": "body-foundation"
+	},
+	{
+		"id": 348,
+		"name": "ترمیم و بازسازی پوست بدن",
+		"parent_id": 131,
+		"slug": "body-repairing"
+	},
+	{
+		"id": 350,
+		"name": "کوله پشتی زنانه",
+		"parent_id": 353,
+		"slug": "women-backpacks"
+	},
+	{
+		"id": 351,
+		"name": "کمربند",
+		"parent_id": 353,
+		"slug": "belt"
+	},
+	{
+		"id": 352,
+		"name": "کیف پول",
+		"parent_id": 353,
+		"slug": "walet"
+	},
+	{
+		"id": 353,
+		"name": "کیف زنانه",
+		"parent_id": 256,
+		"slug": "women-bag"
+	},
+	{
+		"id": 354,
+		"name": "کیف مردانه",
+		"parent_id": 256,
+		"slug": "men-bag"
+	},
+	{
+		"id": 355,
+		"name": "کیف پول و مدارک",
+		"parent_id": 353,
+		"slug": "men-wallet"
+	},
+	{
+		"id": 356,
+		"name": "کیف اداری و روزمره",
+		"parent_id": 353,
+		"slug": "men-briefcase"
+	},
+	{
+		"id": 357,
+		"name": "کیف دوشی و کمری",
+		"parent_id": 353,
+		"slug": "shoulder-lumbar-bag"
+	},
+	{
+		"id": 358,
+		"name": "کیف روزمره و مجلسی",
+		"parent_id": 353,
+		"slug": "purse"
+	},
+	{
+		"id": 359,
+		"name": "ست هدیه مردانه و زنانه",
+		"parent_id": 353,
+		"slug": "women-men-gift-set"
+	},
+	{
+		"id": 360,
+		"name": "کلاه و توربان",
+		"parent_id": 285,
+		"slug": "hat"
+	},
+	{
+		"id": 362,
+		"name": "کفش زنانه",
+		"parent_id": 256,
+		"slug": "women-shoes"
+	},
+	{
+		"id": 363,
+		"name": "کفش تخت زنانه",
+		"parent_id": 362,
+		"slug": "women-flat-shoes"
+	},
+	{
+		"id": 364,
+		"name": "کفش اسپرت زنانه",
+		"parent_id": 362,
+		"slug": "women-sport-shoes"
+	},
+	{
+		"id": 365,
+		"name": "ضدعفونی و پاک کننده",
+		"parent_id": 413,
+		"slug": "antibacterial"
+	},
+	{
+		"id": 366,
+		"name": "لوازم اصلاح مردانه",
+		"parent_id": 377,
+		"slug": "men-shaving-products"
+	},
+	{
+		"id": 367,
+		"name": "حوله",
+		"parent_id": 187,
+		"slug": "towel"
+	},
+	{
+		"id": 368,
+		"name": "ظروف آرایشی بهداشتی",
+		"parent_id": 187,
+		"slug": "personal-pack"
+	},
+	{
+		"id": 369,
+		"name": "لیفتینگ و جوان سازی",
+		"parent_id": 262,
+		"slug": "skin-rejuvenation-tools"
+	},
+	{
+		"id": 370,
+		"name": "بهداشت شخصی",
+		"parent_id": 0,
+		"slug": "personal-care-detergents"
+	},
+	{
+		"id": 371,
+		"name": "شوینده لباس",
+		"parent_id": 370,
+		"slug": "clothes-detergents"
+	},
+	{
+		"id": 372,
+		"name": "شوینده ظروف",
+		"parent_id": 370,
+		"slug": "dishes-detergents"
+	},
+	{
+		"id": 373,
+		"name": "شوینده سطوح",
+		"parent_id": 370,
+		"slug": "surface-cleaner"
+	},
+	{
+		"id": 374,
+		"name": "پودر لباس شویی",
+		"parent_id": 371,
+		"slug": "laundry-powder"
+	},
+	{
+		"id": 375,
+		"name": "مایع لباسشویی",
+		"parent_id": 371,
+		"slug": "laundry-detergent-liquid"
+	},
+	{
+		"id": 376,
+		"name": "صابون لباسشویی",
+		"parent_id": 371,
+		"slug": "laundry-soap"
+	},
+	{
+		"id": 377,
+		"name": "لوازم اصلاح",
+		"parent_id": 370,
+		"slug": "shaving"
+	},
+	{
+		"id": 378,
+		"name": "شیشه پاک کن",
+		"parent_id": 373,
+		"slug": "glass-cleaner"
+	},
+	{
+		"id": 379,
+		"name": "شوینده فرش و مبل",
+		"parent_id": 373,
+		"slug": "carpet-and-furniture-shampoo"
+	},
+	{
+		"id": 380,
+		"name": "مایع ظرفشویی",
+		"parent_id": 372,
+		"slug": "dishwashing-liquid"
+	},
+	{
+		"id": 381,
+		"name": "ملزومات ماشین ظرفشویی",
+		"parent_id": 372,
+		"slug": "dishwasher-requirements"
+	},
+	{
+		"id": 382,
+		"name": "صابون",
+		"parent_id": 30,
+		"slug": "soap"
+	},
+	{
+		"id": 383,
+		"name": "مایع دستشویی",
+		"parent_id": 30,
+		"slug": "washing-liquid"
+	},
+	{
+		"id": 384,
+		"name": "دستمال کاغذی",
+		"parent_id": 385,
+		"slug": "tissue-paper"
+	},
+	{
+		"id": 385,
+		"name": "دستمال و پنبه",
+		"parent_id": 370,
+		"slug": "tissue-cotton"
+	},
+	{
+		"id": 386,
+		"name": "دستمال توالت",
+		"parent_id": 385,
+		"slug": "toilet-paper"
+	},
+	{
+		"id": 387,
+		"name": "دستمال مرطوب آرایشی",
+		"parent_id": 128,
+		"slug": "makeup-remover-wet-wipes"
+	},
+	{
+		"id": 388,
+		"name": "دستمال حوله کاغذی",
+		"parent_id": 385,
+		"slug": "paper-towel-tissue"
+	},
+	{
+		"id": 389,
+		"name": "مایع نرم کننده حوله و لباس",
+		"parent_id": 371,
+		"slug": "softener"
+	},
+	{
+		"id": 390,
+		"name": "مایع سفید کننده و ضدعفونی کننده",
+		"parent_id": 373,
+		"slug": "bleaching-disinfection"
+	},
+	{
+		"id": 393,
+		"name": "انواع دستکش آشپزخانه و یک بار مصرف",
+		"parent_id": 400,
+		"slug": "gloves"
+	},
+	{
+		"id": 394,
+		"name": "پاک کننده سطوح",
+		"parent_id": 373,
+		"slug": "surface-cleanser"
+	},
+	{
+		"id": 395,
+		"name": "پنبه و پد پاک کننده",
+		"parent_id": 128,
+		"slug": "cotton-pad"
+	},
+	{
+		"id": 396,
+		"name": "دستمال مرطوب کودک",
+		"parent_id": 433,
+		"slug": "baby-wep-wipes"
+	},
+	{
+		"id": 397,
+		"name": "خوشبو کننده هوا",
+		"parent_id": 400,
+		"slug": "air-freshener"
+	},
+	{
+		"id": 398,
+		"name": "پستانک و ملزومات",
+		"parent_id": 235,
+		"slug": "pacifier"
+	},
+	{
+		"id": 399,
+		"name": "لوازم مراقبتی کودک",
+		"parent_id": 235,
+		"slug": "baby-care-products"
+	},
+	{
+		"id": 400,
+		"name": "ابزار و ملزومات",
+		"parent_id": 370,
+		"slug": "requirements"
+	},
+	{
+		"id": 401,
+		"name": "کیسه فریزر",
+		"parent_id": 400,
+		"slug": "freezer-bag"
+	},
+	{
+		"id": 402,
+		"name": "کیسه زباله",
+		"parent_id": 400,
+		"slug": "bin-bag"
+	},
+	{
+		"id": 403,
+		"name": "یک بار مصرف",
+		"parent_id": 400,
+		"slug": "disposable-tablecloth"
+	},
+	{
+		"id": 404,
+		"name": "رنگ ابرو",
+		"parent_id": 188,
+		"slug": "eyebrow-color"
+	},
+	{
+		"id": 405,
+		"name": "ماساژ و اسپا",
+		"parent_id": 131,
+		"slug": "spa-and-massage"
+	},
+	{
+		"id": 406,
+		"name": "کاندوم",
+		"parent_id": 217,
+		"slug": "condom"
+	},
+	{
+		"id": 407,
+		"name": "ژل بهداشتی آقایان",
+		"parent_id": 217,
+		"slug": "intimate-genital-cleansing-gel-for-men"
+	},
+	{
+		"id": 408,
+		"name": "لیف و اسفنج",
+		"parent_id": 30,
+		"slug": "washcloth"
+	},
+	{
+		"id": 409,
+		"name": "روسری",
+		"parent_id": 285,
+		"slug": "scarf2"
+	},
+	{
+		"id": 410,
+		"name": "شال",
+		"parent_id": 285,
+		"slug": "shawl"
+	},
+	{
+		"id": 412,
+		"name": "دستمال گردن و تزئینی",
+		"parent_id": 285,
+		"slug": "neck-scarf"
+	},
+	{
+		"id": 413,
+		"name": "مراقبت ویژه کرونا",
+		"parent_id": 370,
+		"slug": "covid19-care"
+	},
+	{
+		"id": 414,
+		"name": "ماسک بهداشتی",
+		"parent_id": 413,
+		"slug": "mask"
+	},
+	{
+		"id": 415,
+		"name": "لباس ورزشی",
+		"parent_id": 208,
+		"slug": "sport-wearing"
+	},
+	{
+		"id": 416,
+		"name": "دستمال آشپزخانه",
+		"parent_id": 385,
+		"slug": "kitchen-napkins"
+	},
+	{
+		"id": 417,
+		"name": "سرگرمی و اسباب بازی",
+		"parent_id": 235,
+		"slug": "baby-fun"
+	},
+	{
+		"id": 418,
+		"name": "پوشینه",
+		"parent_id": 217,
+		"slug": "adult-diaper"
+	},
+	{
+		"id": 419,
+		"name": "لباس زیر زنانه",
+		"parent_id": 208,
+		"slug": "women-underwear"
+	},
+	{
+		"id": 420,
+		"name": "شورت",
+		"parent_id": 419,
+		"slug": "panties"
+	},
+	{
+		"id": 421,
+		"name": "سوتین",
+		"parent_id": 419,
+		"slug": "bra"
+	},
+	{
+		"id": 422,
+		"name": "ست لباس زیر",
+		"parent_id": 419,
+		"slug": "set"
+	},
+	{
+		"id": 423,
+		"name": "تاپ و تیشرت",
+		"parent_id": 208,
+		"slug": "women-tee-shirts-and-tops"
+	},
+	{
+		"id": 424,
+		"name": "شلوار و شلوارک زنانه",
+		"parent_id": 208,
+		"slug": "trousers"
+	},
+	{
+		"id": 425,
+		"name": "دکلته",
+		"parent_id": 419,
+		"slug": "decollete"
+	},
+	{
+		"id": 426,
+		"name": "مانتو",
+		"parent_id": 208,
+		"slug": "gown"
+	},
+	{
+		"id": 427,
+		"name": "لوازم برقی خانگی",
+		"parent_id": 195,
+		"slug": "home-electrical-equipment"
+	},
+	{
+		"id": 428,
+		"name": "خواب کودک",
+		"parent_id": 235,
+		"slug": "baby-sleeping"
+	},
+	{
+		"id": 429,
+		"name": "قمقمه و فلاسک کودک و نوزاد",
+		"parent_id": 343,
+		"slug": "baby-flask"
+	},
+	{
+		"id": 430,
+		"name": "حوله و کلاه حمام کودک",
+		"parent_id": 433,
+		"slug": "baby-bathing-towel-and-cap"
+	},
+	{
+		"id": 431,
+		"name": "تشک و زیرانداز تعویض کودک",
+		"parent_id": 433,
+		"slug": "baby-changing-mat"
+	},
+	{
+		"id": 432,
+		"name": "استیکر کودک",
+		"parent_id": 235,
+		"slug": "baby-sticker"
+	},
+	{
+		"id": 433,
+		"name": "بهداشت و حمام کودک",
+		"parent_id": 235,
+		"slug": "baby-health-and-bathroom-tools"
+	},
+	{
+		"id": 434,
+		"name": "پوشاک و کفش کودک و نوزاد",
+		"parent_id": 235,
+		"slug": "kids-apparel"
+	},
+	{
+		"id": 435,
+		"name": "شیردوش",
+		"parent_id": 399,
+		"slug": "baby-milking"
+	},
+	{
+		"id": 436,
+		"name": "محافظ و پد سینه",
+		"parent_id": 399,
+		"slug": "protective-and-chest-pads"
+	},
+	{
+		"id": 437,
+		"name": "لباس نوزادی",
+		"parent_id": 434,
+		"slug": "baby-apparel"
+	},
+	{
+		"id": 438,
+		"name": "کفش ورزشی کودک",
+		"parent_id": 434,
+		"slug": "kids-shoes"
+	},
+	{
+		"id": 441,
+		"name": "پودر بچه",
+		"parent_id": 433,
+		"slug": "baby-powder"
+	},
+	{
+		"id": 442,
+		"name": "تبدیل توالت فرنگی و صندلی حمام",
+		"parent_id": 433,
+		"slug": "baby-soft-wc-baby-seat"
+	},
+	{
+		"id": 443,
+		"name": "پالتو، بارانی و کاپشن",
+		"parent_id": 208,
+		"slug": "women-outwear"
+	},
+	{
+		"id": 444,
+		"name": "سوییشرت و هودی زنانه",
+		"parent_id": 208,
+		"slug": "women-sweatshirts"
+	},
+	{
+		"id": 445,
+		"name": "دامن زنانه",
+		"parent_id": 208,
+		"slug": "women-skirts"
+	},
+	{
+		"id": 446,
+		"name": "کت، جلیقه و ست رسمی زنانه",
+		"parent_id": 208,
+		"slug": "women-blazers-and-suits"
+	},
+	{
+		"id": 447,
+		"name": "شیشه شیر، سرلاک و داروخوری",
+		"parent_id": 343,
+		"slug": "baby-bottle"
+	},
+	{
+		"id": 448,
+		"name": "ملزومات شیشه شیر",
+		"parent_id": 343,
+		"slug": "baby-bottle-accessory"
+	},
+	{
+		"id": 449,
+		"name": "جوراب کودک و نوزاد",
+		"parent_id": 284,
+		"slug": "kids-socks"
+	},
+	{
+		"id": 450,
+		"name": "تقویت مژه و ابرو",
+		"parent_id": 58,
+		"slug": "lash-and-eyebrow-strengthener"
+	},
+	{
+		"id": 453,
+		"name": "شورت آموزشی کودک",
+		"parent_id": 434,
+		"slug": "training-short"
+	},
+	{
+		"id": 454,
+		"name": "اکسسوری نوزاد",
+		"parent_id": 235,
+		"slug": "baby-accessories"
+	},
+	{
+		"id": 455,
+		"name": "ست جوراب مادر و کودک",
+		"parent_id": 284,
+		"slug": "mama-baby-socks"
+	},
+	{
+		"id": 456,
+		"name": "پد و کیسه آب گرم",
+		"parent_id": 399,
+		"slug": "hot-water-bag"
+	},
+	{
+		"id": 457,
+		"name": "تامپون",
+		"parent_id": 217,
+		"slug": "tampon"
+	},
+	{
+		"id": 458,
+		"name": "فیس میست",
+		"parent_id": 143,
+		"slug": "face-mist"
+	},
+	{
+		"id": 459,
+		"name": "ساعت مردانه",
+		"parent_id": 201,
+		"slug": "men-watch"
+	},
+	{
+		"id": 460,
+		"name": "ساعت زنانه",
+		"parent_id": 201,
+		"slug": "women-watch"
+	},
+	{
+		"id": 461,
+		"name": "اکسسوری آقایان",
+		"parent_id": 167,
+		"slug": "men-accessories"
+	},
+	{
+		"id": 462,
+		"name": "لباس مردانه",
+		"parent_id": 167,
+		"slug": "men-clothing"
+	},
+	{
+		"id": 463,
+		"name": "تیشرت و پولوشرت",
+		"parent_id": 462,
+		"slug": "men-ti-shirts-and-polo-shirts"
+	},
+	{
+		"id": 464,
+		"name": "شلوارک",
+		"parent_id": 462,
+		"slug": "men-shorts"
+	},
+	{
+		"id": 465,
+		"name": "سوییشرت و هودی",
+		"parent_id": 462,
+		"slug": "men-sweatshirts"
+	},
+	{
+		"id": 466,
+		"name": "لباس زیر",
+		"parent_id": 462,
+		"slug": "men-underwear"
+	},
+	{
+		"id": 467,
+		"name": "پیراهن و بلوز",
+		"parent_id": 462,
+		"slug": "men-shirts"
+	},
+	{
+		"id": 468,
+		"name": "شلوار",
+		"parent_id": 462,
+		"slug": "men-trousers"
+	},
+	{
+		"id": 469,
+		"name": "لباس ورزشی",
+		"parent_id": 462,
+		"slug": "men-sportswear"
+	},
+	{
+		"id": 470,
+		"name": "خواب و حمام",
+		"parent_id": 256,
+		"slug": "bed-and-bath"
+	},
+	{
+		"id": 471,
+		"name": "حوله استخری",
+		"parent_id": 470,
+		"slug": "pool-towel"
+	},
+	{
+		"id": 472,
+		"name": "حوله پالتویی",
+		"parent_id": 470,
+		"slug": "coat-towel"
+	},
+	{
+		"id": 473,
+		"name": "حوله دستی",
+		"parent_id": 470,
+		"slug": "hand-towels"
+	},
+	{
+		"id": 474,
+		"name": "کلاه حمام",
+		"parent_id": 470,
+		"slug": "bath-hat"
+	},
+	{
+		"id": 475,
+		"name": "لباس کودک",
+		"parent_id": 434,
+		"slug": "kids-apparel2"
+	},
+	{
+		"id": 476,
+		"name": "صندل مردانه",
+		"parent_id": 477,
+		"slug": "men-sandal"
+	},
+	{
+		"id": 477,
+		"name": "کفش",
+		"parent_id": 167,
+		"slug": "men-shoes"
+	},
+	{
+		"id": 478,
+		"name": "صندل",
+		"parent_id": 362,
+		"slug": "women-sandal"
+	},
+	{
+		"id": 479,
+		"name": "پیراهن زنانه",
+		"parent_id": 208,
+		"slug": "woman-dress"
+	},
+	{
+		"id": 480,
+		"name": "لوکس",
+		"parent_id": 8,
+		"slug": "luxury"
+	},
+	{
+		"id": 481,
+		"name": "دمپایی حوله ای",
+		"parent_id": 470,
+		"slug": "slippers"
+	},
+	{
+		"id": 482,
+		"name": "عینک",
+		"parent_id": 256,
+		"slug": "unisex-eyewear"
+	},
+	{
+		"id": 483,
+		"name": "عینک مردانه",
+		"parent_id": 482,
+		"slug": "men-eyewear"
+	},
+	{
+		"id": 484,
+		"name": "عینک زنانه",
+		"parent_id": 482,
+		"slug": "woman-eyewear"
+	},
+	{
+		"id": 485,
+		"name": "تستر عطر زنانه",
+		"parent_id": 172,
+		"slug": "women-tester"
+	},
+	{
+		"id": 486,
+		"name": "تستر عطر مردانه",
+		"parent_id": 175,
+		"slug": "men-tester"
+	},
+	{
+		"id": 487,
+		"name": "کوله پشتی آقایان",
+		"parent_id": 354,
+		"slug": "men-backpack"
+	},
+	{
+		"id": 488,
+		"name": "واریاسیون",
+		"parent_id": 188,
+		"slug": "variation"
+	},
+	{
+		"id": 489,
+		"name": "لباس راحتی زنانه",
+		"parent_id": 208,
+		"slug": "slack-suit"
+	},
+	{
+		"id": 490,
+		"name": "ست لباس دخترانه",
+		"parent_id": 208,
+		"slug": "girl-clothes-set"
+	},
+	{
+		"id": 491,
+		"name": "سفید کننده دندان",
+		"parent_id": 212,
+		"slug": "teth-whitening"
+	},
+	{
+		"id": 492,
+		"name": "ست لباس پسرانه",
+		"parent_id": 462,
+		"slug": "boys-clothing"
+	},
+	{
+		"id": 493,
+		"name": "لباس راحتی مردانه",
+		"parent_id": 462,
+		"slug": "men-casual-wear"
+	},
+	{
+		"id": 494,
+		"name": "انگشتر طلا",
+		"parent_id": 248,
+		"slug": "gold-rings"
+	},
+	{
+		"id": 495,
+		"name": "آویز و گردنبند طلا",
+		"parent_id": 248,
+		"slug": "gold-necklaces-pendants"
+	},
+	{
+		"id": 496,
+		"name": "گوشواره طلا",
+		"parent_id": 248,
+		"slug": "gold-earring"
+	},
+	{
+		"id": 497,
+		"name": "بنگل طلا",
+		"parent_id": 248,
+		"slug": "bangle-gold"
+	},
+	{
+		"id": 499,
+		"name": "پابند طلا",
+		"parent_id": 248,
+		"slug": "anklet-gold"
+	},
+	{
+		"id": 501,
+		"name": "ست و نیم ست طلا",
+		"parent_id": 248,
+		"slug": "set-half-set-gold"
+	},
+	{
+		"id": 502,
+		"name": "بنگل",
+		"parent_id": 251,
+		"slug": "bangle"
+	},
+	{
+		"id": 503,
+		"name": "پابند",
+		"parent_id": 251,
+		"slug": "anklet"
+	},
+	{
+		"id": 504,
+		"name": "آویز ساعت",
+		"parent_id": 251,
+		"slug": "watch-pendant"
+	},
+	{
+		"id": 505,
+		"name": "پیرسینگ",
+		"parent_id": 323,
+		"slug": "piercing"
+	},
+	{
+		"id": 506,
+		"name": "سنجاق سینه و گل سینه",
+		"parent_id": 323,
+		"slug": "brooches-pins"
+	},
+	{
+		"id": 507,
+		"name": "جعبه انگشتر و حلقه لوکس",
+		"parent_id": 323,
+		"slug": "luxury-ring-box"
+	},
+	{
+		"id": 508,
+		"name": "کلیپس و تزیینات مو",
+		"parent_id": 323,
+		"slug": "hair-clips"
+	},
+	{
+		"id": 509,
+		"name": "آویز کیف و کلید لوکس",
+		"parent_id": 323,
+		"slug": "handbag-pendant"
+	},
+	{
+		"id": 510,
+		"name": "بند عینک",
+		"parent_id": 323,
+		"slug": "eyeglass-straps"
+	},
+	{
+		"id": 511,
+		"name": "ست هدیه",
+		"parent_id": 256,
+		"slug": "gift-sets"
+	},
+	{
+		"id": 512,
+		"name": "ست زیورآلات هدیه",
+		"parent_id": 511,
+		"slug": "gift-jewelry-set"
+	},
+	{
+		"id": 513,
+		"name": "ست اکسسوری هدیه",
+		"parent_id": 511,
+		"slug": "accessory-gift-set"
+	},
+	{
+		"id": 514,
+		"name": "مکمل های درمانی",
+		"parent_id": 58,
+		"slug": "therapeutic-supplements"
+	},
+	{
+		"id": 515,
+		"name": "تقویت پوست و مو",
+		"parent_id": 514,
+		"slug": "hair-skin-nourishing"
+	},
+	{
+		"id": 516,
+		"name": "هدایای ویژه",
+		"parent_id": 511,
+		"slug": "specially-gift"
+	},
+	{
+		"id": 519,
+		"name": "مرطوب کننده رنگی",
+		"parent_id": 9,
+		"slug": "tinted-moisturizer"
+	},
+	{
+		"id": 520,
+		"name": "تینت لب",
+		"parent_id": 24,
+		"slug": "lip-tint"
+	},
+	{
+		"id": 521,
+		"name": "مکمل غذایی و ورزشی",
+		"parent_id": 0,
+		"slug": "nutritional-sports-supplement"
+	},
+	{
+		"id": 522,
+		"name": "مکمل تناسب اندام",
+		"parent_id": 521,
+		"slug": "fitness-supplements"
+	},
+	{
+		"id": 523,
+		"name": "کاهش وزن",
+		"parent_id": 522,
+		"slug": "weight-loss"
+	},
+	{
+		"id": 524,
+		"name": "افزایش وزن",
+		"parent_id": 522,
+		"slug": "weight-gain"
+	},
+	{
+		"id": 525,
+		"name": "مکمل بدن سازی",
+		"parent_id": 521,
+		"slug": "bodybuilding-supplements"
+	},
+	{
+		"id": 526,
+		"name": "پروتئین ها",
+		"parent_id": 525,
+		"slug": "proteins"
+	},
+	{
+		"id": 527,
+		"name": "آمینواسیدها",
+		"parent_id": 525,
+		"slug": "amino-acids"
+	},
+	{
+		"id": 528,
+		"name": "مکمل قبل از تمرین",
+		"parent_id": 525,
+		"slug": "pre-workout"
+	},
+	{
+		"id": 529,
+		"name": "افزایش وزن و کربوهیدرات",
+		"parent_id": 525,
+		"slug": "weight-gain-carbohydrate"
+	},
+	{
+		"id": 530,
+		"name": "کاهش وزن و چربی سوزی",
+		"parent_id": 525,
+		"slug": "weight-loss-fat-burning"
+	},
+	{
+		"id": 531,
+		"name": "مکمل جنسی",
+		"parent_id": 521,
+		"slug": "sexual-supplements"
+	},
+	{
+		"id": 532,
+		"name": "تقویت میل جنسی بانوان",
+		"parent_id": 531,
+		"slug": "women-libido"
+	},
+	{
+		"id": 533,
+		"name": "تقویت باروری بانوان",
+		"parent_id": 531,
+		"slug": "women-fertility"
+	},
+	{
+		"id": 534,
+		"name": "تقویت قوای جنسی آقایان",
+		"parent_id": 531,
+		"slug": "men-libido"
+	},
+	{
+		"id": 535,
+		"name": "تقویت باروری آقایان",
+		"parent_id": 531,
+		"slug": "men-fertility"
+	},
+	{
+		"id": 536,
+		"name": "مکمل پوست، مو و ناخن",
+		"parent_id": 521,
+		"slug": "skin-hair-nails-supplement"
+	},
+	{
+		"id": 537,
+		"name": "کلاژن و ضد چروک",
+		"parent_id": 536,
+		"slug": "collagen-anti-wrinkle"
+	},
+	{
+		"id": 539,
+		"name": "ضد ریزش و تقویت مو",
+		"parent_id": 536,
+		"slug": "anti-hair-loss-strength"
+	},
+	{
+		"id": 540,
+		"name": "رشد و استحکام ناخن",
+		"parent_id": 536,
+		"slug": "nail-growth-strength"
+	},
+	{
+		"id": 541,
+		"name": "مکمل غذایی",
+		"parent_id": 521,
+		"slug": "nutritional-supplements"
+	},
+	{
+		"id": 542,
+		"name": "مولتی ویتامین",
+		"parent_id": 541,
+		"slug": "multivitamin"
+	},
+	{
+		"id": 543,
+		"name": "ویتامین های ضروری",
+		"parent_id": 541,
+		"slug": "vitamins"
+	},
+	{
+		"id": 544,
+		"name": "مواد معدنی",
+		"parent_id": 541,
+		"slug": "minerals"
+	},
+	{
+		"id": 545,
+		"name": "آهن و فولیک اسید",
+		"parent_id": 541,
+		"slug": "iron-folic-acid"
+	},
+	{
+		"id": 546,
+		"name": "رویال ژلی",
+		"parent_id": 541,
+		"slug": "royal-jelly"
+	},
+	{
+		"id": 547,
+		"name": "امگا 3",
+		"parent_id": 541,
+		"slug": "omega-3"
+	},
+	{
+		"id": 548,
+		"name": "مکمل گیاهی",
+		"parent_id": 541,
+		"slug": "herbal-supplements"
+	},
+	{
+		"id": 549,
+		"name": "کتاب",
+		"parent_id": 0,
+		"slug": "book"
+	},
+	{
+		"id": 550,
+		"name": "تخصصی بانوان",
+		"parent_id": 521,
+		"slug": "women-supplements"
+	},
+	{
+		"id": 551,
+		"name": "مکمل قاعدگی",
+		"parent_id": 550,
+		"slug": "menstruation"
+	},
+	{
+		"id": 552,
+		"name": "مکمل یائسگی",
+		"parent_id": 550,
+		"slug": "menopause"
+	}
+]
