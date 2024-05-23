@@ -2,6 +2,7 @@
 
 namespace KhanoumiAffiliatePartner\Widgets;
 
+use KhanoumiAffiliatePartner\Helpers\FiltersHelper;
 use KhanoumiAffiliatePartner\Helpers\ProductsHelper;
 
 class ProductsCarouselWidget extends \WP_Widget
@@ -79,7 +80,12 @@ class ProductsCarouselWidget extends \WP_Widget
 			<label for="<?php echo esc_attr($this->get_field_id('category')); ?>">
 				<?php _e('Category: ', KAPP_TEXT_DOMAIN); ?>
 			</label>
-			<input type="number" id="<?php echo esc_attr($this->get_field_id('category')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('category')); ?>" value="<?php echo esc_attr($category); ?>" />
+			<select id="<?php echo esc_attr($this->get_field_id('category')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('category')); ?>">
+				<option value="0" <?php selected($category, 0); ?>><?php _e('All', KAPP_TEXT_DOMAIN); ?></option>
+				<?php foreach ( FiltersHelper::getAllCategories() as $cat ) : ?>
+					<option value="<?php echo $cat['id']; ?>" <?php selected($category, $cat['id']); ?>><?php echo $cat['name']; ?></option>
+				<?php endforeach; ?>
+			</select>
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('tag')); ?>">
