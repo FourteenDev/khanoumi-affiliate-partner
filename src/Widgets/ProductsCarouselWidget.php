@@ -82,8 +82,8 @@ class ProductsCarouselWidget extends \WP_Widget
 			</label>
 			<select id="<?php echo esc_attr($this->get_field_id('category')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('category')); ?>">
 				<option value="0" <?php selected($category, 0); ?>><?php _e('All', KAPP_TEXT_DOMAIN); ?></option>
-				<?php foreach ( FiltersHelper::getAllCategories() as $cat ) : ?>
-					<option value="<?php echo $cat['id']; ?>" <?php selected($category, $cat['id']); ?>><?php echo $cat['name']; ?></option>
+				<?php foreach (FiltersHelper::getAllCategories() as $c) : ?>
+					<option value="<?php echo $c['id']; ?>" <?php selected($category, $c['id']); ?>><?php echo $c['name']; ?></option>
 				<?php endforeach; ?>
 			</select>
 		</p>
@@ -91,13 +91,23 @@ class ProductsCarouselWidget extends \WP_Widget
 			<label for="<?php echo esc_attr($this->get_field_id('tag')); ?>">
 				<?php _e('Tag: ', KAPP_TEXT_DOMAIN); ?>
 			</label>
-			<input type="number" id="<?php echo esc_attr($this->get_field_id('tag')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('tag')); ?>" value="<?php echo esc_attr($tag); ?>" />
+			<select id="<?php echo esc_attr($this->get_field_id('tag')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('tag')); ?>">
+				<option value="0" <?php selected($tag, 0); ?>><?php _e('All', KAPP_TEXT_DOMAIN); ?></option>
+				<?php foreach (FiltersHelper::getAllTags() as $t) : ?>
+					<option value="<?php echo $t['id']; ?>" <?php selected($tag, $t['id']); ?>><?php echo $t['name']; ?></option>
+				<?php endforeach; ?>
+			</select>
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('brand')); ?>">
 				<?php _e('Brand: ', KAPP_TEXT_DOMAIN); ?>
 			</label>
-			<input type="number" id="<?php echo esc_attr($this->get_field_id('brand')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('brand')); ?>" value="<?php echo esc_attr($brand); ?>" />
+			<select id="<?php echo esc_attr($this->get_field_id('brand')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('brand')); ?>">
+				<option value="0" <?php selected($brand, 0); ?>><?php _e('All', KAPP_TEXT_DOMAIN); ?></option>
+				<?php foreach (FiltersHelper::getAllBrands() as $b) : ?>
+					<option value="<?php echo $b['id']; ?>" <?php selected($brand, $b['id']); ?>><?php echo $b['name_per']; ?></option>
+				<?php endforeach; ?>
+			</select>
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('limit')); ?>">
