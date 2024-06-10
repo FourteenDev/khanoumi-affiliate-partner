@@ -25,6 +25,7 @@ class Core
 			Shortcode::getInstance();
 
 		Widget::getInstance();
+		Block::getInstance();
 	}
 
 	/**

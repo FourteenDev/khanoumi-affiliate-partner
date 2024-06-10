@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "kapp/khanoumi-products-slider",
+	"title": "Khanoumi Products Slider",
+	"category": "widgets",
+	"keywords": [
+	  "khanoumi",
+	  "slider",
+	  "carousel",
+	  "slick"
+	],
+	"description": "Displays Khanoumi.com products as a slider.",
+	"version": "1.0.0",
+	"textdomain": "khanoumi-affiliate-partner",
+	"attributes": {
+		"category": {
+			"type": "number",
+			"default": 0
+		},
+		"tag": {
+			"type": "number",
+			"default": 0
+		},
+		"brand": {
+			"type": "number",
+			"default": 0
+		},
+		"limit": {
+			"type": "number",
+			"default": 10,
+			"minimum": 1,
+			"maximum": 50
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
