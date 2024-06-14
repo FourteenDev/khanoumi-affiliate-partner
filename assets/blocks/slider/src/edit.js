@@ -40,6 +40,11 @@ export default function Edit({ attributes, setAttributes })
 {
 	const { category } = attributes;
 
+	const categoryOptions = allCategories.map(function(cat)
+	{
+		return { label: cat.name, value: cat.id }
+	});
+
 	return (
 		<>
 			<InspectorControls>
@@ -47,10 +52,7 @@ export default function Edit({ attributes, setAttributes })
 					<SelectControl
 						label={__('Category', 'khanoumi-affiliate-partner')}
 						value={category}
-						options={[
-							{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 },
-							{ label: __('آرایشی', 'khanoumi-affiliate-partner'), value: 8 },
-						]}
+						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(categoryOptions)}
 						onChange={value => setAttributes({ category: value })}
 					/>
 				</PanelBody>
