@@ -2,22 +2,24 @@
 
 namespace KhanoumiAffiliatePartner\Blocks;
 
+use KhanoumiAffiliatePartner\Helpers\FiltersHelper;
+
 class SliderBlock
 {
-
 	/**
-	 * Block slug.
+	 * Block handle.
+	 *
+	 * It's the same name from `block.json`, but with a '-' instead of '/'.
 	 *
 	 * @var	string
 	 */
-	// public static $slug = 'kapp/khanoumi-products-slider';
+	public static $handle = 'kapp-khanoumi-products-slider';
 
 	public function __construct()
 	{
 		add_action('init', [$this, 'register']);
 
-		// add_action('enqueue_block_editor_assets', [$this, 'enqueueEditorAssets']);
-		// add_action('wp_enqueue_scripts', [$this, 'enqueueFrontendAssets']);
+		add_action('enqueue_block_editor_assets', [$this, 'addInlineScript']);
 	}
 
 	/**
@@ -28,38 +30,23 @@ class SliderBlock
 	public function register()
 	{
 		register_block_type(KAPP()->dir('assets/blocks/slider/build'));
-
-		/* wp_register_script('kapp_slider_editor_script', KAPP()->url('assets/blocks/slider/slider.js'), [], KAPP_VERSION, true);
-		wp_register_style('kapp_slider_editor_style', KAPP()->url('assets/blocks/slider/editor.css'), [], KAPP_VERSION);
-
-		if (!is_admin())
-		{
-			wp_register_script('kapp_slider_frontend_script', KAPP()->url('assets/blocks/slider/frontend.js'), [], KAPP_VERSION, true);
-			wp_register_style('kapp_slider_frontend_style', KAPP()->url('assets/blocks/slider/frontend.css'), [], KAPP_VERSION);
-		} */
 	}
 
 	/**
-	 * Enqueues editor assets.
+	 * Adds more data to the block.
 	 *
 	 * @return	void
-	 */
-	public function enqueueEditorAssets()
-	{
-		// TODO: Do this only on Gutenberg edit pages
-		wp_enqueue_script('kapp_slider_editor_script');
-	}
-
-	/**
-	 * Enqueues frontend assets.
 	 *
-	 * @return	void
+	 * @source	https://StackOverflow.com/a/73551111/
 	 */
-	public function enqueueFrontendAssets()
+	public function addInlineScript()
 	{
-		// TODO: Do this only on Gutenberg pages
+		$data = '
+			const allCategories = ' . json_encode(FiltersHelper::getAllCategories()) . ';
+			const allTags       = ' . json_encode(FiltersHelper::getAllTags()) . ';
+			const allBrands     = ' . json_encode(FiltersHelper::getAllBrands()) . ';
+		';
 
-		wp_enqueue_script('kapp_slider_frontend_script');
-		wp_enqueue_style('kapp_slider_frontend_style');
+		wp_add_inline_script(self::$handle . '-editor-script', $data, 'before');
 	}
 }
