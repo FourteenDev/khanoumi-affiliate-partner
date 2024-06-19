@@ -67,7 +67,8 @@ function Edit({
   const {
     category,
     tag,
-    brand
+    brand,
+    limit
   } = attributes;
   const categoryOptions = allCategories.map(function (cat) {
     return {
@@ -119,6 +120,14 @@ function Edit({
     onChange: value => setAttributes({
       brand: parseInt(value)
     })
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalNumberControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Limit', 'khanoumi-affiliate-partner'),
+    value: limit,
+    min: 1,
+    max: 50,
+    onChange: value => setAttributes({
+      limit: parseInt(value)
+    })
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Selected values:', 'khanoumi-affiliate-partner')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
@@ -127,7 +136,9 @@ function Edit({
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Tag:', 'khanoumi-affiliate-partner'), " ", tag), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand:', 'khanoumi-affiliate-partner'), " ", brand));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand:', 'khanoumi-affiliate-partner'), " ", brand), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Limit:', 'khanoumi-affiliate-partner'), " ", limit));
 }
 
 /***/ }),

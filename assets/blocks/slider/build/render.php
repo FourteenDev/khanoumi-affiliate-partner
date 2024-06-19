@@ -9,6 +9,7 @@ use KhanoumiAffiliatePartner\Helpers\ProductsHelper;
 $category = (!empty($attributes['category'])) ? intval($attributes['category']) : 0;
 $tag      = (!empty($attributes['tag'])) ? intval($attributes['tag']) : 0;
 $brand    = (!empty($attributes['brand'])) ? intval($attributes['brand']) : 0;
+$limit    = (!empty($attributes['limit'])) ? intval($attributes['limit']) : 10;
 
 ?>
 <div id="khanoumi-carousel-block" <?php echo get_block_wrapper_attributes(); ?>>

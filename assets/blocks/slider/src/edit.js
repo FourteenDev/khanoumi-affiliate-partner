@@ -18,7 +18,7 @@ import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
  *
  * @see	https://wordpress.github.io/gutenberg/?path=/docs/components-introduction--docs
  */
-import { PanelBody, SelectControl } from '@wordpress/components';
+import { PanelBody, SelectControl, __experimentalNumberControl as NumberControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -38,7 +38,7 @@ import './editor.scss';
  */
 export default function Edit({ attributes, setAttributes })
 {
-	const { category, tag, brand } = attributes;
+	const { category, tag, brand, limit } = attributes;
 
 	const categoryOptions = allCategories.map(function(cat)
 	{
@@ -75,6 +75,13 @@ export default function Edit({ attributes, setAttributes })
 						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(brandOptions)}
 						onChange={value => setAttributes({ brand: parseInt(value) })}
 					/>
+					<NumberControl
+						label={__('Limit', 'khanoumi-affiliate-partner')}
+						value={limit}
+						min={1}
+						max={50}
+						onChange={value => setAttributes({ limit: parseInt(value) })}
+					/>
 				</PanelBody>
 			</InspectorControls>
 
@@ -82,6 +89,7 @@ export default function Edit({ attributes, setAttributes })
 			<p {...useBlockProps()}>{__('Category:', 'khanoumi-affiliate-partner')} {category}</p>
 			<p {...useBlockProps()}>{__('Tag:', 'khanoumi-affiliate-partner')} {tag}</p>
 			<p {...useBlockProps()}>{__('Brand:', 'khanoumi-affiliate-partner')} {brand}</p>
+			<p {...useBlockProps()}>{__('Limit:', 'khanoumi-affiliate-partner')} {limit}</p>
 		</>
 	);
 }
