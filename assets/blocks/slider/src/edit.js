@@ -38,11 +38,19 @@ import './editor.scss';
  */
 export default function Edit({ attributes, setAttributes })
 {
-	const { category } = attributes;
+	const { category, tag, brand } = attributes;
 
 	const categoryOptions = allCategories.map(function(cat)
 	{
 		return { label: cat.name, value: cat.id }
+	});
+	const tagOptions = allTags.map(function(tag)
+	{
+		return { label: tag.name, value: tag.id }
+	});
+	const brandOptions = allBrands.map(function(brand)
+	{
+		return { label: brand.name_per, value: brand.id }
 	});
 
 	return (
@@ -55,11 +63,25 @@ export default function Edit({ attributes, setAttributes })
 						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(categoryOptions)}
 						onChange={value => setAttributes({ category: value })}
 					/>
+					<SelectControl
+						label={__('Tag', 'khanoumi-affiliate-partner')}
+						value={tag}
+						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(tagOptions)}
+						onChange={value => setAttributes({ tag: value })}
+					/>
+					<SelectControl
+						label={__('Brand', 'khanoumi-affiliate-partner')}
+						value={brand}
+						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(brandOptions)}
+						onChange={value => setAttributes({ brand: value })}
+					/>
 				</PanelBody>
 			</InspectorControls>
 
 			<h6 {...useBlockProps()}>{__('Selected values:', 'khanoumi-affiliate-partner')}</h6>
 			<p {...useBlockProps()}>{__('Category:', 'khanoumi-affiliate-partner')} {category}</p>
+			<p {...useBlockProps()}>{__('Tag:', 'khanoumi-affiliate-partner')} {tag}</p>
+			<p {...useBlockProps()}>{__('Brand:', 'khanoumi-affiliate-partner')} {brand}</p>
 		</>
 	);
 }
