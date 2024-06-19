@@ -97,7 +97,7 @@ function Edit({
       value: 0
     }].concat(categoryOptions),
     onChange: value => setAttributes({
-      category: value
+      category: parseInt(value)
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Tag', 'khanoumi-affiliate-partner'),
@@ -107,7 +107,7 @@ function Edit({
       value: 0
     }].concat(tagOptions),
     onChange: value => setAttributes({
-      tag: value
+      tag: parseInt(value)
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand', 'khanoumi-affiliate-partner'),
@@ -117,7 +117,7 @@ function Edit({
       value: 0
     }].concat(brandOptions),
     onChange: value => setAttributes({
-      brand: value
+      brand: parseInt(value)
     })
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()

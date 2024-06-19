@@ -61,19 +61,19 @@ export default function Edit({ attributes, setAttributes })
 						label={__('Category', 'khanoumi-affiliate-partner')}
 						value={category}
 						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(categoryOptions)}
-						onChange={value => setAttributes({ category: value })}
+						onChange={value => setAttributes({ category: parseInt(value) })}
 					/>
 					<SelectControl
 						label={__('Tag', 'khanoumi-affiliate-partner')}
 						value={tag}
 						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(tagOptions)}
-						onChange={value => setAttributes({ tag: value })}
+						onChange={value => setAttributes({ tag: parseInt(value) })}
 					/>
 					<SelectControl
 						label={__('Brand', 'khanoumi-affiliate-partner')}
 						value={brand}
 						options={[{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }].concat(brandOptions)}
-						onChange={value => setAttributes({ brand: value })}
+						onChange={value => setAttributes({ brand: parseInt(value) })}
 					/>
 				</PanelBody>
 			</InspectorControls>
