@@ -12,6 +12,6 @@ $brand    = (!empty($attributes['brand'])) ? intval($attributes['brand']) : 0;
 $limit    = (!empty($attributes['limit'])) ? intval($attributes['limit']) : 10;
 
 ?>
-<div id="khanoumi-carousel-block" <?php echo get_block_wrapper_attributes(); ?>>
+<div class="khanoumi-carousel-block" <?php echo get_block_wrapper_attributes(); ?>>
 	<?php echo ProductsHelper::getProducts('', $category, $tag, $brand, $limit); ?>
 </div>
