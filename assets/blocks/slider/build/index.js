@@ -70,53 +70,48 @@ function Edit({
     brand,
     limit
   } = attributes;
-  const categoryOptions = allCategories.map(function (cat) {
+  const firstSelectOption = [{
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('All', 'khanoumi-affiliate-partner'),
+    value: 0
+  }];
+  const categoryOptions = firstSelectOption.concat(allCategories.map(function (cat) {
     return {
       label: cat.name,
       value: cat.id
     };
-  });
-  const tagOptions = allTags.map(function (tag) {
+  }));
+  const tagOptions = firstSelectOption.concat(allTags.map(function (tag) {
     return {
       label: tag.name,
       value: tag.id
     };
-  });
-  const brandOptions = allBrands.map(function (brand) {
+  }));
+  const brandOptions = firstSelectOption.concat(allBrands.map(function (brand) {
     return {
       label: brand.name_per,
       value: brand.id
     };
-  });
+  }));
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Settings', 'khanoumi-affiliate-partner')
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category', 'khanoumi-affiliate-partner'),
     value: category,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('All', 'khanoumi-affiliate-partner'),
-      value: 0
-    }].concat(categoryOptions),
+    options: categoryOptions,
     onChange: value => setAttributes({
       category: parseInt(value)
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Tag', 'khanoumi-affiliate-partner'),
     value: tag,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('All', 'khanoumi-affiliate-partner'),
-      value: 0
-    }].concat(tagOptions),
+    options: tagOptions,
     onChange: value => setAttributes({
       tag: parseInt(value)
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand', 'khanoumi-affiliate-partner'),
     value: brand,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('All', 'khanoumi-affiliate-partner'),
-      value: 0
-    }].concat(brandOptions),
+    options: brandOptions,
     onChange: value => setAttributes({
       brand: parseInt(value)
     })
