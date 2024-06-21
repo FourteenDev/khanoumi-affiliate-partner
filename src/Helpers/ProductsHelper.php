@@ -18,10 +18,13 @@ class ProductsHelper
 	 */
 	public static function getProducts($display = 'carousel', $category = 0, $tag = 0, $brand = 0, $limit = 10, $page = 1)
 	{
-		if (isset($_GET['refresh_products']))
-			delete_transient('khanoumi_products');
+		$category = intval($category);
+		$tag      = intval($tag);
+		$brand    = intval($brand);
+		$limit    = intval($limit);
+		$page     = intval($page);
 
-		$products = get_transient('khanoumi_products');
+		$products = get_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}");
 		if (empty($products))
 		{
 			$products = self::fetchProductsViaAPI($category, $tag, $brand, $limit, $page);
@@ -40,7 +43,7 @@ class ProductsHelper
 				return __('Unable to process products! See log file for more details.', KAPP_TEXT_DOMAIN);
 			}
 
-			set_transient('khanoumi_products', $products, 12 * HOUR_IN_SECONDS);
+			set_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}", $products, 12 * HOUR_IN_SECONDS);
 		}
 
 		if ($display === 'grid')
