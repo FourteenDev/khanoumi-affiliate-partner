@@ -79,9 +79,9 @@ export default function Edit({ attributes, setAttributes })
 
 			<div {...useBlockProps()}>
 				{__('A Khanoumi slider with these values will be shown here:', 'khanoumi-affiliate-partner')} <br />
-				{__('Category:', 'khanoumi-affiliate-partner')} {category} <br />
-				{__('Tag:', 'khanoumi-affiliate-partner')} {tag} <br />
-				{__('Brand:', 'khanoumi-affiliate-partner')} {brand} <br />
+				{__('Category:', 'khanoumi-affiliate-partner')} {categoryOptions.find(option => option.value == category).label} <br />
+				{__('Tag:', 'khanoumi-affiliate-partner')} {tagOptions.find(option => option.value == tag).label} <br />
+				{__('Brand:', 'khanoumi-affiliate-partner')} {brandOptions.find(option => option.value == brand).label} <br />
 				{__('Limit:', 'khanoumi-affiliate-partner')} {limit}
 			</div>
 		</>
