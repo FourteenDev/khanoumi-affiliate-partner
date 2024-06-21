@@ -1,6 +1,7 @@
 (function($)
 {
-	setProductsSlickCarousel($('#khanoumi-carousel'));
+	$('.khanoumi-carousel').each(function() { setProductsSlickCarousel($(this)) });
+
 	function setProductsSlickCarousel($parentElement)
 	{
 		var $slickArgs = {
