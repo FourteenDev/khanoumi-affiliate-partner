@@ -128,17 +128,9 @@ function Edit({
     onChange: value => setAttributes({
       limit: parseInt(value)
     })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
+  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Selected values:', 'khanoumi-affiliate-partner')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category:', 'khanoumi-affiliate-partner'), " ", category), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Tag:', 'khanoumi-affiliate-partner'), " ", tag), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand:', 'khanoumi-affiliate-partner'), " ", brand), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Limit:', 'khanoumi-affiliate-partner'), " ", limit));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('A Khanoumi slider with these values will be shown here:', 'khanoumi-affiliate-partner'), " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category:', 'khanoumi-affiliate-partner'), " ", category, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Tag:', 'khanoumi-affiliate-partner'), " ", tag, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand:', 'khanoumi-affiliate-partner'), " ", brand, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Limit:', 'khanoumi-affiliate-partner'), " ", limit));
 }
 
 /***/ }),

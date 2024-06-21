@@ -85,11 +85,13 @@ export default function Edit({ attributes, setAttributes })
 				</PanelBody>
 			</InspectorControls>
 
-			<h6 {...useBlockProps()}>{__('Selected values:', 'khanoumi-affiliate-partner')}</h6>
-			<p {...useBlockProps()}>{__('Category:', 'khanoumi-affiliate-partner')} {category}</p>
-			<p {...useBlockProps()}>{__('Tag:', 'khanoumi-affiliate-partner')} {tag}</p>
-			<p {...useBlockProps()}>{__('Brand:', 'khanoumi-affiliate-partner')} {brand}</p>
-			<p {...useBlockProps()}>{__('Limit:', 'khanoumi-affiliate-partner')} {limit}</p>
+			<div {...useBlockProps()}>
+				{__('A Khanoumi slider with these values will be shown here:', 'khanoumi-affiliate-partner')} <br />
+				{__('Category:', 'khanoumi-affiliate-partner')} {category} <br />
+				{__('Tag:', 'khanoumi-affiliate-partner')} {tag} <br />
+				{__('Brand:', 'khanoumi-affiliate-partner')} {brand} <br />
+				{__('Limit:', 'khanoumi-affiliate-partner')} {limit}
+			</div>
 		</>
 	);
 }
