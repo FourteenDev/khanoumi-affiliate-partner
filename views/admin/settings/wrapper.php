@@ -1,6 +1,6 @@
 <div class="wrap kapp-wrap">
 	<div class="kapp-wrap__main">
-		<h1><?php esc_html_e('Settings', KAPP_TEXT_DOMAIN); ?></h1>
+		<h1><?php echo esc_html($title); ?></h1>
 
 		<div class="kapp-tab-group">
 			<ul class="kapp-tab">
@@ -22,8 +22,8 @@
 				<form method="post" action="options.php">
 					<table class="form-table">
 						<?php
-						settings_fields(KAPP_SETTINGS_SLUG . '_settings_group');
-						do_settings_fields(KAPP_SETTINGS_SLUG . '_settings', KAPP_SETTINGS_SLUG . "_settings_$activeTab"); ?>
+						settings_fields("{$menuSlug}_group");
+						do_settings_fields($menuSlug, "{$menuSlug}_$activeTab"); ?>
 					</table>
 
 					<?php submit_button(); ?>
