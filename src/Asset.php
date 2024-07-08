@@ -28,6 +28,8 @@ class Asset
 	public function enqueueAdminScripts()
 	{
 		wp_enqueue_style('kapp_admin', KAPP()->url('assets/admin/css/admin.css'), [], KAPP_VERSION);
+
+		wp_enqueue_script('kapp_admin', KAPP()->url('assets/admin/js/admin.js'), ['jquery'], KAPP_VERSION, true);
 	}
 
 	/**

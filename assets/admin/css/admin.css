@@ -1,3 +1,7 @@
+/********************/
+/* Settings Wrapper */
+/********************/
+
 .kapp-tab-group {
 	display: block;
 	float: left;
@@ -82,4 +86,80 @@
 	padding: 16px;
 	color: #000000;
 	white-space: nowrap;
+}
+
+/****************************/
+/* Copy to Clipboard Button */
+/****************************/
+
+.shortcode-generator__shortcode-label {
+	padding: 10px;
+}
+
+.shortcode-generator__shortcode-text {
+	display: flex;
+	position: relative;
+	width: 40%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.shortcode-generator__shortcode-text.active button:before,
+.shortcode-generator__shortcode-text.active button:after {
+	display: block;
+}
+
+.shortcode-generator__shortcode-text input {
+	width: 100%;
+	padding: 5px;
+	color: #555;
+	font-size: 1.2em;
+	border: none !important;
+	outline: none !important;
+}
+
+.shortcode-generator__shortcode-text input:active,
+.shortcode-generator__shortcode-text input:focus {
+	outline: none !important;
+	border-color: unset !important;
+	box-shadow: unset !important;
+}
+
+.shortcode-generator__copy-button {
+	margin: 0px 5px;
+	padding: 10px;
+	color: #fff;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	background: #5784f5;
+}
+
+.shortcode-generator__copy-button:before {
+	display: none;
+	position: absolute;
+	top: -45px;
+	padding: 8px 10px;
+	border-radius: 20px;
+	background: #5c81dc;
+}
+
+.shortcode-generator__copy-button:after {
+	content: "";
+	display: none;
+	position: absolute;
+	top: -20px;
+	margin: 5px 25px;
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	background: #5c81dc;
+}
+
+.shortcode-generator__copy-button:active {
+	background: #809ce2;
 }
