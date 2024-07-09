@@ -174,11 +174,13 @@ abstract class Base
 	 */
 	public function displayContent()
 	{
-		$activeTab = (!empty($_GET['tab']) && array_key_exists($_GET['tab'], $this->getTabs())) ? sanitize_key($_GET['tab']) : 'general';
-		$args      = [
+		$tabs       = $this->getTabs();
+		$defaultTab = !empty($tabs) ? sanitize_key(array_key_first($tabs)) : 'general';
+		$activeTab  = (!empty($_GET['tab']) && array_key_exists($_GET['tab'], $tabs)) ? sanitize_key($_GET['tab']) : $defaultTab;
+		$args       = [
 			'title'     => __('Settings', KAPP_TEXT_DOMAIN),
 			'menuSlug'  => $this->menuSlug,
-			'tabs'      => $this->getTabs(),
+			'tabs'      => $tabs,
 			'activeTab' => $activeTab,
 		];
 
