@@ -91,8 +91,8 @@
 				<div class="shortcode-generator__shortcode-label">
 					<?php echo sprintf(
 						// translators: %s: Khanoumi.com website link.
-						__('Use this shortcode to display <a href="%s" target="_blank">Khanoumi.com</a> products carousel anywhere on your website: ', KAPP_TEXT_DOMAIN),
-						esc_url('https://khanoumi.com/')
+						__('Use this shortcode to display <a href="%s" target="_blank" rel="sponsored nofollow">Khanoumi.com</a> products carousel anywhere on your website: ', KAPP_TEXT_DOMAIN),
+						esc_url('https://khanoumi.com/?utm_source=affiliation&utm_medium=referral')
 					); ?>
 				</div>
 				<div class="shortcode-generator__shortcode-text">
