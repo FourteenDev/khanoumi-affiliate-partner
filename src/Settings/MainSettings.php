@@ -43,7 +43,7 @@ class MainSettings extends Base
 	public function getTabs()
 	{
 		return apply_filters('kapp_settings_main_tabs', [
-			'general' => esc_html__('General Settings', KAPP_TEXT_DOMAIN),
+			'deema' => esc_html__('Deema Settings', KAPP_TEXT_DOMAIN),
 		]);
 	}
 
@@ -58,11 +58,17 @@ class MainSettings extends Base
 			'deema_general_link' => [
 				'id'      => 'deema_general_link',
 				'label'   => esc_html__('Deema General Link', KAPP_TEXT_DOMAIN),
-				'section' => 'general',
+				'section' => 'deema',
 				'type'    => 'text',
 				'default' => '',
 				'args'    => [
-					'description' => esc_html__('Deema Affiliate General Link. If you leave this field empty, carousel/grid products will have direct links to the Khanoumi website.', KAPP_TEXT_DOMAIN),
+					'description' => sprintf(
+						// translators: %s: Link to an article from Deema.agency.
+						__('Use <a href="%s" target="_blank" rel="noopener noreferrer nofollow">this guide</a> to find your Deema Affiliate general link. <br />
+Note that you don\'t need to encode the link, just follow the first 3 steps and paste your general link here. <br />
+If you leave this field empty, carousel products will have direct links to the Khanoumi website.', KAPP_TEXT_DOMAIN),
+						esc_url('https://deema.agency/?p=20332')
+					),
 				],
 			],
 		]);
