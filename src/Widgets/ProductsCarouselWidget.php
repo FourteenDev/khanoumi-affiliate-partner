@@ -45,11 +45,12 @@ class ProductsCarouselWidget extends \WP_Widget
 		$brand    = !empty($instance['brand']) ? intval($instance['brand']) : 0;
 		$limit    = !empty($instance['limit']) ? intval($instance['limit']) : 10;
 		// $page     = !empty($instance['page']) ? intval($instance['page']) : 1;
+		$speed    = !empty($instance['speed']) ? intval($instance['speed']) : 3000;
 
 		echo $args['before_widget'];
 			echo $args['before_title'] . apply_filters('widget_title', $title) . $args['after_title'];
 			echo '<div class="khanoumi-carousel-widget">';
-				echo ProductsHelper::getProducts('', $category, $tag, $brand, $limit);
+				echo ProductsHelper::getProducts('', $category, $tag, $brand, $limit, 1, $speed);
 			echo '</div>';
 		echo $args['after_widget'];
 	}
@@ -69,6 +70,7 @@ class ProductsCarouselWidget extends \WP_Widget
 		$brand    = !empty($instance['brand']) ? intval($instance['brand']) : 0;
 		$limit    = !empty($instance['limit']) ? intval($instance['limit']) : 10;
 		// $page     = !empty($instance['page']) ? intval($instance['page']) : 1;
+		$speed    = !empty($instance['speed']) ? intval($instance['speed']) : 3000;
 		?>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('title')); ?>">
@@ -115,6 +117,12 @@ class ProductsCarouselWidget extends \WP_Widget
 			</label>
 			<input type="number" id="<?php echo esc_attr($this->get_field_id('limit')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('limit')); ?>" value="<?php echo esc_attr($limit); ?>" />
 		</p>
+		<p>
+			<label for="<?php echo esc_attr($this->get_field_id('speed')); ?>">
+				<?php _e('Slider speed (milliseconds): ', KAPP_TEXT_DOMAIN); ?>
+			</label>
+			<input type="number" id="<?php echo esc_attr($this->get_field_id('speed')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('speed')); ?>" value="<?php echo esc_attr($speed); ?>" min="500" />
+		</p>
 		<?php
 	}
 
@@ -136,6 +144,7 @@ class ProductsCarouselWidget extends \WP_Widget
 		$instance['brand']    = !empty($newInstance['brand']) ? intval($newInstance['brand']) : 0;
 		$instance['limit']    = !empty($newInstance['limit']) ? intval($newInstance['limit']) : 10;
 		// $instance['page']     = !empty($newInstance['page']) ? intval($newInstance['page']) : 1;
+		$instance['speed']    = !empty($newInstance['speed']) ? intval($newInstance['speed']) : 3000;
 
 		return $instance;
 	}
