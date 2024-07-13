@@ -1,0 +1,259 @@
+# Copyright (C) 2024 Fourteen Development
+# This file is distributed under the same license as the Khanoumi Affiliate Partner Plugin plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
+"POT-Creation-Date: 2024-07-13T22:48:18+00:00\n"
+"PO-Revision-Date: 2024-07-14 03:02+0330\n"
+"Last-Translator: Koorosh14 <97566920+Koorosh14@users.noreply.github.com>\n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Domain: khanoumi-affiliate-partner\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+msgid "Khanoumi Affiliate Partner Plugin"
+msgstr "پلاگین افیلیت خانومی"
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid "https://Khanoumi.com/"
+msgstr "https://Khanoumi.com/"
+
+#. Description of the plugin
+#: plugin.php
+msgid "Fetch Khanoumi products and display them in your WordPress website."
+msgstr "محصولات خانومی را دریافت کرده و در وبسایت وردپرسی شما نمایش می‌دهد."
+
+#. Author of the plugin
+#: plugin.php
+msgid "Fourteen Development"
+msgstr "Fourteen Development"
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "https://Fourteen.dev/"
+msgstr "https://Fourteen.dev/"
+
+#: src/Helpers/ProductsHelper.php:33
+msgid "No products were found!"
+msgstr "محصولی پیدا نشد!"
+
+#: src/Helpers/ProductsHelper.php:38
+msgid "Invalid products! See log file for more details."
+msgstr "محصولات نامعتبر هستند! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
+
+#: src/Helpers/ProductsHelper.php:45
+msgid "Unable to process products! See log file for more details."
+msgstr "خطا در پردازش محصولات! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
+
+#: src/Setting.php:52 src/Settings/MainSettings.php:29
+msgid "Khanoumi Affiliate Partner Settings"
+msgstr "تنظیمات افیلیت خانومی"
+
+#: src/Setting.php:53 src/Settings/MainSettings.php:30
+msgid "Khanoumi Affiliate"
+msgstr "افیلیت خانومی"
+
+#: src/Setting.php:90 src/Settings/Base.php:181
+#: assets/blocks/slider/build/index.js:97 assets/blocks/slider/src/edit.js:51
+#: assets/blocks/slider/build/index.js:51
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: src/Settings/MainSettings.php:46
+msgid "Deema Settings"
+msgstr "تنظیمات دیما"
+
+#: src/Settings/MainSettings.php:60
+msgid "Deema General Link"
+msgstr "لینک عمومی دیما"
+
+#. translators: %s: Link to an article from Deema.agency.
+#: src/Settings/MainSettings.php:67
+msgid ""
+"Use <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this guide</a> to find your Deema Affiliate general link. <br />\n"
+"Note that you don't need to encode the link, just follow the first 3 steps and paste your general link here. <br />\n"
+"If you leave this field empty, carousel products will have direct links to the Khanoumi website."
+msgstr ""
+"با استفاده از <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">این آموزش</a> می‌توانید لینک عمومی دیما افیلیت خود را پیدا کنید. <br />\n"
+"دقت داشته باشید که نیاز نیست لینک را انکد کنید، فقط 3 مرحله‌ی اول آموزش را طی کرده و لینک عمومی خود را اینجا وارد کنید. <br />\n"
+"اگر این فیلد را خالی بگذارید، محصولات کروسل لینک مستقیم به سایت خانومی خواهند داشت."
+
+#: src/Settings/ShortcodeGeneratorSettings.php:29
+#: src/Settings/ShortcodeGeneratorSettings.php:30
+#: views/admin/settings/shortcode-generator.php:3
+msgid "Shortcode Generator"
+msgstr "شورتکد ساز"
+
+#: src/Settings/ShortcodeGeneratorSettings.php:63
+msgid "Invalid Nonce!"
+msgstr "نانس نامعتبر!"
+
+#: src/Widgets/ProductsCarouselWidget.php:22
+msgid "Khanoumi Products Carousel"
+msgstr "کروسل محصولات خانومی"
+
+#: src/Widgets/ProductsCarouselWidget.php:23
+msgid "Display Khanoumi.com products in a carousel."
+msgstr "محصولات سایت خانومی را به صورت کروسل نمایش می‌دهد."
+
+#: src/Widgets/ProductsCarouselWidget.php:77
+msgid "Title: "
+msgstr "عنوان: "
+
+#: src/Widgets/ProductsCarouselWidget.php:83
+#: views/admin/settings/shortcode-generator.php:29
+msgid "Category: "
+msgstr "دسته‌بندی: "
+
+#: src/Widgets/ProductsCarouselWidget.php:86
+#: src/Widgets/ProductsCarouselWidget.php:97
+#: src/Widgets/ProductsCarouselWidget.php:108
+#: views/admin/settings/shortcode-generator.php:34
+#: views/admin/settings/shortcode-generator.php:49
+#: views/admin/settings/shortcode-generator.php:64
+#: assets/blocks/slider/build/index.js:75 assets/blocks/slider/src/edit.js:43
+#: assets/blocks/slider/build/index.js:43
+msgid "All"
+msgstr "همه"
+
+#: src/Widgets/ProductsCarouselWidget.php:94
+#: views/admin/settings/shortcode-generator.php:44
+msgid "Tag: "
+msgstr "برچسب: "
+
+#: src/Widgets/ProductsCarouselWidget.php:105
+#: views/admin/settings/shortcode-generator.php:59
+msgid "Brand: "
+msgstr "برند: "
+
+#: src/Widgets/ProductsCarouselWidget.php:116
+#: views/admin/settings/shortcode-generator.php:74
+msgid "Limit: "
+msgstr "محدودیت: "
+
+#: src/Widgets/ProductsCarouselWidget.php:122
+#: views/admin/settings/shortcode-generator.php:84
+msgid "Slider speed (milliseconds): "
+msgstr "سرعت اسلایدر (میلی‌ثانیه): "
+
+#: views/admin/settings/shortcode-generator.php:14
+msgid "Use the options below to generate a proper \"Khanoumi Products Shortcode\" 👇"
+msgstr "با استفاده از گزینه‌ی زیر می‌توانید یک «شورتکد محصولات خانومی» بسازید 👇"
+
+#: views/admin/settings/shortcode-generator.php:95
+msgid "Generate Shortcode"
+msgstr "تولید شورتکد"
+
+#. translators: %s: Khanoumi.com website link.
+#: views/admin/settings/shortcode-generator.php:105
+msgid "Use this shortcode to display <a href=\"%s\" target=\"_blank\" rel=\"sponsored nofollow\">Khanoumi.com</a> products carousel anywhere on your website: "
+msgstr "با این شورتکد می‌توانید محصولات <a href=\"%s\" target=\"_blank\" rel=\"sponsored nofollow\">Khanoumi.com</a> را به صورت کروسل در همه جای وبسایت خود نمایش بدهید: "
+
+#: views/admin/settings/shortcode-generator.php:112
+msgid "Copy"
+msgstr "کپی"
+
+#: views/admin/settings/shortcode-generator.php:117
+msgid "Copied"
+msgstr "کپی شد"
+
+#: views/public/shortcodes/get-products-carousel.php:9
+#: views/public/shortcodes/get-products-carousel.php:10
+msgid "Buy from Khanoumi"
+msgstr "از خانومی بخر"
+
+#: views/public/shortcodes/get-products-carousel.php:46
+msgid "View and buy »"
+msgstr "مشاهده و خرید »"
+
+#: assets/blocks/slider/build/index.js:99 assets/blocks/slider/src/edit.js:53
+#: assets/blocks/slider/build/index.js:53
+msgid "Category"
+msgstr "دسته‌بندی"
+
+#: assets/blocks/slider/build/index.js:106 assets/blocks/slider/src/edit.js:59
+#: assets/blocks/slider/build/index.js:59
+msgid "Tag"
+msgstr "برچسب"
+
+#: assets/blocks/slider/build/index.js:113 assets/blocks/slider/src/edit.js:65
+#: assets/blocks/slider/build/index.js:65
+msgid "Brand"
+msgstr "برند"
+
+#: assets/blocks/slider/build/index.js:120 assets/blocks/slider/src/edit.js:71
+#: assets/blocks/slider/build/index.js:71
+msgid "Limit"
+msgstr "محدودیت"
+
+#: assets/blocks/slider/build/index.js:128 assets/blocks/slider/src/edit.js:78
+#: assets/blocks/slider/build/index.js:78
+msgid "Slider speed (milliseconds)"
+msgstr "سرعت اسلایدر (میلی‌ثانیه)"
+
+#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:87
+#: assets/blocks/slider/build/index.js:87
+msgid "A Khanoumi slider with these values will be shown here:"
+msgstr "یک اسلایدر خانومی در اینجا نمایش داده خواهد شد:"
+
+#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:88
+#: assets/blocks/slider/build/index.js:88
+msgid "Category:"
+msgstr "دسته‌بندی:"
+
+#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:89
+#: assets/blocks/slider/build/index.js:89
+msgid "Tag:"
+msgstr "برچسب:"
+
+#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:90
+#: assets/blocks/slider/build/index.js:90
+msgid "Brand:"
+msgstr "برند:"
+
+#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:91
+#: assets/blocks/slider/build/index.js:91
+msgid "Limit:"
+msgstr "محدودیت:"
+
+#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:92
+#: assets/blocks/slider/build/index.js:92
+msgid "Speed:"
+msgstr "سرعت:"
+
+#: assets/blocks/slider/build/block.json assets/blocks/slider/src/block.json
+msgctxt "block title"
+msgid "Khanoumi Products Slider"
+msgstr "اسلایدر محصولات خانومی"
+
+#: assets/blocks/slider/build/block.json assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "khanoumi"
+msgstr "خانومی"
+
+#: assets/blocks/slider/build/block.json assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "slider"
+msgstr "اسلایدر"
+
+#: assets/blocks/slider/build/block.json assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "carousel"
+msgstr "کروسل"
+
+#: assets/blocks/slider/build/block.json assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "slick"
+msgstr "اسلیک"
+
+#: assets/blocks/slider/build/block.json assets/blocks/slider/src/block.json
+msgctxt "block description"
+msgid "Displays Khanoumi.com products as a slider."
+msgstr "محصولات سایت خانومی را به صورت اسلایدر نمایش می‌دهد."

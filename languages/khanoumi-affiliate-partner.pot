@@ -1,0 +1,276 @@
+# Copyright (C) 2024 Fourteen Development
+# This file is distributed under the same license as the Khanoumi Affiliate Partner Plugin plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-07-13T22:48:18+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: khanoumi-affiliate-partner\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+msgid "Khanoumi Affiliate Partner Plugin"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: plugin.php
+msgid "https://Khanoumi.com/"
+msgstr ""
+
+#. Description of the plugin
+#: plugin.php
+msgid "Fetch Khanoumi products and display them in your WordPress website."
+msgstr ""
+
+#. Author of the plugin
+#: plugin.php
+msgid "Fourteen Development"
+msgstr ""
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "https://Fourteen.dev/"
+msgstr ""
+
+#: src/Helpers/ProductsHelper.php:33
+msgid "No products were found!"
+msgstr ""
+
+#: src/Helpers/ProductsHelper.php:38
+msgid "Invalid products! See log file for more details."
+msgstr ""
+
+#: src/Helpers/ProductsHelper.php:45
+msgid "Unable to process products! See log file for more details."
+msgstr ""
+
+#: src/Setting.php:52
+#: src/Settings/MainSettings.php:29
+msgid "Khanoumi Affiliate Partner Settings"
+msgstr ""
+
+#: src/Setting.php:53
+#: src/Settings/MainSettings.php:30
+msgid "Khanoumi Affiliate"
+msgstr ""
+
+#: src/Setting.php:90
+#: src/Settings/Base.php:181
+#: assets/blocks/slider/build/index.js:97
+#: assets/blocks/slider/src/edit.js:51
+#: assets/blocks/slider/build/index.js:51
+msgid "Settings"
+msgstr ""
+
+#: src/Settings/MainSettings.php:46
+msgid "Deema Settings"
+msgstr ""
+
+#: src/Settings/MainSettings.php:60
+msgid "Deema General Link"
+msgstr ""
+
+#. translators: %s: Link to an article from Deema.agency.
+#: src/Settings/MainSettings.php:67
+msgid ""
+"Use <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this guide</a> to find your Deema Affiliate general link. <br />\n"
+"Note that you don't need to encode the link, just follow the first 3 steps and paste your general link here. <br />\n"
+"If you leave this field empty, carousel products will have direct links to the Khanoumi website."
+msgstr ""
+
+#: src/Settings/ShortcodeGeneratorSettings.php:29
+#: src/Settings/ShortcodeGeneratorSettings.php:30
+#: views/admin/settings/shortcode-generator.php:3
+msgid "Shortcode Generator"
+msgstr ""
+
+#: src/Settings/ShortcodeGeneratorSettings.php:63
+msgid "Invalid Nonce!"
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:22
+msgid "Khanoumi Products Carousel"
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:23
+msgid "Display Khanoumi.com products in a carousel."
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:77
+msgid "Title: "
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:83
+#: views/admin/settings/shortcode-generator.php:29
+msgid "Category: "
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:86
+#: src/Widgets/ProductsCarouselWidget.php:97
+#: src/Widgets/ProductsCarouselWidget.php:108
+#: views/admin/settings/shortcode-generator.php:34
+#: views/admin/settings/shortcode-generator.php:49
+#: views/admin/settings/shortcode-generator.php:64
+#: assets/blocks/slider/build/index.js:75
+#: assets/blocks/slider/src/edit.js:43
+#: assets/blocks/slider/build/index.js:43
+msgid "All"
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:94
+#: views/admin/settings/shortcode-generator.php:44
+msgid "Tag: "
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:105
+#: views/admin/settings/shortcode-generator.php:59
+msgid "Brand: "
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:116
+#: views/admin/settings/shortcode-generator.php:74
+msgid "Limit: "
+msgstr ""
+
+#: src/Widgets/ProductsCarouselWidget.php:122
+#: views/admin/settings/shortcode-generator.php:84
+msgid "Slider speed (milliseconds): "
+msgstr ""
+
+#: views/admin/settings/shortcode-generator.php:14
+msgid "Use the options below to generate a proper \"Khanoumi Products Shortcode\" 👇"
+msgstr ""
+
+#: views/admin/settings/shortcode-generator.php:95
+msgid "Generate Shortcode"
+msgstr ""
+
+#. translators: %s: Khanoumi.com website link.
+#: views/admin/settings/shortcode-generator.php:105
+msgid "Use this shortcode to display <a href=\"%s\" target=\"_blank\" rel=\"sponsored nofollow\">Khanoumi.com</a> products carousel anywhere on your website: "
+msgstr ""
+
+#: views/admin/settings/shortcode-generator.php:112
+msgid "Copy"
+msgstr ""
+
+#: views/admin/settings/shortcode-generator.php:117
+msgid "Copied"
+msgstr ""
+
+#: views/public/shortcodes/get-products-carousel.php:9
+#: views/public/shortcodes/get-products-carousel.php:10
+msgid "Buy from Khanoumi"
+msgstr ""
+
+#: views/public/shortcodes/get-products-carousel.php:46
+msgid "View and buy »"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:99
+#: assets/blocks/slider/src/edit.js:53
+#: assets/blocks/slider/build/index.js:53
+msgid "Category"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:106
+#: assets/blocks/slider/src/edit.js:59
+#: assets/blocks/slider/build/index.js:59
+msgid "Tag"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:113
+#: assets/blocks/slider/src/edit.js:65
+#: assets/blocks/slider/build/index.js:65
+msgid "Brand"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:120
+#: assets/blocks/slider/src/edit.js:71
+#: assets/blocks/slider/build/index.js:71
+msgid "Limit"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:128
+#: assets/blocks/slider/src/edit.js:78
+#: assets/blocks/slider/build/index.js:78
+msgid "Slider speed (milliseconds)"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:136
+#: assets/blocks/slider/src/edit.js:87
+#: assets/blocks/slider/build/index.js:87
+msgid "A Khanoumi slider with these values will be shown here:"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:136
+#: assets/blocks/slider/src/edit.js:88
+#: assets/blocks/slider/build/index.js:88
+msgid "Category:"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:136
+#: assets/blocks/slider/src/edit.js:89
+#: assets/blocks/slider/build/index.js:89
+msgid "Tag:"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:136
+#: assets/blocks/slider/src/edit.js:90
+#: assets/blocks/slider/build/index.js:90
+msgid "Brand:"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:136
+#: assets/blocks/slider/src/edit.js:91
+#: assets/blocks/slider/build/index.js:91
+msgid "Limit:"
+msgstr ""
+
+#: assets/blocks/slider/build/index.js:136
+#: assets/blocks/slider/src/edit.js:92
+#: assets/blocks/slider/build/index.js:92
+msgid "Speed:"
+msgstr ""
+
+#: assets/blocks/slider/build/block.json
+#: assets/blocks/slider/src/block.json
+msgctxt "block title"
+msgid "Khanoumi Products Slider"
+msgstr ""
+
+#: assets/blocks/slider/build/block.json
+#: assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "khanoumi"
+msgstr ""
+
+#: assets/blocks/slider/build/block.json
+#: assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "slider"
+msgstr ""
+
+#: assets/blocks/slider/build/block.json
+#: assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "carousel"
+msgstr ""
+
+#: assets/blocks/slider/build/block.json
+#: assets/blocks/slider/src/block.json
+msgctxt "block keyword"
+msgid "slick"
+msgstr ""
+
+#: assets/blocks/slider/build/block.json
+#: assets/blocks/slider/src/block.json
+msgctxt "block description"
+msgid "Displays Khanoumi.com products as a slider."
+msgstr ""
