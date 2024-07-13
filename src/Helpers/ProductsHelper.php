@@ -13,16 +13,18 @@ class ProductsHelper
 	 * @param	int		$brand
 	 * @param	int		$limit
 	 * @param	int		$page
+	 * @param	int		$speed		Slider speed in milliseconds. Only works when `$display` is equal to 'carousel'. (minimum = 500)
 	 *
 	 * @return	string				The HTML code of the products view (or the error).
 	 */
-	public static function getProducts($display = 'carousel', $category = 0, $tag = 0, $brand = 0, $limit = 10, $page = 1)
+	public static function getProducts($display = 'carousel', $category = 0, $tag = 0, $brand = 0, $limit = 10, $page = 1, $speed = 3000)
 	{
 		$category = intval($category);
 		$tag      = intval($tag);
 		$brand    = intval($brand);
 		$limit    = intval($limit);
 		$page     = intval($page);
+		$speed    = max(500, absint($speed));
 
 		$products = get_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}");
 		if (empty($products))
@@ -49,7 +51,7 @@ class ProductsHelper
 		if ($display === 'grid')
 			return KAPP()->view('public.shortcodes.get-products-grid', ['products' => $products['data']['products']['items']], false);
 		else
-			return KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items']], false);
+			return KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items'], 'speed' => $speed], false);
 	}
 
 	/**

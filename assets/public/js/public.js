@@ -7,7 +7,7 @@
 		var $slickArgs = {
 			autoplay: true,
 			infinite: true,
-			speed: 300,
+			autoplaySpeed: $parentElement.data('speed') !== undefined ? $parentElement.data('speed') : 3000,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			prevArrow: $parentElement.find('.khanoumi-carousel__control-prev'),
