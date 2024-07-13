@@ -68,6 +68,7 @@ class ShortcodeGeneratorSettings extends Base
 		$shortcode .= !empty($_POST['shortcode-brand']) ? ' brand=' . intval($_POST['shortcode-brand']) : '';
 		$shortcode .= !empty($_POST['shortcode-limit']) ? ' limit=' . intval($_POST['shortcode-limit']) : '';
 		$shortcode .= !empty($_POST['shortcode-page']) ? ' page=' . intval($_POST['shortcode-page']) : '';
+		$shortcode .= !empty($_POST['shortcode-speed']) ? ' speed=' . intval($_POST['shortcode-speed']) : '';
 		$shortcode .= ']';
 
 		return ['status' => 'success', 'result' => $shortcode];

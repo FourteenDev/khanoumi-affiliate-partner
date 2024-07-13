@@ -21,6 +21,7 @@
 				$tag      = !empty($_POST['shortcode-tag']) ? intval($_POST['shortcode-tag']) : 0;
 				$brand    = !empty($_POST['shortcode-brand']) ? intval($_POST['shortcode-brand']) : 0;
 				$limit    = !empty($_POST['shortcode-limit']) ? intval($_POST['shortcode-limit']) : 10;
+				$speed    = !empty($_POST['shortcode-speed']) ? intval($_POST['shortcode-speed']) : 3000;
 				?>
 				<tr>
 					<th>
@@ -75,6 +76,16 @@
 					</th>
 					<td>
 						<input type="number" id="shortcode-limit" name="shortcode-limit" value="<?php echo $limit; ?>" />
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="shortcode-speed">
+							<?php _e('Slider speed (milliseconds): ', KAPP_TEXT_DOMAIN); ?>
+						</label>
+					</th>
+					<td>
+						<input type="number" id="shortcode-speed" name="shortcode-speed" value="<?php echo $speed; ?>" min="500" />
 					</td>
 				</tr>
 			</table>

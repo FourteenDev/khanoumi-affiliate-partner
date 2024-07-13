@@ -35,12 +35,13 @@ class KhanoumiProducts
 				'tag'   => '',
 				'brand' => '',
 				'limit' => '10',
-				'page' => '1',
+				'page'  => '1',
+				'speed' => '3000',
 			],
 			$atts,
 			'khanoumi_products'
 		);
 
-		return ProductsHelper::getProducts($atts['show'], $atts['cat'], $atts['tag'], $atts['brand'], $atts['limit'], $atts['page']);
+		return ProductsHelper::getProducts($atts['show'], $atts['cat'], $atts['tag'], $atts['brand'], $atts['limit'], $atts['page'], $atts['speed']);
 	}
 }
