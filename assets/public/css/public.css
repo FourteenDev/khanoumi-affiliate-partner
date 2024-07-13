@@ -3,82 +3,175 @@
 /************/
 
 .khanoumi-carousel {
-	display: flex;
-}
-
-.khanoumi-carousel .slick-arrow {
-	height: 100%;
-	width: 10%;
-	color: black;
-	background-color: unset !important;
-	border: unset !important;
-	transform: translateY(150px);
-	z-index: 9;
+	position: relative;
+	padding: 16px 8px;
+	border-radius: 4px;
+	background-color: #db2777;
 }
 
 .khanoumi-carousel__content {
-	max-width: 80%;
+	overflow: hidden;
 }
 
-.khanoumi-carousel .slick-slider {
-	direction: ltr;
+.khanoumi-carousel .slick-list {
+	margin: 0 -4px;
+}
+
+.khanoumi-carousel .slick-track {
+	display: flex;
+}
+
+.khanoumi-carousel__item {
+	display: flex !important;
+	position: relative;
+	height: inherit !important;
+	min-height: 200px;
+	margin: 0 4px;
+	padding: 8px;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	background-color: #FFF;
+}
+
+.khanoumi-carousel .khanoumi-carousel-intro {
+	gap: 32px;
+	align-items: center;
+	justify-content: center;
+	border-color: transparent;
+	background-color: #db2777;
+}
+
+.khanoumi-carousel .khanoumi-carousel-intro--title {
+	color: #FFF;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+@keyframes khanoumi-carousel-intro-animation {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.khanoumi-carousel .khanoumi-carousel-intro--image {
+	width: 90%;
+	animation: khanoumi-carousel-intro-animation 1.2s ease infinite forwards;
+	box-shadow: unset !important;
+	-webkit-box-shadow: unset !important;
+	-moz-box-shadow: unset !important;
 }
 
 .khanoumi-carousel__item-image {
-	width: 400px;
-	height: auto;
-	margin: auto;
-	object-fit: cover;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.khanoumi-carousel__item-image:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: contain;
 }
 
 .khanoumi-carousel__item-container {
-	direction: rtl;
-	padding: 20px;
-	text-align: center;
+	width: 100%;
+	height: 100%;
 }
 
-.khanoumi-carousel__item-caption h3 {
-	text-align: center;
-	font-size: 16px;
+.khanoumi-carousel__item-caption {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.khanoumi-carousel__item-price {
-	font-size: 14px;
-}
-
-.khanoumi-carousel__item-price span,
-.khanoumi-products-grid__item-price span {
-	color: gray;
-	text-decoration: line-through;
-}
-
-.khanoumi-carousel__item-button,
-.khanoumi-products-grid__item-button {
-	color: white;
-	background-color: rgba(240, 150, 165, 0.9);
-	transition: all 0.3s ease;
-}
-
-.khanoumi-carousel__item-button:hover,
-.khanoumi-products-grid__item-button:hover {
-	background: transparent !important;
-	color: rgba(240, 150, 165, 0.9) !important;
+.khanoumi-carousel__item-caption a {
 	text-decoration: none;
 }
 
-@media (max-width: 768px) {
-	.khanoumi-carousel__control-prev {
-		left: 10px;
-	}
+.khanoumi-carousel__item-caption a h3 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	overflow: hidden;
+}
 
-	.khanoumi-carousel__control-next {
-		right: 10px;
-	}
+.khanoumi-carousel__item-price {
+	display: inline-grid;
+	margin: 0;
+	grid-template: auto / auto;
+	column-gap: 4px;
+	align-self: flex-end;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.khanoumi-carousel__item-price>span {
+	grid-column: span 2 / span 2;
+	color: #a3a3a3;
+	text-decoration-line: line-through;
+}
+
+.khanoumi-carousel__item-price svg {
+	width: 20px;
+}
+
+.khanoumi-carousel__item-view-more {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+}
+
+.khanoumi-carousel__item-view-more button {
+	display: none;
+}
+
+.khanoumi-carousel button.slick-arrow {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #d4d4d4;
+	border-radius: 6px;
+	transform: translateY(-50%);
+	transition: 0.2s ease-in;
+	background-color: #e5e5e572;
+	cursor: pointer;
+	visibility: visible;
+	opacity: 1;
+	z-index: 10;
+}
+
+.khanoumi-carousel button.slick-arrow.khanoumi-carousel__control-prev {
+	right: 18px;
+}
+
+.khanoumi-carousel button.slick-arrow.khanoumi-carousel__control-next {
+	left: 18px;
+}
+
+.khanoumi-carousel button.slick-arrow.khanoumi-carousel__control-prev svg,
+.khanoumi-carousel button.slick-arrow.khanoumi-carousel__control-next svg {
+	position: inherit;
+	transform: rotate(180deg);
+}
+
+.khanoumi-carousel button.slick-arrow.khanoumi-carousel__control.slick-disabled {
+	visibility: hidden;
+	opacity: 0;
 }
 
 /********/
