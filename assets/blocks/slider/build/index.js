@@ -68,7 +68,8 @@ function Edit({
     category,
     tag,
     brand,
-    limit
+    limit,
+    speed
   } = attributes;
   const firstSelectOption = [{
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('All', 'khanoumi-affiliate-partner'),
@@ -123,9 +124,16 @@ function Edit({
     onChange: value => setAttributes({
       limit: parseInt(value)
     })
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalNumberControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Slider speed (milliseconds)', 'khanoumi-affiliate-partner'),
+    value: speed,
+    min: 500,
+    onChange: value => setAttributes({
+      speed: parseInt(value)
+    })
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('A Khanoumi slider with these values will be shown here:', 'khanoumi-affiliate-partner'), " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category:', 'khanoumi-affiliate-partner'), " ", categoryOptions.find(option => option.value == category).label, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Tag:', 'khanoumi-affiliate-partner'), " ", tagOptions.find(option => option.value == tag).label, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand:', 'khanoumi-affiliate-partner'), " ", brandOptions.find(option => option.value == brand).label, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Limit:', 'khanoumi-affiliate-partner'), " ", limit));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('A Khanoumi slider with these values will be shown here:', 'khanoumi-affiliate-partner'), " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category:', 'khanoumi-affiliate-partner'), " ", categoryOptions.find(option => option.value == category).label, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Tag:', 'khanoumi-affiliate-partner'), " ", tagOptions.find(option => option.value == tag).label, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Brand:', 'khanoumi-affiliate-partner'), " ", brandOptions.find(option => option.value == brand).label, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Limit:', 'khanoumi-affiliate-partner'), " ", limit, " ", (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("br", null), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Speed:', 'khanoumi-affiliate-partner'), " ", speed));
 }
 
 /***/ }),
@@ -285,7 +293,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://json.schemastore.org/block.json","apiVersion":3,"name":"kapp/khanoumi-products-slider","title":"Khanoumi Products Slider","category":"widgets","keywords":["khanoumi","slider","carousel","slick"],"description":"Displays Khanoumi.com products as a slider.","version":"1.0.0","textdomain":"khanoumi-affiliate-partner","attributes":{"category":{"type":"number","default":0},"tag":{"type":"number","default":0},"brand":{"type":"number","default":0},"limit":{"type":"number","default":10,"minimum":1,"maximum":50}},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://json.schemastore.org/block.json","apiVersion":3,"name":"kapp/khanoumi-products-slider","title":"Khanoumi Products Slider","category":"widgets","keywords":["khanoumi","slider","carousel","slick"],"description":"Displays Khanoumi.com products as a slider.","version":"1.0.0","textdomain":"khanoumi-affiliate-partner","attributes":{"category":{"type":"number","default":0},"tag":{"type":"number","default":0},"brand":{"type":"number","default":0},"limit":{"type":"number","default":10,"minimum":1,"maximum":50},"speed":{"type":"number","default":3000,"minimum":500}},"editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

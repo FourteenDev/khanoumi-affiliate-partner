@@ -38,7 +38,7 @@ import './editor.scss';
  */
 export default function Edit({ attributes, setAttributes })
 {
-	const { category, tag, brand, limit } = attributes;
+	const { category, tag, brand, limit, speed } = attributes;
 
 	const firstSelectOption = [{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }];
 	const categoryOptions   = firstSelectOption.concat(allCategories.map(function (cat) { return { label: cat.name, value: cat.id } }));
@@ -74,6 +74,12 @@ export default function Edit({ attributes, setAttributes })
 						max={50}
 						onChange={value => setAttributes({ limit: parseInt(value) })}
 					/>
+					<NumberControl
+						label={__('Slider speed (milliseconds)', 'khanoumi-affiliate-partner')}
+						value={speed}
+						min={500}
+						onChange={value => setAttributes({ speed: parseInt(value) })}
+					/>
 				</PanelBody>
 			</InspectorControls>
 
@@ -82,7 +88,8 @@ export default function Edit({ attributes, setAttributes })
 				{__('Category:', 'khanoumi-affiliate-partner')} {categoryOptions.find(option => option.value == category).label} <br />
 				{__('Tag:', 'khanoumi-affiliate-partner')} {tagOptions.find(option => option.value == tag).label} <br />
 				{__('Brand:', 'khanoumi-affiliate-partner')} {brandOptions.find(option => option.value == brand).label} <br />
-				{__('Limit:', 'khanoumi-affiliate-partner')} {limit}
+				{__('Limit:', 'khanoumi-affiliate-partner')} {limit} <br />
+				{__('Speed:', 'khanoumi-affiliate-partner')} {speed}
 			</div>
 		</>
 	);
