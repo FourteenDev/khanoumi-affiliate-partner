@@ -90,7 +90,7 @@
 }
 
 .khanoumi-carousel__item-caption a {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .khanoumi-carousel__item-caption a h3 {
@@ -110,6 +110,7 @@
 	column-gap: 4px;
 	align-self: flex-end;
 	font-size: 14px;
+	font-weight: bold;
 	line-height: 24px;
 }
 
@@ -117,6 +118,7 @@
 	grid-column: span 2 / span 2;
 	color: #a3a3a3;
 	text-decoration-line: line-through;
+	font-weight: normal;
 }
 
 .khanoumi-carousel__item-price svg {

@@ -21,15 +21,15 @@
 								<h3><?php echo $product['nameFa']; ?></h3>
 							</a>
 							<p class="khanoumi-carousel__item-price">
-								<?php if (isset($product['basePrice']) && intval($product['basePrice'])) : ?>
-									<?php if (isset($product['effectivePrice']) && intval($product['effectivePrice'])) : ?>
+								<?php if (!empty($product['basePrice']) && intval($product['basePrice'])) : ?>
+									<?php if (!empty($product['effectivePrice']) && intval($product['effectivePrice'])) : ?>
 										<span><?php echo number_format($product['basePrice']); ?></span>
 										<?php echo number_format($product['effectivePrice']); ?>
 									<?php else : ?>
 										<?php echo number_format($product['basePrice']); ?>
 									<?php endif; ?>
 								<?php else : ?>
-									<?php echo number_format($product['basePrice']); ?>
+									0
 								<?php endif; ?>
 								<svg class="toman-currency-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 									<path d="M3.52231 9.85151C3.70646 11.2265 3.81695 13.9888 3.7924 15.5724C3.76785 16.751 3.91517 17.107 4.86047 17.107H4.92186L5.02007 18.0278L4.92186 18.9363H4.86047C3.00669 18.9363 2.31919 17.8559 2.31919 15.8057C2.30692 13.9642 2.2087 11.6194 2 10.183L3.52231 9.85151Z"></path>
