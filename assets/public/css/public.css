@@ -114,11 +114,19 @@
 	line-height: 24px;
 }
 
-.khanoumi-carousel__item-price>span {
-	grid-column: span 2 / span 2;
+.khanoumi-carousel__item-price > span.khanoumi-carousel__item-base-price {
+	grid-column: span 3 / span 2;
 	color: #a3a3a3;
 	text-decoration-line: line-through;
 	font-weight: normal;
+}
+
+.khanoumi-carousel__item-price > span.khanoumi-carousel__item-discount-percent {
+	padding: 0px 3px;
+	color: white;
+	font-weight: normal;
+	border-radius: 4px;
+	background-color: #e11d48;
 }
 
 .khanoumi-carousel__item-price svg {

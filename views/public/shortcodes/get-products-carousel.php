@@ -23,7 +23,7 @@
 							<p class="khanoumi-carousel__item-price">
 								<?php if (!empty($product['basePrice']) && intval($product['basePrice'])) : ?>
 									<?php if (!empty($product['effectivePrice']) && intval($product['effectivePrice'])) : ?>
-										<span><?php echo number_format($product['basePrice']); ?></span>
+										<span class="khanoumi-carousel__item-base-price"><?php echo number_format($product['basePrice']); ?></span>
 										<?php echo number_format($product['effectivePrice']); ?>
 									<?php else : ?>
 										<?php echo number_format($product['basePrice']); ?>
@@ -38,6 +38,9 @@
 									<path d="M17.6909 18.9363V17.107H18.2802C19.9621 17.107 20.5022 16.8124 20.5022 16.2599C20.49 15.8425 19.9375 14.4184 19.827 14.1975L21.1284 13.4854C21.3616 13.9888 21.865 15.376 21.865 16.3459C21.8527 18.0032 20.7601 18.9363 18.5502 18.9363H17.6909ZM17.8136 11.9877C18.1451 11.6439 18.5011 11.3002 18.8326 10.9564C19.1764 11.3002 19.5201 11.6439 19.8516 11.9877C19.5201 12.3314 19.1764 12.6629 18.8326 13.0066C18.5011 12.6629 18.1451 12.3314 17.8136 11.9877ZM19.9621 11.9877C20.2935 11.6439 20.6496 11.3002 20.981 10.9564C21.3248 11.3002 21.6685 11.6439 22 11.9877C21.6685 12.3314 21.3248 12.6629 20.981 13.0066C20.6496 12.6629 20.2935 12.3314 19.9621 11.9877Z"></path>
 									<path d="M5.90307 3.41851C5.57159 4.16739 5.26468 4.92855 5.24012 5.73881C5.19102 7.18746 6.11177 7.8504 7.72002 7.8504C9.51242 7.8504 10.5437 6.80688 10.5437 5.73881C10.5437 5.05131 9.9421 3.3203 9.75795 2.7924L11.0716 2.1049C11.5749 3.45534 11.845 4.69529 11.845 5.73881C11.845 7.86268 10.2122 9.66735 7.72002 9.66735C5.30151 9.66735 3.70553 8.14504 3.87741 5.73881C3.93879 4.69529 4.40531 3.54128 4.7245 2.87834L5.90307 3.41851ZM6.82382 2.12946C7.21667 1.74888 7.58497 1.38058 7.96555 1L9.09501 2.12946C8.71443 2.51003 8.34613 2.89061 7.96555 3.25891C7.58497 2.89061 7.21667 2.51003 6.82382 2.12946Z"></path>
 								</svg>
+								<?php if (!empty($product['discountPercent']) && intval($product['discountPercent'])) : ?>
+									<span class="khanoumi-carousel__item-discount-percent"><?php echo $product['discountPercent']; ?>%</span>
+								<?php endif; ?>
 							</p>
 							<a class="khanoumi-carousel__item-view-more" href="<?php echo $product['deemaLink']; ?>" target="_blank" rel="sponsored nofollow">
 								<button class="khanoumi-carousel__item-button"><?php esc_html_e('View and buy »', KAPP_TEXT_DOMAIN); ?></button>
