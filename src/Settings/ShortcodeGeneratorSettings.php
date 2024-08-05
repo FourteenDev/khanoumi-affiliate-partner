@@ -63,7 +63,7 @@ class ShortcodeGeneratorSettings extends Base
 			return ['status' => 'error', 'result' => __('Invalid Nonce!', KAPP_TEXT_DOMAIN)];
 
 		$shortcode = '[khanoumi_products';
-		$shortcode .= !empty($_POST['shortcode-category']) ? ' cat=' . intval($_POST['shortcode-category']) : '';
+		$shortcode .= !empty($_POST['shortcode-category']) ? ' category=' . intval($_POST['shortcode-category']) : '';
 		$shortcode .= !empty($_POST['shortcode-tag']) ? ' tag=' . intval($_POST['shortcode-tag']) : '';
 		$shortcode .= !empty($_POST['shortcode-brand']) ? ' brand=' . intval($_POST['shortcode-brand']) : '';
 		$shortcode .= !empty($_POST['shortcode-limit']) ? ' limit=' . intval($_POST['shortcode-limit']) : '';

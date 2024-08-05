@@ -30,18 +30,18 @@ class KhanoumiProducts
 	{
 		$atts = shortcode_atts(
 			[
-				'show'  => 'carousel',
-				'cat'   => '',
-				'tag'   => '',
-				'brand' => '',
-				'limit' => '10',
-				'page'  => '1',
-				'speed' => '3000',
+				'display'  => 'carousel',
+				'category' => '',
+				'tag'      => '',
+				'brand'    => '',
+				'limit'    => '10',
+				'page'     => '1',
+				'speed'    => '3000',
 			],
 			$atts,
 			'khanoumi_products'
 		);
 
-		return ProductsHelper::getProducts($atts['show'], $atts['cat'], $atts['tag'], $atts['brand'], $atts['limit'], $atts['page'], $atts['speed']);
+		return ProductsHelper::getProducts($atts['display'], $atts['category'], $atts['tag'], $atts['brand'], $atts['limit'], $atts['page'], $atts['speed']);
 	}
 }
