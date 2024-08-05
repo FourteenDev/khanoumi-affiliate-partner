@@ -7,24 +7,26 @@ class ProductsHelper
 	/**
 	 * Returns Khanoumi products in carousel or grid form.
 	 *
-	 * @param	string	$display	Accetable values are `carousel` and `grid`.
-	 * @param	int		$category
-	 * @param	int		$tag
-	 * @param	int		$brand
-	 * @param	int		$limit
-	 * @param	int		$page
-	 * @param	int		$speed		Slider speed in milliseconds. Only works when `$display` is equal to 'carousel'. (minimum = 500)
+	 * @param	array	$args		An associative array of user defined arguments. Acceptable keys:
+	 * 	- `display` : Accetable values are `carousel` and `grid`. Defaults to `carousel`.
+	 * 	- `category`: Defaults to 0.
+	 * 	- `tag`     : Defaults to 0.
+	 * 	- `brand`   : Defaults to 0.
+	 * 	- `limit`   : Defaults to 10.
+	 * 	- `page`    : Defaults to 1.
+	 * 	- `speed`   : Slider speed in milliseconds. Only works when `$display` is equal to 'carousel'. Minimum 500 and default 3000.
 	 *
 	 * @return	string				The HTML code of the products view (or the error).
 	 */
-	public static function getProducts($display = 'carousel', $category = 0, $tag = 0, $brand = 0, $limit = 10, $page = 1, $speed = 3000)
+	public static function getProducts($args = [])
 	{
-		$category = intval($category);
-		$tag      = intval($tag);
-		$brand    = intval($brand);
-		$limit    = intval($limit);
-		$page     = intval($page);
-		$speed    = max(500, absint($speed));
+		$display  = !empty($args['display']) ? esc_attr($args['display']) : 'carousel';
+		$category = !empty($args['category']) ? intval($args['category']) : 0;
+		$tag      = !empty($args['tag']) ? intval($args['tag']) : 0;
+		$brand    = !empty($args['brand']) ? intval($args['brand']) : 0;
+		$limit    = !empty($args['limit']) ? intval($args['limit']) : 10;
+		$page     = !empty($args['page']) ? intval($args['page']) : 1;
+		$speed    = !empty($args['speed']) ? max(500, absint($args['speed'])) : 3000;
 
 		$products = get_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}");
 		if (empty($products))

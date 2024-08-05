@@ -42,6 +42,6 @@ class KhanoumiProducts
 			'khanoumi_products'
 		);
 
-		return ProductsHelper::getProducts($atts['display'], $atts['category'], $atts['tag'], $atts['brand'], $atts['limit'], $atts['page'], $atts['speed']);
+		return ProductsHelper::getProducts($atts);
 	}
 }

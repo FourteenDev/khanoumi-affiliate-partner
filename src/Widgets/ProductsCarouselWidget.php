@@ -50,7 +50,13 @@ class ProductsCarouselWidget extends \WP_Widget
 		echo $args['before_widget'];
 			echo $args['before_title'] . apply_filters('widget_title', $title) . $args['after_title'];
 			echo '<div class="khanoumi-carousel-widget">';
-				echo ProductsHelper::getProducts('', $category, $tag, $brand, $limit, 1, $speed);
+				echo ProductsHelper::getProducts([
+					'category' => $category,
+					'tag'      => $tag,
+					'brand'    => $brand,
+					'limit'    => $limit,
+					'speed'    => $speed,
+				]);
 			echo '</div>';
 		echo $args['after_widget'];
 	}

@@ -14,5 +14,11 @@ $speed    = (!empty($attributes['speed'])) ? intval($attributes['speed']) : 3000
 
 ?>
 <div class="khanoumi-carousel-block" <?php echo get_block_wrapper_attributes(); ?>>
-	<?php echo ProductsHelper::getProducts('', $category, $tag, $brand, $limit, 1, $speed); ?>
+	<?php echo ProductsHelper::getProducts([
+		'category' => $category,
+		'tag'      => $tag,
+		'brand'    => $brand,
+		'limit'    => $limit,
+		'speed'    => $speed,
+	]); ?>
 </div>
