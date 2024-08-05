@@ -50,10 +50,17 @@ class ProductsHelper
 			set_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}", $products, 12 * HOUR_IN_SECONDS);
 		}
 
-		if ($display === 'grid')
-			return KAPP()->view('public.shortcodes.get-products-grid', ['products' => $products['data']['products']['items']], false);
-		else
-			return KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items'], 'speed' => $speed], false);
+		$output = $display === 'grid' ? KAPP()->view('public.shortcodes.get-products-grid', ['products' => $products['data']['products']['items']], false) : KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items'], 'speed' => $speed], false);
+
+		/**
+		 * Filters the output of the `getProducts()` helper.
+		 *
+		 * @param	string	$output		Output HTML.
+		 * @param	array	$products	Products to display in the HTML.
+		 * @param	int		$speed		Carousel speed.
+		 * @param	array	$args		Input arguments (raw).
+		 */
+		return apply_filters('kapp_get_products_output', $output, $products['data']['products']['items'], $speed, $args);
 	}
 
 	/**
