@@ -63,9 +63,8 @@ class MainSettings extends Base
 				'default' => '',
 				'args'    => [
 					'description' => sprintf(
-						'با استفاده از <a href="%s" target="_blank" rel="noopener noreferrer nofollow">این آموزش</a> می‌توانید لینک عمومی دیما افیلیت خود را پیدا کنید. <br />
-دقت داشته باشید که نیاز نیست لینک را انکد کنید، فقط 3 مرحله‌ی اول آموزش را طی کرده و لینک عمومی خود را اینجا وارد کنید. <br />
-اگر این فیلد را خالی بگذارید، محصولات کروسل لینک مستقیم به سایت خانومی خواهند داشت.',
+						// translators: %s: Link to an article from Deema.agency.
+						nl2br(__("Use <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this guide</a> to find your Deema Affiliate general link. \nNote that you don't need to encode the link, just follow the first 3 steps and paste your general link here. \nIf you leave this field empty, carousel products will have direct links to the Khanoumi website.", 'khanoumi-affiliate-partner')),
 						esc_url('https://deema.agency/?p=20332')
 					),
 				],

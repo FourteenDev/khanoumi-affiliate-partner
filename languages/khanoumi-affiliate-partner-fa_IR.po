@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
-"POT-Creation-Date: 2024-07-13T22:48:18+00:00\n"
-"PO-Revision-Date: 2024-07-14 03:02+0330\n"
+"POT-Creation-Date: 2024-08-07T21:47:58+00:00\n"
+"PO-Revision-Date: 2024-08-07 21:49+0330\n"
 "Last-Translator: Koorosh14 <97566920+Koorosh14@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -40,15 +40,15 @@ msgstr "Fourteen Development"
 msgid "https://Fourteen.dev/"
 msgstr "https://Fourteen.dev/"
 
-#: src/Helpers/ProductsHelper.php:33
+#: src/Helpers/ProductsHelper.php:35
 msgid "No products were found!"
 msgstr "محصولی پیدا نشد!"
 
-#: src/Helpers/ProductsHelper.php:38
+#: src/Helpers/ProductsHelper.php:40
 msgid "Invalid products! See log file for more details."
 msgstr "محصولات نامعتبر هستند! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
 
-#: src/Helpers/ProductsHelper.php:45
+#: src/Helpers/ProductsHelper.php:47
 msgid "Unable to process products! See log file for more details."
 msgstr "خطا در پردازش محصولات! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
 
@@ -77,12 +77,12 @@ msgstr "لینک عمومی دیما"
 #. translators: %s: Link to an article from Deema.agency.
 #: src/Settings/MainSettings.php:67
 msgid ""
-"Use <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this guide</a> to find your Deema Affiliate general link. <br />\n"
-"Note that you don't need to encode the link, just follow the first 3 steps and paste your general link here. <br />\n"
+"Use <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this guide</a> to find your Deema Affiliate general link. \n"
+"Note that you don't need to encode the link, just follow the first 3 steps and paste your general link here. \n"
 "If you leave this field empty, carousel products will have direct links to the Khanoumi website."
 msgstr ""
-"با استفاده از <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">این آموزش</a> می‌توانید لینک عمومی دیما افیلیت خود را پیدا کنید. <br />\n"
-"دقت داشته باشید که نیاز نیست لینک را انکد کنید، فقط 3 مرحله‌ی اول آموزش را طی کرده و لینک عمومی خود را اینجا وارد کنید. <br />\n"
+"با استفاده از <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">این آموزش</a> می‌توانید لینک عمومی دیما افیلیت خود را پیدا کنید. \n"
+"دقت داشته باشید که نیاز نیست لینک را انکد کنید، فقط 3 مرحله‌ی اول آموزش را طی کرده و لینک عمومی خود را اینجا وارد کنید. \n"
 "اگر این فیلد را خالی بگذارید، محصولات کروسل لینک مستقیم به سایت خانومی خواهند داشت."
 
 #: src/Settings/ShortcodeGeneratorSettings.php:29
@@ -103,18 +103,18 @@ msgstr "کروسل محصولات خانومی"
 msgid "Display Khanoumi.com products in a carousel."
 msgstr "محصولات سایت خانومی را به صورت کروسل نمایش می‌دهد."
 
-#: src/Widgets/ProductsCarouselWidget.php:77
+#: src/Widgets/ProductsCarouselWidget.php:83
 msgid "Title: "
 msgstr "عنوان: "
 
-#: src/Widgets/ProductsCarouselWidget.php:83
+#: src/Widgets/ProductsCarouselWidget.php:89
 #: views/admin/settings/shortcode-generator.php:29
 msgid "Category: "
 msgstr "دسته‌بندی: "
 
-#: src/Widgets/ProductsCarouselWidget.php:86
-#: src/Widgets/ProductsCarouselWidget.php:97
-#: src/Widgets/ProductsCarouselWidget.php:108
+#: src/Widgets/ProductsCarouselWidget.php:92
+#: src/Widgets/ProductsCarouselWidget.php:103
+#: src/Widgets/ProductsCarouselWidget.php:114
 #: views/admin/settings/shortcode-generator.php:34
 #: views/admin/settings/shortcode-generator.php:49
 #: views/admin/settings/shortcode-generator.php:64
@@ -123,22 +123,22 @@ msgstr "دسته‌بندی: "
 msgid "All"
 msgstr "همه"
 
-#: src/Widgets/ProductsCarouselWidget.php:94
+#: src/Widgets/ProductsCarouselWidget.php:100
 #: views/admin/settings/shortcode-generator.php:44
 msgid "Tag: "
 msgstr "برچسب: "
 
-#: src/Widgets/ProductsCarouselWidget.php:105
+#: src/Widgets/ProductsCarouselWidget.php:111
 #: views/admin/settings/shortcode-generator.php:59
 msgid "Brand: "
 msgstr "برند: "
 
-#: src/Widgets/ProductsCarouselWidget.php:116
+#: src/Widgets/ProductsCarouselWidget.php:122
 #: views/admin/settings/shortcode-generator.php:74
 msgid "Limit: "
 msgstr "محدودیت: "
 
-#: src/Widgets/ProductsCarouselWidget.php:122
+#: src/Widgets/ProductsCarouselWidget.php:128
 #: views/admin/settings/shortcode-generator.php:84
 msgid "Slider speed (milliseconds): "
 msgstr "سرعت اسلایدر (میلی‌ثانیه): "
