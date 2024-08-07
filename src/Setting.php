@@ -49,8 +49,8 @@ class Setting
 	public function createAdminMenu()
 	{
 		add_menu_page(
-			esc_html__('Khanoumi Affiliate Partner Settings', KAPP_TEXT_DOMAIN),
-			esc_html__('Khanoumi Affiliate', KAPP_TEXT_DOMAIN),
+			esc_html__('Khanoumi Affiliate Partner Settings', 'khanoumi-affiliate-partner'),
+			esc_html__('Khanoumi Affiliate', 'khanoumi-affiliate-partner'),
 			'manage_options',
 			$this->menuSlug,
 			'',
@@ -87,7 +87,7 @@ class Setting
 	 */
 	public function actionLinks($links)
 	{
-		$links[] = '<a href="' . get_admin_url(null, "admin.php?page={$this->menuSlug}") . '">' . esc_html__('Settings', KAPP_TEXT_DOMAIN) . '</a>';
+		$links[] = '<a href="' . get_admin_url(null, "admin.php?page={$this->menuSlug}") . '">' . esc_html__('Settings', 'khanoumi-affiliate-partner') . '</a>';
 		return $links;
 	}
 }

@@ -20,7 +20,6 @@ define('KAPP_FILE', __FILE__);
 define('KAPP_URL', plugin_dir_url(KAPP_FILE));
 define('KAPP_DIR', plugin_dir_path(KAPP_FILE));
 define('KAPP_BASENAME', plugin_basename(KAPP_FILE));
-define('KAPP_TEXT_DOMAIN', 'khanoumi-affiliate-partner');
 define('KAPP_SETTINGS_SLUG', 'kapp');
 define('KAPP_OPTIONS_KEY_DB_VERSION', 'kapp_db_version');
 

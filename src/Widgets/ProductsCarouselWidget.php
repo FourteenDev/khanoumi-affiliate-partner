@@ -19,8 +19,8 @@ class ProductsCarouselWidget extends \WP_Widget
 		 */
 		parent::__construct(
 			'kapp-products-carousel',
-			__('Khanoumi Products Carousel', KAPP_TEXT_DOMAIN),
-			['description' => __('Display Khanoumi.com products in a carousel.', KAPP_TEXT_DOMAIN)]
+			__('Khanoumi Products Carousel', 'khanoumi-affiliate-partner'),
+			['description' => __('Display Khanoumi.com products in a carousel.', 'khanoumi-affiliate-partner')]
 		);
 
 		add_action('widgets_init', function ()
@@ -80,16 +80,16 @@ class ProductsCarouselWidget extends \WP_Widget
 		?>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('title')); ?>">
-				<?php _e('Title: ', KAPP_TEXT_DOMAIN); ?>
+				<?php _e('Title: ', 'khanoumi-affiliate-partner'); ?>
 			</label>
 			<input type="text" id="<?php echo esc_attr($this->get_field_id('title')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('title')); ?>" value="<?php echo esc_attr($title); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('category')); ?>">
-				<?php _e('Category: ', KAPP_TEXT_DOMAIN); ?>
+				<?php _e('Category: ', 'khanoumi-affiliate-partner'); ?>
 			</label>
 			<select id="<?php echo esc_attr($this->get_field_id('category')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('category')); ?>">
-				<option value="0" <?php selected($category, 0); ?>><?php _e('All', KAPP_TEXT_DOMAIN); ?></option>
+				<option value="0" <?php selected($category, 0); ?>><?php _e('All', 'khanoumi-affiliate-partner'); ?></option>
 				<?php foreach (FiltersHelper::getAllCategories() as $c) : ?>
 					<option value="<?php echo $c['id']; ?>" <?php selected($category, $c['id']); ?>><?php echo $c['name']; ?></option>
 				<?php endforeach; ?>
@@ -97,10 +97,10 @@ class ProductsCarouselWidget extends \WP_Widget
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('tag')); ?>">
-				<?php _e('Tag: ', KAPP_TEXT_DOMAIN); ?>
+				<?php _e('Tag: ', 'khanoumi-affiliate-partner'); ?>
 			</label>
 			<select id="<?php echo esc_attr($this->get_field_id('tag')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('tag')); ?>">
-				<option value="0" <?php selected($tag, 0); ?>><?php _e('All', KAPP_TEXT_DOMAIN); ?></option>
+				<option value="0" <?php selected($tag, 0); ?>><?php _e('All', 'khanoumi-affiliate-partner'); ?></option>
 				<?php foreach (FiltersHelper::getAllTags() as $t) : ?>
 					<option value="<?php echo $t['id']; ?>" <?php selected($tag, $t['id']); ?>><?php echo $t['name']; ?></option>
 				<?php endforeach; ?>
@@ -108,10 +108,10 @@ class ProductsCarouselWidget extends \WP_Widget
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('brand')); ?>">
-				<?php _e('Brand: ', KAPP_TEXT_DOMAIN); ?>
+				<?php _e('Brand: ', 'khanoumi-affiliate-partner'); ?>
 			</label>
 			<select id="<?php echo esc_attr($this->get_field_id('brand')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('brand')); ?>">
-				<option value="0" <?php selected($brand, 0); ?>><?php _e('All', KAPP_TEXT_DOMAIN); ?></option>
+				<option value="0" <?php selected($brand, 0); ?>><?php _e('All', 'khanoumi-affiliate-partner'); ?></option>
 				<?php foreach (FiltersHelper::getAllBrands() as $b) : ?>
 					<option value="<?php echo $b['id']; ?>" <?php selected($brand, $b['id']); ?>><?php echo $b['name_per']; ?></option>
 				<?php endforeach; ?>
@@ -119,13 +119,13 @@ class ProductsCarouselWidget extends \WP_Widget
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('limit')); ?>">
-				<?php _e('Limit: ', KAPP_TEXT_DOMAIN); ?>
+				<?php _e('Limit: ', 'khanoumi-affiliate-partner'); ?>
 			</label>
 			<input type="number" id="<?php echo esc_attr($this->get_field_id('limit')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('limit')); ?>" value="<?php echo esc_attr($limit); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('speed')); ?>">
-				<?php _e('Slider speed (milliseconds): ', KAPP_TEXT_DOMAIN); ?>
+				<?php _e('Slider speed (milliseconds): ', 'khanoumi-affiliate-partner'); ?>
 			</label>
 			<input type="number" id="<?php echo esc_attr($this->get_field_id('speed')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('speed')); ?>" value="<?php echo esc_attr($speed); ?>" min="500" />
 		</p>

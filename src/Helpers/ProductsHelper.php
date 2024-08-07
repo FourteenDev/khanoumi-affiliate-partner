@@ -32,19 +32,19 @@ class ProductsHelper
 		if (empty($products))
 		{
 			$products = self::fetchProductsViaAPI($category, $tag, $brand, $limit, $page);
-			if (empty($products)) return __('No products were found!', KAPP_TEXT_DOMAIN);
+			if (empty($products)) return __('No products were found!', 'khanoumi-affiliate-partner');
 
 			if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']) || empty($products['data']['products']['items']))
 			{
 				error_log(print_r($products, true));
-				return __('Invalid products! See log file for more details.', KAPP_TEXT_DOMAIN);
+				return __('Invalid products! See log file for more details.', 'khanoumi-affiliate-partner');
 			}
 
 			$products = DeemaHelper::addProductLinksToApiResponse($products);
 			if (empty($products))
 			{
 				error_log(print_r($products, true));
-				return __('Unable to process products! See log file for more details.', KAPP_TEXT_DOMAIN);
+				return __('Unable to process products! See log file for more details.', 'khanoumi-affiliate-partner');
 			}
 
 			set_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}", $products, 12 * HOUR_IN_SECONDS);

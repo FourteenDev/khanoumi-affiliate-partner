@@ -26,8 +26,8 @@ class ShortcodeGeneratorSettings extends Base
 	public function addSubmenu($submenus)
 	{
 		$submenus['shortcode_generator'] = [
-			'page_title' => esc_html__('Shortcode Generator', KAPP_TEXT_DOMAIN),
-			'menu_title' => esc_html__('Shortcode Generator', KAPP_TEXT_DOMAIN),
+			'page_title' => esc_html__('Shortcode Generator', 'khanoumi-affiliate-partner'),
+			'menu_title' => esc_html__('Shortcode Generator', 'khanoumi-affiliate-partner'),
 			'callback'   => [$this, 'displayContent'],
 			'position'   => 0,
 		];
@@ -60,7 +60,7 @@ class ShortcodeGeneratorSettings extends Base
 	function generateShortcode()
 	{
 		if (!isset($_POST['kapp_shortcode_generator_nonce']) || !wp_verify_nonce($_POST['kapp_shortcode_generator_nonce'], 'kapp_shortcode_generator'))
-			return ['status' => 'error', 'result' => __('Invalid Nonce!', KAPP_TEXT_DOMAIN)];
+			return ['status' => 'error', 'result' => __('Invalid Nonce!', 'khanoumi-affiliate-partner')];
 
 		$shortcode = '[khanoumi_products';
 		$shortcode .= !empty($_POST['shortcode-category']) ? ' category=' . intval($_POST['shortcode-category']) : '';

@@ -102,6 +102,6 @@ class Core
 	 */
 	public function i18n()
 	{
-		load_plugin_textdomain(KAPP_TEXT_DOMAIN, false, basename(KAPP_DIR) . DIRECTORY_SEPARATOR . 'languages');
+		load_plugin_textdomain('khanoumi-affiliate-partner', false, basename(KAPP_DIR) . DIRECTORY_SEPARATOR . 'languages');
 	}
 }

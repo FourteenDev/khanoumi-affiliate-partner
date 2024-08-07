@@ -26,8 +26,8 @@ class MainSettings extends Base
 	public function addSubmenu($submenus)
 	{
 		$submenus['settings'] = [
-			'page_title' => esc_html__('Khanoumi Affiliate Partner Settings', KAPP_TEXT_DOMAIN),
-			'menu_title' => esc_html__('Khanoumi Affiliate', KAPP_TEXT_DOMAIN),
+			'page_title' => esc_html__('Khanoumi Affiliate Partner Settings', 'khanoumi-affiliate-partner'),
+			'menu_title' => esc_html__('Khanoumi Affiliate', 'khanoumi-affiliate-partner'),
 			'callback'   => [$this, 'displayContent'],
 			'position'   => 0,
 		];
@@ -43,7 +43,7 @@ class MainSettings extends Base
 	public function getTabs()
 	{
 		return apply_filters('kapp_settings_main_tabs', [
-			'deema' => esc_html__('Deema Settings', KAPP_TEXT_DOMAIN),
+			'deema' => esc_html__('Deema Settings', 'khanoumi-affiliate-partner'),
 		]);
 	}
 
@@ -57,7 +57,7 @@ class MainSettings extends Base
 		return apply_filters('kapp_settings_main_fields', [
 			'deema_general_link' => [
 				'id'      => 'deema_general_link',
-				'label'   => esc_html__('Deema General Link', KAPP_TEXT_DOMAIN),
+				'label'   => esc_html__('Deema General Link', 'khanoumi-affiliate-partner'),
 				'section' => 'deema',
 				'type'    => 'text',
 				'default' => '',

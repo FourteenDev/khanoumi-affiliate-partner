@@ -6,8 +6,8 @@
 	</button>
 	<div class="khanoumi-carousel__content">
 		<div class="khanoumi-carousel__item khanoumi-carousel-intro">
-			<div class="khanoumi-carousel-intro--title"><?php esc_html_e('Buy from Khanoumi', KAPP_TEXT_DOMAIN); ?></div>
-			<img class="khanoumi-carousel-intro--image" src="<?php echo esc_url(KAPP()->url('assets/public/images/pink-box.png')); ?>" alt="<?php esc_html_e('Buy from Khanoumi', KAPP_TEXT_DOMAIN); ?>">
+			<div class="khanoumi-carousel-intro--title"><?php esc_html_e('Buy from Khanoumi', 'khanoumi-affiliate-partner'); ?></div>
+			<img class="khanoumi-carousel-intro--image" src="<?php echo esc_url(KAPP()->url('assets/public/images/pink-box.png')); ?>" alt="<?php esc_html_e('Buy from Khanoumi', 'khanoumi-affiliate-partner'); ?>">
 		</div>
 		<?php for ($i = 0; $i < count($products); $i++) : $product = $products[$i]; ?>
 			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
@@ -43,7 +43,7 @@
 								<?php endif; ?>
 							</p>
 							<a class="khanoumi-carousel__item-view-more" href="<?php echo $product['deemaLink']; ?>" target="_blank" rel="sponsored nofollow">
-								<button class="khanoumi-carousel__item-button"><?php esc_html_e('View and buy »', KAPP_TEXT_DOMAIN); ?></button>
+								<button class="khanoumi-carousel__item-button"><?php esc_html_e('View and buy »', 'khanoumi-affiliate-partner'); ?></button>
 							</a>
 						</div>
 					</div>
