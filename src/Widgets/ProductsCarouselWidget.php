@@ -46,6 +46,7 @@ class ProductsCarouselWidget extends \WP_Widget
 		$limit    = !empty($instance['limit']) ? intval($instance['limit']) : 10;
 		// $page     = !empty($instance['page']) ? intval($instance['page']) : 1;
 		$speed    = !empty($instance['speed']) ? intval($instance['speed']) : 3000;
+		$intro    = isset($instance['intro']) ? filter_var($instance['intro'], FILTER_VALIDATE_BOOLEAN) : true;
 
 		echo $args['before_widget'];
 			echo $args['before_title'] . apply_filters('widget_title', $title) . $args['after_title'];
@@ -56,6 +57,7 @@ class ProductsCarouselWidget extends \WP_Widget
 					'brand'    => $brand,
 					'limit'    => $limit,
 					'speed'    => $speed,
+					'intro'    => $intro,
 				]);
 			echo '</div>';
 		echo $args['after_widget'];
@@ -77,6 +79,7 @@ class ProductsCarouselWidget extends \WP_Widget
 		$limit    = !empty($instance['limit']) ? intval($instance['limit']) : 10;
 		// $page     = !empty($instance['page']) ? intval($instance['page']) : 1;
 		$speed    = !empty($instance['speed']) ? intval($instance['speed']) : 3000;
+		$intro    = isset($instance['intro']) ? filter_var($instance['intro'], FILTER_VALIDATE_BOOLEAN) : true;
 		?>
 		<p>
 			<label for="<?php echo esc_attr($this->get_field_id('title')); ?>">
@@ -129,6 +132,12 @@ class ProductsCarouselWidget extends \WP_Widget
 			</label>
 			<input type="number" id="<?php echo esc_attr($this->get_field_id('speed')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('speed')); ?>" value="<?php echo esc_attr($speed); ?>" min="500" />
 		</p>
+		<p>
+			<label for="<?php echo esc_attr($this->get_field_id('intro')); ?>">
+				<?php _e('Display first slide (introduction): ', 'khanoumi-affiliate-partner'); ?>
+			</label>
+			<input type="checkbox" id="<?php echo esc_attr($this->get_field_id('intro')); ?>" class="widefat" name="<?php echo esc_attr($this->get_field_name('intro')); ?>" value="1" <?php checked($intro); ?> />
+		</p>
 		<?php
 	}
 
@@ -151,6 +160,7 @@ class ProductsCarouselWidget extends \WP_Widget
 		$instance['limit']    = !empty($newInstance['limit']) ? intval($newInstance['limit']) : 10;
 		// $instance['page']     = !empty($newInstance['page']) ? intval($newInstance['page']) : 1;
 		$instance['speed']    = !empty($newInstance['speed']) ? intval($newInstance['speed']) : 3000;
+		$instance['intro']    = isset($newInstance['intro']) ? filter_var($newInstance['intro'], FILTER_VALIDATE_BOOLEAN) : false;
 
 		return $instance;
 	}

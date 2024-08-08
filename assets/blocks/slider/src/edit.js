@@ -18,7 +18,7 @@ import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
  *
  * @see	https://wordpress.github.io/gutenberg/?path=/docs/components-introduction--docs
  */
-import { PanelBody, SelectControl, __experimentalNumberControl as NumberControl } from '@wordpress/components';
+import { PanelBody, SelectControl, __experimentalNumberControl as NumberControl, CheckboxControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -38,7 +38,7 @@ import './editor.scss';
  */
 export default function Edit({ attributes, setAttributes })
 {
-	const { category, tag, brand, limit, speed } = attributes;
+	const { category, tag, brand, limit, speed, intro } = attributes;
 
 	const firstSelectOption = [{ label: __('All', 'khanoumi-affiliate-partner'), value: 0 }];
 	const categoryOptions   = firstSelectOption.concat(allCategories.map(function (cat) { return { label: cat.name, value: cat.id } }));
@@ -80,6 +80,13 @@ export default function Edit({ attributes, setAttributes })
 						min={500}
 						onChange={value => setAttributes({ speed: parseInt(value) })}
 					/>
+					<CheckboxControl
+						__nextHasNoMarginBottom
+						label={__('Display first slide (introduction)', 'khanoumi-affiliate-partner')}
+						help={__('Adds an extra slide in the beginning of the product carousel.', 'khanoumi-affiliate-partner')}
+						checked={intro}
+						onChange={value => setAttributes({ intro: value })}
+					/>
 				</PanelBody>
 			</InspectorControls>
 
@@ -89,7 +96,8 @@ export default function Edit({ attributes, setAttributes })
 				{__('Tag:', 'khanoumi-affiliate-partner')} {tagOptions.find(option => option.value == tag).label} <br />
 				{__('Brand:', 'khanoumi-affiliate-partner')} {brandOptions.find(option => option.value == brand).label} <br />
 				{__('Limit:', 'khanoumi-affiliate-partner')} {limit} <br />
-				{__('Speed:', 'khanoumi-affiliate-partner')} {speed}
+				{__('Speed:', 'khanoumi-affiliate-partner')} {speed} <br />
+				{__('Introduction:', 'khanoumi-affiliate-partner')} {intro.toString()}
 			</div>
 		</>
 	);

@@ -5,10 +5,12 @@
 		</svg>
 	</button>
 	<div class="khanoumi-carousel__content">
-		<div class="khanoumi-carousel__item khanoumi-carousel-intro">
-			<div class="khanoumi-carousel-intro--title"><?php esc_html_e('Buy from Khanoumi', 'khanoumi-affiliate-partner'); ?></div>
-			<img class="khanoumi-carousel-intro--image" src="<?php echo esc_url(KAPP()->url('assets/public/images/pink-box.png')); ?>" alt="<?php esc_html_e('Buy from Khanoumi', 'khanoumi-affiliate-partner'); ?>">
-		</div>
+		<?php if (!isset($intro) || filter_var($intro, FILTER_VALIDATE_BOOLEAN)) : ?>
+			<div class="khanoumi-carousel__item khanoumi-carousel-intro">
+				<div class="khanoumi-carousel-intro--title"><?php esc_html_e('Buy from Khanoumi', 'khanoumi-affiliate-partner'); ?></div>
+				<img class="khanoumi-carousel-intro--image" src="<?php echo esc_url(KAPP()->url('assets/public/images/pink-box.png')); ?>" alt="<?php esc_html_e('Buy from Khanoumi', 'khanoumi-affiliate-partner'); ?>">
+			</div>
+		<?php endif; ?>
 		<?php for ($i = 0; $i < count($products); $i++) : $product = $products[$i]; ?>
 			<?php if (is_array($product) && !empty($product['imageUrl'])) : ?>
 				<div class="khanoumi-carousel__item">

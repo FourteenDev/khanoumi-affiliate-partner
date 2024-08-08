@@ -36,6 +36,10 @@
 			"type": "number",
 			"default": 3000,
 			"minimum": 500
+		},
+		"intro": {
+			"type": "boolean",
+			"default": true
 		}
 	},
 	"editorScript": "file:./index.js",

@@ -8,13 +8,14 @@ class ProductsHelper
 	 * Returns Khanoumi products in carousel or grid form.
 	 *
 	 * @param	array	$args		An associative array of user defined arguments. Acceptable keys:
-	 * 	- `display` : Accetable values are `carousel` and `grid`. Defaults to `carousel`.
-	 * 	- `category`: Defaults to 0.
-	 * 	- `tag`     : Defaults to 0.
-	 * 	- `brand`   : Defaults to 0.
-	 * 	- `limit`   : Defaults to 10.
-	 * 	- `page`    : Defaults to 1.
-	 * 	- `speed`   : Slider speed in milliseconds. Only works when `$display` is equal to 'carousel'. Minimum 500 and default 3000.
+	 * 	- `display`		string		Accetable values are `carousel` and `grid`. Defaults to `carousel`.
+	 * 	- `category`	int			Defaults to 0.
+	 * 	- `tag`			int			Defaults to 0.
+	 * 	- `brand`		int			Defaults to 0.
+	 * 	- `limit`		int			Defaults to 10.
+	 * 	- `page`		int			Defaults to 1.
+	 * 	- `speed`		int			Slider speed in milliseconds. Only works when `$display` is equal to 'carousel'. Minimum 500 and default 3000.
+	 *  - `intro`		bool		Display first slide (introduction slide) in carousel. Defaults to true.
 	 *
 	 * @return	string				The HTML code of the products view (or the error).
 	 */
@@ -27,6 +28,7 @@ class ProductsHelper
 		$limit    = !empty($args['limit']) ? intval($args['limit']) : 10;
 		$page     = !empty($args['page']) ? intval($args['page']) : 1;
 		$speed    = !empty($args['speed']) ? max(500, absint($args['speed'])) : 3000;
+		$intro    = isset($args['intro']) ? filter_var($args['intro'], FILTER_VALIDATE_BOOLEAN) : true;
 
 		$products = get_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}");
 		if (empty($products))
@@ -50,7 +52,7 @@ class ProductsHelper
 			set_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}", $products, 12 * HOUR_IN_SECONDS);
 		}
 
-		$output = $display === 'grid' ? KAPP()->view('public.shortcodes.get-products-grid', ['products' => $products['data']['products']['items']], false) : KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items'], 'speed' => $speed], false);
+		$output = $display === 'grid' ? KAPP()->view('public.shortcodes.get-products-grid', ['products' => $products['data']['products']['items']], false) : KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items'], 'speed' => $speed, 'intro' => $intro], false);
 
 		/**
 		 * Filters the output of the `getProducts()` helper.

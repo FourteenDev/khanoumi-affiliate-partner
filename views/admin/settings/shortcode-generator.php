@@ -22,6 +22,7 @@
 				$brand    = !empty($_POST['shortcode-brand']) ? intval($_POST['shortcode-brand']) : 0;
 				$limit    = !empty($_POST['shortcode-limit']) ? intval($_POST['shortcode-limit']) : 10;
 				$speed    = !empty($_POST['shortcode-speed']) ? intval($_POST['shortcode-speed']) : 3000;
+				$intro    = isset($_POST['shortcode-intro']) ? filter_var($_POST['shortcode-intro'], FILTER_VALIDATE_BOOLEAN) : true;
 				?>
 				<tr>
 					<th>
@@ -86,6 +87,16 @@
 					</th>
 					<td>
 						<input type="number" id="shortcode-speed" name="shortcode-speed" value="<?php echo $speed; ?>" min="500" />
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="shortcode-intro">
+							<?php _e('Display first slide (introduction): ', 'khanoumi-affiliate-partner'); ?>
+						</label>
+					</th>
+					<td>
+						<input type="checkbox" id="shortcode-intro" name="shortcode-intro" value="1" <?php checked($intro); ?> />
 					</td>
 				</tr>
 			</table>

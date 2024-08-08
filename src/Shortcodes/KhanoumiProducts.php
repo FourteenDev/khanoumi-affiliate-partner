@@ -31,12 +31,13 @@ class KhanoumiProducts
 		$atts = shortcode_atts(
 			[
 				'display'  => 'carousel',
-				'category' => '',
-				'tag'      => '',
-				'brand'    => '',
-				'limit'    => '10',
-				'page'     => '1',
-				'speed'    => '3000',
+				'category' => 0,
+				'tag'      => 0,
+				'brand'    => 0,
+				'limit'    => 10,
+				'page'     => 1,
+				'speed'    => 3000,
+				'intro'    => true,
 			],
 			$atts,
 			'khanoumi_products'
