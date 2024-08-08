@@ -91,13 +91,45 @@ export default function Edit({ attributes, setAttributes })
 			</InspectorControls>
 
 			<div {...useBlockProps()}>
-				{__('A Khanoumi slider with these values will be shown here:', 'khanoumi-affiliate-partner')} <br />
-				{__('Category:', 'khanoumi-affiliate-partner')} {categoryOptions.find(option => option.value == category).label} <br />
-				{__('Tag:', 'khanoumi-affiliate-partner')} {tagOptions.find(option => option.value == tag).label} <br />
-				{__('Brand:', 'khanoumi-affiliate-partner')} {brandOptions.find(option => option.value == brand).label} <br />
-				{__('Limit:', 'khanoumi-affiliate-partner')} {limit} <br />
-				{__('Speed:', 'khanoumi-affiliate-partner')} {speed} <br />
-				{__('Introduction:', 'khanoumi-affiliate-partner')} {intro.toString()}
+				<p>{__('A Khanoumi slider with these values will be shown here:', 'khanoumi-affiliate-partner')}</p>
+				<SelectControl
+					label={__('Category', 'khanoumi-affiliate-partner')}
+					value={category}
+					options={categoryOptions}
+					onChange={value => setAttributes({ category: parseInt(value) })}
+				/>
+				<SelectControl
+					label={__('Tag', 'khanoumi-affiliate-partner')}
+					value={tag}
+					options={tagOptions}
+					onChange={value => setAttributes({ tag: parseInt(value) })}
+				/>
+				<SelectControl
+					label={__('Brand', 'khanoumi-affiliate-partner')}
+					value={brand}
+					options={brandOptions}
+					onChange={value => setAttributes({ brand: parseInt(value) })}
+				/>
+				<NumberControl
+					label={__('Limit', 'khanoumi-affiliate-partner')}
+					value={limit}
+					min={1}
+					max={50}
+					onChange={value => setAttributes({ limit: parseInt(value) })}
+				/>
+				<NumberControl
+					label={__('Slider speed (milliseconds)', 'khanoumi-affiliate-partner')}
+					value={speed}
+					min={500}
+					onChange={value => setAttributes({ speed: parseInt(value) })}
+				/>
+				<CheckboxControl
+					__nextHasNoMarginBottom
+					label={__('Display first slide (introduction)', 'khanoumi-affiliate-partner')}
+					help={__('Adds an extra slide in the beginning of the product carousel.', 'khanoumi-affiliate-partner')}
+					checked={intro}
+					onChange={value => setAttributes({ intro: value })}
+				/>
 			</div>
 		</>
 	);
