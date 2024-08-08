@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
-"POT-Creation-Date: 2024-08-07T21:47:58+00:00\n"
-"PO-Revision-Date: 2024-08-07 21:49+0330\n"
+"POT-Creation-Date: 2024-08-08T14:33:14+00:00\n"
+"PO-Revision-Date: 2024-08-08 14:36+0000\n"
 "Last-Translator: Koorosh14 <97566920+Koorosh14@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -40,15 +40,15 @@ msgstr "Fourteen Development"
 msgid "https://Fourteen.dev/"
 msgstr "https://Fourteen.dev/"
 
-#: src/Helpers/ProductsHelper.php:35
+#: src/Helpers/ProductsHelper.php:37
 msgid "No products were found!"
 msgstr "محصولی پیدا نشد!"
 
-#: src/Helpers/ProductsHelper.php:40
+#: src/Helpers/ProductsHelper.php:42
 msgid "Invalid products! See log file for more details."
 msgstr "محصولات نامعتبر هستند! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
 
-#: src/Helpers/ProductsHelper.php:47
+#: src/Helpers/ProductsHelper.php:49
 msgid "Unable to process products! See log file for more details."
 msgstr "خطا در پردازش محصولات! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
 
@@ -61,7 +61,7 @@ msgid "Khanoumi Affiliate"
 msgstr "افیلیت خانومی"
 
 #: src/Setting.php:90 src/Settings/Base.php:181
-#: assets/blocks/slider/build/index.js:97 assets/blocks/slider/src/edit.js:51
+#: assets/blocks/slider/build/index.js:98 assets/blocks/slider/src/edit.js:51
 #: assets/blocks/slider/build/index.js:51
 msgid "Settings"
 msgstr "تنظیمات"
@@ -103,130 +103,134 @@ msgstr "کروسل محصولات خانومی"
 msgid "Display Khanoumi.com products in a carousel."
 msgstr "محصولات سایت خانومی را به صورت کروسل نمایش می‌دهد."
 
-#: src/Widgets/ProductsCarouselWidget.php:83
+#: src/Widgets/ProductsCarouselWidget.php:86
 msgid "Title: "
 msgstr "عنوان: "
 
-#: src/Widgets/ProductsCarouselWidget.php:89
-#: views/admin/settings/shortcode-generator.php:29
+#: src/Widgets/ProductsCarouselWidget.php:92
+#: views/admin/settings/shortcode-generator.php:30
 msgid "Category: "
 msgstr "دسته‌بندی: "
 
-#: src/Widgets/ProductsCarouselWidget.php:92
-#: src/Widgets/ProductsCarouselWidget.php:103
-#: src/Widgets/ProductsCarouselWidget.php:114
-#: views/admin/settings/shortcode-generator.php:34
-#: views/admin/settings/shortcode-generator.php:49
-#: views/admin/settings/shortcode-generator.php:64
-#: assets/blocks/slider/build/index.js:75 assets/blocks/slider/src/edit.js:43
+#: src/Widgets/ProductsCarouselWidget.php:95
+#: src/Widgets/ProductsCarouselWidget.php:106
+#: src/Widgets/ProductsCarouselWidget.php:117
+#: views/admin/settings/shortcode-generator.php:35
+#: views/admin/settings/shortcode-generator.php:50
+#: views/admin/settings/shortcode-generator.php:65
+#: assets/blocks/slider/build/index.js:76 assets/blocks/slider/src/edit.js:43
 #: assets/blocks/slider/build/index.js:43
 msgid "All"
 msgstr "همه"
 
-#: src/Widgets/ProductsCarouselWidget.php:100
-#: views/admin/settings/shortcode-generator.php:44
+#: src/Widgets/ProductsCarouselWidget.php:103
+#: views/admin/settings/shortcode-generator.php:45
 msgid "Tag: "
 msgstr "برچسب: "
 
-#: src/Widgets/ProductsCarouselWidget.php:111
-#: views/admin/settings/shortcode-generator.php:59
+#: src/Widgets/ProductsCarouselWidget.php:114
+#: views/admin/settings/shortcode-generator.php:60
 msgid "Brand: "
 msgstr "برند: "
 
-#: src/Widgets/ProductsCarouselWidget.php:122
-#: views/admin/settings/shortcode-generator.php:74
+#: src/Widgets/ProductsCarouselWidget.php:125
+#: views/admin/settings/shortcode-generator.php:75
 msgid "Limit: "
 msgstr "محدودیت: "
 
-#: src/Widgets/ProductsCarouselWidget.php:128
-#: views/admin/settings/shortcode-generator.php:84
+#: src/Widgets/ProductsCarouselWidget.php:131
+#: views/admin/settings/shortcode-generator.php:85
 msgid "Slider speed (milliseconds): "
 msgstr "سرعت اسلایدر (میلی‌ثانیه): "
+
+#: src/Widgets/ProductsCarouselWidget.php:137
+#: views/admin/settings/shortcode-generator.php:95
+msgid "Display first slide (introduction): "
+msgstr "نمایش اولین اسلاید (معرفی): "
 
 #: views/admin/settings/shortcode-generator.php:14
 msgid "Use the options below to generate a proper \"Khanoumi Products Shortcode\" 👇"
 msgstr "با استفاده از گزینه‌ی زیر می‌توانید یک «شورتکد محصولات خانومی» بسازید 👇"
 
-#: views/admin/settings/shortcode-generator.php:95
+#: views/admin/settings/shortcode-generator.php:106
 msgid "Generate Shortcode"
 msgstr "تولید شورتکد"
 
 #. translators: %s: Khanoumi.com website link.
-#: views/admin/settings/shortcode-generator.php:105
+#: views/admin/settings/shortcode-generator.php:116
 msgid "Use this shortcode to display <a href=\"%s\" target=\"_blank\" rel=\"sponsored nofollow\">Khanoumi.com</a> products carousel anywhere on your website: "
 msgstr "با این شورتکد می‌توانید محصولات <a href=\"%s\" target=\"_blank\" rel=\"sponsored nofollow\">Khanoumi.com</a> را به صورت کروسل در همه جای وبسایت خود نمایش بدهید: "
 
-#: views/admin/settings/shortcode-generator.php:112
+#: views/admin/settings/shortcode-generator.php:123
 msgid "Copy"
 msgstr "کپی"
 
-#: views/admin/settings/shortcode-generator.php:117
+#: views/admin/settings/shortcode-generator.php:128
 msgid "Copied"
 msgstr "کپی شد"
 
-#: views/public/shortcodes/get-products-carousel.php:9
 #: views/public/shortcodes/get-products-carousel.php:10
+#: views/public/shortcodes/get-products-carousel.php:11
 msgid "Buy from Khanoumi"
 msgstr "از خانومی بخر"
 
-#: views/public/shortcodes/get-products-carousel.php:46
+#: views/public/shortcodes/get-products-carousel.php:48
 msgid "View and buy »"
 msgstr "مشاهده و خرید »"
 
-#: assets/blocks/slider/build/index.js:99 assets/blocks/slider/src/edit.js:53
-#: assets/blocks/slider/build/index.js:53
+#: assets/blocks/slider/build/index.js:100
+#: assets/blocks/slider/build/index.js:146 assets/blocks/slider/src/edit.js:53
+#: assets/blocks/slider/src/edit.js:96 assets/blocks/slider/build/index.js:53
+#: assets/blocks/slider/build/index.js:96
 msgid "Category"
 msgstr "دسته‌بندی"
 
-#: assets/blocks/slider/build/index.js:106 assets/blocks/slider/src/edit.js:59
-#: assets/blocks/slider/build/index.js:59
+#: assets/blocks/slider/build/index.js:107
+#: assets/blocks/slider/build/index.js:153 assets/blocks/slider/src/edit.js:59
+#: assets/blocks/slider/src/edit.js:102 assets/blocks/slider/build/index.js:59
+#: assets/blocks/slider/build/index.js:102
 msgid "Tag"
 msgstr "برچسب"
 
-#: assets/blocks/slider/build/index.js:113 assets/blocks/slider/src/edit.js:65
-#: assets/blocks/slider/build/index.js:65
+#: assets/blocks/slider/build/index.js:114
+#: assets/blocks/slider/build/index.js:160 assets/blocks/slider/src/edit.js:65
+#: assets/blocks/slider/src/edit.js:108 assets/blocks/slider/build/index.js:65
+#: assets/blocks/slider/build/index.js:108
 msgid "Brand"
 msgstr "برند"
 
-#: assets/blocks/slider/build/index.js:120 assets/blocks/slider/src/edit.js:71
-#: assets/blocks/slider/build/index.js:71
+#: assets/blocks/slider/build/index.js:121
+#: assets/blocks/slider/build/index.js:167 assets/blocks/slider/src/edit.js:71
+#: assets/blocks/slider/src/edit.js:114 assets/blocks/slider/build/index.js:71
+#: assets/blocks/slider/build/index.js:114
 msgid "Limit"
 msgstr "محدودیت"
 
-#: assets/blocks/slider/build/index.js:128 assets/blocks/slider/src/edit.js:78
-#: assets/blocks/slider/build/index.js:78
+#: assets/blocks/slider/build/index.js:129
+#: assets/blocks/slider/build/index.js:175 assets/blocks/slider/src/edit.js:78
+#: assets/blocks/slider/src/edit.js:121 assets/blocks/slider/build/index.js:78
+#: assets/blocks/slider/build/index.js:121
 msgid "Slider speed (milliseconds)"
 msgstr "سرعت اسلایدر (میلی‌ثانیه)"
 
-#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:87
-#: assets/blocks/slider/build/index.js:87
+#: assets/blocks/slider/build/index.js:137
+#: assets/blocks/slider/build/index.js:183 assets/blocks/slider/src/edit.js:85
+#: assets/blocks/slider/src/edit.js:128 assets/blocks/slider/build/index.js:85
+#: assets/blocks/slider/build/index.js:128
+msgid "Display first slide (introduction)"
+msgstr "نمایش اولین اسلاید (معرفی)"
+
+#: assets/blocks/slider/build/index.js:138
+#: assets/blocks/slider/build/index.js:184 assets/blocks/slider/src/edit.js:86
+#: assets/blocks/slider/src/edit.js:129 assets/blocks/slider/build/index.js:86
+#: assets/blocks/slider/build/index.js:129
+msgid "Adds an extra slide in the beginning of the product carousel."
+msgstr "یک اسلاید اضافی به ابتدای کروسل محصولات اضافه می‌کند."
+
+#: assets/blocks/slider/build/index.js:145 assets/blocks/slider/src/edit.js:94
+#: assets/blocks/slider/build/index.js:94
 msgid "A Khanoumi slider with these values will be shown here:"
 msgstr "یک اسلایدر خانومی در اینجا نمایش داده خواهد شد:"
-
-#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:88
-#: assets/blocks/slider/build/index.js:88
-msgid "Category:"
-msgstr "دسته‌بندی:"
-
-#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:89
-#: assets/blocks/slider/build/index.js:89
-msgid "Tag:"
-msgstr "برچسب:"
-
-#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:90
-#: assets/blocks/slider/build/index.js:90
-msgid "Brand:"
-msgstr "برند:"
-
-#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:91
-#: assets/blocks/slider/build/index.js:91
-msgid "Limit:"
-msgstr "محدودیت:"
-
-#: assets/blocks/slider/build/index.js:136 assets/blocks/slider/src/edit.js:92
-#: assets/blocks/slider/build/index.js:92
-msgid "Speed:"
-msgstr "سرعت:"
 
 #: assets/blocks/slider/build/block.json assets/blocks/slider/src/block.json
 msgctxt "block title"
@@ -257,3 +261,18 @@ msgstr "اسلیک"
 msgctxt "block description"
 msgid "Displays Khanoumi.com products as a slider."
 msgstr "محصولات سایت خانومی را به صورت اسلایدر نمایش می‌دهد."
+
+#~ msgid "Category:"
+#~ msgstr "دسته‌بندی:"
+
+#~ msgid "Tag:"
+#~ msgstr "برچسب:"
+
+#~ msgid "Brand:"
+#~ msgstr "برند:"
+
+#~ msgid "Limit:"
+#~ msgstr "محدودیت:"
+
+#~ msgid "Speed:"
+#~ msgstr "سرعت:"
