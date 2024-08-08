@@ -7,7 +7,7 @@ class ProductsHelper
 	/**
 	 * Returns Khanoumi products in carousel or grid form.
 	 *
-	 * @param	array	$args		An associative array of user defined arguments. Acceptable keys:
+	 * @param	array	$inputArgs	An associative array of user defined arguments. Acceptable keys:
 	 * 	- `display`		string		Accetable values are `carousel` and `grid`. Defaults to `carousel`.
 	 * 	- `category`	int			Defaults to 0.
 	 * 	- `tag`			int			Defaults to 0.
@@ -15,20 +15,20 @@ class ProductsHelper
 	 * 	- `limit`		int			Defaults to 10.
 	 * 	- `page`		int			Defaults to 1.
 	 * 	- `speed`		int			Slider speed in milliseconds. Only works when `$display` is equal to 'carousel'. Minimum 500 and default 3000.
-	 *  - `intro`		bool		Display first slide (introduction slide) in carousel. Defaults to true.
+	 *	- `intro`		bool		Display first slide (introduction slide) in carousel. Defaults to true.
 	 *
 	 * @return	string				The HTML code of the products view (or the error).
 	 */
-	public static function getProducts($args = [])
+	public static function getProducts($inputArgs = [])
 	{
-		$display  = !empty($args['display']) ? esc_attr($args['display']) : 'carousel';
-		$category = !empty($args['category']) ? intval($args['category']) : 0;
-		$tag      = !empty($args['tag']) ? intval($args['tag']) : 0;
-		$brand    = !empty($args['brand']) ? intval($args['brand']) : 0;
-		$limit    = !empty($args['limit']) ? intval($args['limit']) : 10;
-		$page     = !empty($args['page']) ? intval($args['page']) : 1;
-		$speed    = !empty($args['speed']) ? max(500, absint($args['speed'])) : 3000;
-		$intro    = isset($args['intro']) ? filter_var($args['intro'], FILTER_VALIDATE_BOOLEAN) : true;
+		$display  = !empty($inputArgs['display']) ? esc_attr($inputArgs['display']) : 'carousel';
+		$category = !empty($inputArgs['category']) ? intval($inputArgs['category']) : 0;
+		$tag      = !empty($inputArgs['tag']) ? intval($inputArgs['tag']) : 0;
+		$brand    = !empty($inputArgs['brand']) ? intval($inputArgs['brand']) : 0;
+		$limit    = !empty($inputArgs['limit']) ? intval($inputArgs['limit']) : 10;
+		$page     = !empty($inputArgs['page']) ? intval($inputArgs['page']) : 1;
+		$speed    = !empty($inputArgs['speed']) ? max(500, absint($inputArgs['speed'])) : 3000;
+		$intro    = isset($inputArgs['intro']) ? filter_var($inputArgs['intro'], FILTER_VALIDATE_BOOLEAN) : true;
 
 		$products = get_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}");
 		if (empty($products))
@@ -52,17 +52,24 @@ class ProductsHelper
 			set_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}", $products, 12 * HOUR_IN_SECONDS);
 		}
 
-		$output = $display === 'grid' ? KAPP()->view('public.shortcodes.get-products-grid', ['products' => $products['data']['products']['items']], false) : KAPP()->view('public.shortcodes.get-products-carousel', ['products' => $products['data']['products']['items'], 'speed' => $speed, 'intro' => $intro], false);
+		$outputArgs = [
+			'products' => $products['data']['products']['items'],
+			'speed' => $speed,
+			'intro' => $intro,
+		];
+		$output     = KAPP()->view($display === 'grid' ? 'public.shortcodes.get-products-grid' : 'public.shortcodes.get-products-carousel', $outputArgs, false);
 
 		/**
 		 * Filters the output of the `getProducts()` helper.
 		 *
 		 * @param	string	$output		Output HTML.
-		 * @param	array	$products	Products to display in the HTML.
-		 * @param	int		$speed		Carousel speed.
-		 * @param	array	$args		Input arguments (raw).
+		 * @param	array	$outputArgs	Output Arguments. Keys:
+	 	 * 	- `products`	array	Products to display in the HTML.
+	 	 * 	- `speed`		int		Slider speed in milliseconds.
+	 	 * 	- `intro`		bool	Display first slide (introduction slide) in carousel.
+		 * @param	array	$inputArgs		Input arguments (raw).
 		 */
-		return apply_filters('kapp_get_products_output', $output, $products['data']['products']['items'], $speed, $args);
+		return apply_filters('kapp_get_products_output', $output, $outputArgs, $inputArgs);
 	}
 
 	/**
