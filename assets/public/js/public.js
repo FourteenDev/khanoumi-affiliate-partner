@@ -4,7 +4,6 @@
 
 	function setProductsSlickCarousel($parentElement)
 	{
-		console.log($parentElement.find('.khanoumi-carousel__control-prev'));
 		var $slickArgs = {
 			rtl: true,
 			autoplay: false,
