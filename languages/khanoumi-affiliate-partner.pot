@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the Khanoumi Affiliate Partner Plugin plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
+"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.1.0\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-08T14:33:14+00:00\n"
+"POT-Creation-Date: 2024-08-09T21:12:09+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: khanoumi-affiliate-partner\n"
@@ -61,7 +61,7 @@ msgid "Khanoumi Affiliate"
 msgstr ""
 
 #: src/Setting.php:90
-#: src/Settings/Base.php:181
+#: src/Settings/Base.php:213
 #: assets/blocks/slider/build/index.js:98
 #: assets/blocks/slider/src/edit.js:51
 #: assets/blocks/slider/build/index.js:51
@@ -72,16 +72,104 @@ msgstr ""
 msgid "Deema Settings"
 msgstr ""
 
-#: src/Settings/MainSettings.php:60
+#: src/Settings/MainSettings.php:47
+msgid "Style Settings"
+msgstr ""
+
+#: src/Settings/MainSettings.php:61
 msgid "Deema General Link"
 msgstr ""
 
 #. translators: %s: Link to an article from Deema.agency.
-#: src/Settings/MainSettings.php:67
+#: src/Settings/MainSettings.php:68
 msgid ""
 "Use <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this guide</a> to find your Deema Affiliate general link. \n"
 "Note that you don't need to encode the link, just follow the first 3 steps and paste your general link here. \n"
 "If you leave this field empty, carousel products will have direct links to the Khanoumi website."
+msgstr ""
+
+#: src/Settings/MainSettings.php:76
+msgid "Carousel Primary Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:84
+msgid "Carousel Item Border Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:92
+msgid "Carousel Item Background Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:100
+msgid "Carousel Intro Title Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:105
+msgid "Color of the \"Buy from Khanoumi\" text."
+msgstr ""
+
+#: src/Settings/MainSettings.php:110
+msgid "Carousel Price Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:118
+msgid "Carousel Price Striked Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:123
+msgid "Color of the base price when there's a discount."
+msgstr ""
+
+#: src/Settings/MainSettings.php:128
+msgid "Carousel Price Discount Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:136
+msgid "Carousel Price Discount Background Color"
+msgstr ""
+
+#: src/Settings/MainSettings.php:141
+msgid "Background of discount boxes."
+msgstr ""
+
+#: src/Settings/MainSettings.php:146
+msgid "Carousel Vertical Padding"
+msgstr ""
+
+#: src/Settings/MainSettings.php:151
+msgid "Padding (px) from top and bottom of the carousel."
+msgstr ""
+
+#: src/Settings/MainSettings.php:156
+msgid "Carousel Horizontal Padding"
+msgstr ""
+
+#: src/Settings/MainSettings.php:161
+msgid "Padding (px) from left and right of the carousel."
+msgstr ""
+
+#: src/Settings/MainSettings.php:166
+msgid "Carousel Item Padding"
+msgstr ""
+
+#: src/Settings/MainSettings.php:171
+msgid "Padding (px) for items of the carousel."
+msgstr ""
+
+#: src/Settings/MainSettings.php:176
+msgid "Carousel Item Min Height"
+msgstr ""
+
+#: src/Settings/MainSettings.php:181
+msgid "Minimum height (px) for items of the carousel."
+msgstr ""
+
+#: src/Settings/MainSettings.php:186
+msgid "Carousel Item Max Height"
+msgstr ""
+
+#: src/Settings/MainSettings.php:191
+msgid "Maximum height (px) for items of the carousel."
 msgstr ""
 
 #: src/Settings/ShortcodeGeneratorSettings.php:29
@@ -169,12 +257,12 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: views/public/shortcodes/get-products-carousel.php:10
-#: views/public/shortcodes/get-products-carousel.php:11
+#: views/public/shortcodes/get-products-carousel.php:26
+#: views/public/shortcodes/get-products-carousel.php:27
 msgid "Buy from Khanoumi"
 msgstr ""
 
-#: views/public/shortcodes/get-products-carousel.php:48
+#: views/public/shortcodes/get-products-carousel.php:64
 msgid "View and buy »"
 msgstr ""
 

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
-"POT-Creation-Date: 2024-08-08T14:33:14+00:00\n"
-"PO-Revision-Date: 2024-08-08 14:36+0000\n"
+"POT-Creation-Date: 2024-08-09T21:12:09+00:00\n"
+"PO-Revision-Date: 2024-08-10 21:30+0000\n"
 "Last-Translator: Koorosh14 <97566920+Koorosh14@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -60,7 +60,7 @@ msgstr "تنظیمات افیلیت خانومی"
 msgid "Khanoumi Affiliate"
 msgstr "افیلیت خانومی"
 
-#: src/Setting.php:90 src/Settings/Base.php:181
+#: src/Setting.php:90 src/Settings/Base.php:213
 #: assets/blocks/slider/build/index.js:98 assets/blocks/slider/src/edit.js:51
 #: assets/blocks/slider/build/index.js:51
 msgid "Settings"
@@ -70,12 +70,16 @@ msgstr "تنظیمات"
 msgid "Deema Settings"
 msgstr "تنظیمات دیما"
 
-#: src/Settings/MainSettings.php:60
+#: src/Settings/MainSettings.php:47
+msgid "Style Settings"
+msgstr "تنظیمات استایل"
+
+#: src/Settings/MainSettings.php:61
 msgid "Deema General Link"
 msgstr "لینک عمومی دیما"
 
 #. translators: %s: Link to an article from Deema.agency.
-#: src/Settings/MainSettings.php:67
+#: src/Settings/MainSettings.php:68
 msgid ""
 "Use <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this guide</a> to find your Deema Affiliate general link. \n"
 "Note that you don't need to encode the link, just follow the first 3 steps and paste your general link here. \n"
@@ -84,6 +88,90 @@ msgstr ""
 "با استفاده از <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">این آموزش</a> می‌توانید لینک عمومی دیما افیلیت خود را پیدا کنید. \n"
 "دقت داشته باشید که نیاز نیست لینک را انکد کنید، فقط 3 مرحله‌ی اول آموزش را طی کرده و لینک عمومی خود را اینجا وارد کنید. \n"
 "اگر این فیلد را خالی بگذارید، محصولات کروسل لینک مستقیم به سایت خانومی خواهند داشت."
+
+#: src/Settings/MainSettings.php:76
+msgid "Carousel Primary Color"
+msgstr "رنگ اصلی کروسل"
+
+#: src/Settings/MainSettings.php:84
+msgid "Carousel Item Border Color"
+msgstr "رنگ حاشیه‌ی آیتم‌های کروسل"
+
+#: src/Settings/MainSettings.php:92
+msgid "Carousel Item Background Color"
+msgstr "رنگ پس‌زمینه‌ی آیتم‌های کروسل"
+
+#: src/Settings/MainSettings.php:100
+msgid "Carousel Intro Title Color"
+msgstr "رنگ متن معرفی کروسل"
+
+#: src/Settings/MainSettings.php:105
+msgid "Color of the \"Buy from Khanoumi\" text."
+msgstr "رنگ متن «از خانومی بخر»."
+
+#: src/Settings/MainSettings.php:110
+msgid "Carousel Price Color"
+msgstr "رنگ قیمت‌های کروسل"
+
+#: src/Settings/MainSettings.php:118
+msgid "Carousel Price Striked Color"
+msgstr "رنگ قیمت‌های خط خورده‌ی کروسل"
+
+#: src/Settings/MainSettings.php:123
+msgid "Color of the base price when there's a discount."
+msgstr "رنگ قیمت پایه وقتی محصول تخفیف دارد."
+
+#: src/Settings/MainSettings.php:128
+msgid "Carousel Price Discount Color"
+msgstr "رنگ قیمت تخفیف کروسل"
+
+#: src/Settings/MainSettings.php:136
+msgid "Carousel Price Discount Background Color"
+msgstr "رنگ پس‌زمینه‌ی قیمت تخفیف کروسل"
+
+#: src/Settings/MainSettings.php:141
+msgid "Background of discount boxes."
+msgstr "پس‌زمینه‌ی باکس‌های تخفیف."
+
+#: src/Settings/MainSettings.php:146
+msgid "Carousel Vertical Padding"
+msgstr "پدینگ عمودی کروسل"
+
+#: src/Settings/MainSettings.php:151
+msgid "Padding (px) from top and bottom of the carousel."
+msgstr "فاصله‌ی داخلی (به پیکسل) از بالا و پایین کروسل."
+
+#: src/Settings/MainSettings.php:156
+msgid "Carousel Horizontal Padding"
+msgstr "پدینگ افقی کروسل"
+
+#: src/Settings/MainSettings.php:161
+msgid "Padding (px) from left and right of the carousel."
+msgstr "فاصله‌ی داخلی (به پیکسل) از چپ و راست کروسل."
+
+#: src/Settings/MainSettings.php:166
+msgid "Carousel Item Padding"
+msgstr "پدینگ آیتم‌های کروسل"
+
+#: src/Settings/MainSettings.php:171
+msgid "Padding (px) for items of the carousel."
+msgstr "فاصله‌ی داخلی (به پیکسل) آیتم‌های کروسل."
+
+#: src/Settings/MainSettings.php:176
+msgid "Carousel Item Min Height"
+msgstr "حداقل ارتفاع آیتم‌های کروسل"
+
+#: src/Settings/MainSettings.php:181
+msgid "Minimum height (px) for items of the carousel."
+msgstr "حداقل ارتفاع (به پیکسل) آیتم‌های کروسل."
+
+#: src/Settings/MainSettings.php:186
+msgid "Carousel Item Max Height"
+msgstr "حداکثر ارتفاع آیتم‌های کروسل"
+
+#: src/Settings/MainSettings.php:191
+msgid "Maximum height (px) for items of the carousel."
+msgstr "حداکثر ارتفاع (به پیکسل) آیتم‌های کروسل."
 
 #: src/Settings/ShortcodeGeneratorSettings.php:29
 #: src/Settings/ShortcodeGeneratorSettings.php:30
@@ -169,12 +257,12 @@ msgstr "کپی"
 msgid "Copied"
 msgstr "کپی شد"
 
-#: views/public/shortcodes/get-products-carousel.php:10
-#: views/public/shortcodes/get-products-carousel.php:11
+#: views/public/shortcodes/get-products-carousel.php:26
+#: views/public/shortcodes/get-products-carousel.php:27
 msgid "Buy from Khanoumi"
 msgstr "از خانومی بخر"
 
-#: views/public/shortcodes/get-products-carousel.php:48
+#: views/public/shortcodes/get-products-carousel.php:64
 msgid "View and buy »"
 msgstr "مشاهده و خرید »"
 
