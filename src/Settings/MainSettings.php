@@ -141,6 +141,56 @@ class MainSettings extends Base
 					'description' => esc_html__('Background of discount boxes.', 'khanoumi-affiliate-partner'),
 				],
 			],
+			'carousel_vertical_padding' => [
+				'id'      => 'carousel_vertical_padding',
+				'label'   => esc_html__('Carousel Vertical Padding', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'number',
+				'default' => 16,
+				'args'    => [
+					'description' => esc_html__('Padding (px) from top and bottom of the carousel.', 'khanoumi-affiliate-partner'),
+				],
+			],
+			'carousel_horizontal_padding' => [
+				'id'      => 'carousel_horizontal_padding',
+				'label'   => esc_html__('Carousel Horizontal Padding', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'number',
+				'default' => 8,
+				'args'    => [
+					'description' => esc_html__('Padding (px) from left and right of the carousel.', 'khanoumi-affiliate-partner'),
+				],
+			],
+			'carousel_item_padding' => [
+				'id'      => 'carousel_item_padding',
+				'label'   => esc_html__('Carousel Item Padding', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'number',
+				'default' => 8,
+				'args'    => [
+					'description' => esc_html__('Padding (px) for items of the carousel.', 'khanoumi-affiliate-partner'),
+				],
+			],
+			'carousel_item_min_height' => [
+				'id'      => 'carousel_item_min_height',
+				'label'   => esc_html__('Carousel Item Min Height', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'number',
+				'default' => 200,
+				'args'    => [
+					'description' => esc_html__('Minimum height (px) for items of the carousel.', 'khanoumi-affiliate-partner'),
+				],
+			],
+			'carousel_item_max_height' => [
+				'id'      => 'carousel_item_max_height',
+				'label'   => esc_html__('Carousel Item Max Height', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'number',
+				'default' => 400,
+				'args'    => [
+					'description' => esc_html__('Maximum height (px) for items of the carousel.', 'khanoumi-affiliate-partner'),
+				],
+			],
 		]);
 	}
 }

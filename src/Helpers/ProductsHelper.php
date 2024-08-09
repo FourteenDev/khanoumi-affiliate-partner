@@ -65,6 +65,11 @@ class ProductsHelper
 				'--kappCarouselPriceStrikedColor'            => esc_attr(KAPP()->option('carousel_price_striked_color')),
 				'--kappCarouselPriceDiscountColor'           => esc_attr(KAPP()->option('carousel_price_discount_color')),
 				'--kappCarouselPriceDiscountBackgroundColor' => esc_attr(KAPP()->option('carousel_price_discount_background_color')),
+				'--kappCarouselVerticalPadding'              => intval(KAPP()->option('carousel_vertical_padding')) ? intval(KAPP()->option('carousel_vertical_padding')) . 'px' : '',
+				'--kappCarouselHorizontalPadding'            => intval(KAPP()->option('carousel_horizontal_padding')) ? intval(KAPP()->option('carousel_horizontal_padding')) . 'px' : '',
+				'--kappCarouselItemPadding'                  => intval(KAPP()->option('carousel_item_padding')) ? intval(KAPP()->option('carousel_item_padding')) . 'px' : '',
+				'--kappCarouselItemMinHeight'                => intval(KAPP()->option('carousel_item_min_height')) ? intval(KAPP()->option('carousel_item_min_height')) . 'px' : '',
+				'--kappCarouselItemMaxHeight'                => intval(KAPP()->option('carousel_item_max_height')) ? intval(KAPP()->option('carousel_item_max_height')) . 'px' : '',
 			]
 		];
 		$output     = KAPP()->view($display === 'grid' ? 'public.shortcodes.get-products-grid' : 'public.shortcodes.get-products-carousel', $outputArgs, false);
