@@ -3,6 +3,13 @@
 /*************/
 :root {
 	--kappCarouselPrimaryColor: #DB2777;
+	--kappCarouselItemBorderColor: #E5E5E5;
+	--kappCarouselItemBackgroundColor: #FFFFFF;
+	--kappCarouselIntroTitleColor: #FFFFFF;
+	--kappCarouselPriceColor: #000000;
+	--kappCarouselPriceStrikedColor: #A3A3A3;
+	--kappCarouselPriceDiscountColor: #FFFFFF;
+	--kappCarouselPriceDiscountBackgroundColor: #E11D48;
 }
 
 /************/
@@ -37,9 +44,9 @@
 	padding: 8px;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid #e5e5e5;
+	border: 1px solid var(--kappCarouselItemBorder);
 	border-radius: 4px;
-	background-color: #FFF;
+	background-color: var(--kappCarouselItemBackgroundColor);
 }
 
 .khanoumi-carousel .khanoumi-carousel-intro {
@@ -51,7 +58,7 @@
 }
 
 .khanoumi-carousel .khanoumi-carousel-intro--title {
-	color: #FFF;
+	color: var(--kappCarouselIntroTitleColor);
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -113,6 +120,7 @@
 .khanoumi-carousel__item-price {
 	display: inline-grid;
 	margin: 0;
+	color: var(--kappCarouselPriceColor);
 	grid-template: auto / auto;
 	column-gap: 4px;
 	align-self: flex-end;
@@ -123,17 +131,17 @@
 
 .khanoumi-carousel__item-price > span.khanoumi-carousel__item-base-price {
 	grid-column: span 3 / span 2;
-	color: #a3a3a3;
+	color: var(--kappCarouselPriceStrikedColor);
 	text-decoration-line: line-through;
 	font-weight: normal;
 }
 
 .khanoumi-carousel__item-price > span.khanoumi-carousel__item-discount-percent {
 	padding: 0px 3px;
-	color: white;
+	color: var(--kappCarouselPriceDiscountColor);
 	font-weight: normal;
 	border-radius: 4px;
-	background-color: #e11d48;
+	background-color: var(--kappCarouselPriceDiscountBackgroundColor);
 }
 
 .khanoumi-carousel__item-price svg {
@@ -161,11 +169,11 @@
 	height: 32px;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid #d4d4d4;
+	border: 1px solid #D4D4D4;
 	border-radius: 6px;
 	transform: translateY(-50%);
 	transition: 0.2s ease-in;
-	background-color: #e5e5e572;
+	background-color: #E5E5E572;
 	cursor: pointer;
 	visibility: visible;
 	opacity: 1;

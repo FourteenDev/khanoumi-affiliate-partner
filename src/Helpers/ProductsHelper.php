@@ -57,7 +57,14 @@ class ProductsHelper
 			'speed'    => $speed,
 			'intro'    => $intro,
 			'colors'   => [
-				'--kappCarouselPrimaryColor' => esc_attr(KAPP()->option('carousel_primary_color')),
+				'--kappCarouselPrimaryColor'                 => esc_attr(KAPP()->option('carousel_primary_color')),
+				'--kappCarouselItemBorderColor'              => esc_attr(KAPP()->option('carousel_item_border_color')),
+				'--kappCarouselItemBackgroundColor'          => esc_attr(KAPP()->option('carousel_item_background_color')),
+				'--kappCarouselIntroTitleColor'              => esc_attr(KAPP()->option('carousel_intro_title_color')),
+				'--kappCarouselPriceColor'                   => esc_attr(KAPP()->option('carousel_price_color')),
+				'--kappCarouselPriceStrikedColor'            => esc_attr(KAPP()->option('carousel_price_striked_color')),
+				'--kappCarouselPriceDiscountColor'           => esc_attr(KAPP()->option('carousel_price_discount_color')),
+				'--kappCarouselPriceDiscountBackgroundColor' => esc_attr(KAPP()->option('carousel_price_discount_background_color')),
 			]
 		];
 		$output     = KAPP()->view($display === 'grid' ? 'public.shortcodes.get-products-grid' : 'public.shortcodes.get-products-carousel', $outputArgs, false);

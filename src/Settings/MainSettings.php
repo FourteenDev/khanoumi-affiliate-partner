@@ -79,6 +79,68 @@ class MainSettings extends Base
 				'default' => '#DB2777',
 				'args'    => [],
 			],
+			'carousel_item_border_color' => [
+				'id'      => 'carousel_item_border_color',
+				'label'   => esc_html__('Carousel Item Border Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#E5E5E5',
+				'args'    => [],
+			],
+			'carousel_item_background_color' => [
+				'id'      => 'carousel_item_background_color',
+				'label'   => esc_html__('Carousel Item Background Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#FFFFFF',
+				'args'    => [],
+			],
+			'carousel_intro_title_color' => [
+				'id'      => 'carousel_intro_title_color',
+				'label'   => esc_html__('Carousel Intro Title Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#FFFFFF',
+				'args'    => [
+					'description' => esc_html__('Color of the "Buy from Khanoumi" text.', 'khanoumi-affiliate-partner'),
+				],
+			],
+			'carousel_price_color' => [
+				'id'      => 'carousel_price_color',
+				'label'   => esc_html__('Carousel Price Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#000000',
+				'args'    => [],
+			],
+			'carousel_price_striked_color' => [
+				'id'      => 'carousel_price_striked_color',
+				'label'   => esc_html__('Carousel Price Striked Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#A3A3A3',
+				'args'    => [
+					'description' => esc_html__('Color of the base price when there\'s a discount.', 'khanoumi-affiliate-partner'),
+				],
+			],
+			'carousel_price_discount_color' => [
+				'id'      => 'carousel_price_discount_color',
+				'label'   => esc_html__('Carousel Price Discount Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#FFFFFF',
+				'args'    => [],
+			],
+			'carousel_price_discount_background_color' => [
+				'id'      => 'carousel_price_discount_background_color',
+				'label'   => esc_html__('Carousel Price Discount Background Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#E11D48',
+				'args'    => [
+					'description' => esc_html__('Background of discount boxes.', 'khanoumi-affiliate-partner'),
+				],
+			],
 		]);
 	}
 }
