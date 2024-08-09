@@ -18,4 +18,9 @@
 			}, 2500);
 		});
 	}
+
+	/*****************/
+	/* Color pickers */
+	/*****************/
+	$('.kapp-color-picker').each(function() { $(this).wpColorPicker(); });
 })(jQuery);

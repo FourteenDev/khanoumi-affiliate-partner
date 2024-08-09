@@ -44,6 +44,7 @@ class MainSettings extends Base
 	{
 		return apply_filters('kapp_settings_main_tabs', [
 			'deema' => esc_html__('Deema Settings', 'khanoumi-affiliate-partner'),
+			'style' => esc_html__('Style Settings', 'khanoumi-affiliate-partner'),
 		]);
 	}
 
@@ -68,6 +69,15 @@ class MainSettings extends Base
 						esc_url('https://deema.agency/?p=20332')
 					),
 				],
+			],
+
+			'carousel_primary_color' => [
+				'id'      => 'carousel_primary_color',
+				'label'   => esc_html__('Carousel Primary Color', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'colorPicker',
+				'default' => '#DB2777',
+				'args'    => [],
 			],
 		]);
 	}

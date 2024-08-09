@@ -21,15 +21,24 @@ class Asset
 	/**
 	 * Enqueues admin styles and scripts.
 	 *
+	 * @param	string	$hookSuffix		Current admin page.
+	 *
 	 * @return	void
 	 *
 	 * @hooked	action: `admin_enqueue_scripts` - 10
 	 */
-	public function enqueueAdminScripts()
+	public function enqueueAdminScripts($hookSuffix)
 	{
 		wp_enqueue_style('kapp_admin', KAPP()->url('assets/admin/css/admin.css'), [], KAPP_VERSION);
 
-		wp_enqueue_script('kapp_admin', KAPP()->url('assets/admin/js/admin.js'), ['jquery'], KAPP_VERSION, true);
+		$dependencies = ['jquery'];
+		if ($hookSuffix === 'toplevel_page_kapp_settings')
+		{
+			wp_enqueue_style('wp-color-picker');
+			$dependencies[] = 'wp-color-picker';
+		}
+
+		wp_enqueue_script('kapp_admin', KAPP()->url('assets/admin/js/admin.js'), $dependencies, KAPP_VERSION, true);
 	}
 
 	/**

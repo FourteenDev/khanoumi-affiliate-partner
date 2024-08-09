@@ -145,6 +145,21 @@ abstract class Base
 	}
 
 	/**
+	 * Outputs a color picker field.
+	 *
+	 * @param	array	$args
+	 *
+	 * @return	string
+	 */
+	public function colorPickerFieldCallback($args)
+	{
+		$id = !empty($args['id']) ? $args['id'] : '';
+		if (empty($id)) return;
+
+		KAPP()->view('admin.settings.fields.color-picker', $this->getSettingsValue($id, $args));
+	}
+
+	/**
 	 * Returns field's value.
 	 *
 	 * @param	string	$key
