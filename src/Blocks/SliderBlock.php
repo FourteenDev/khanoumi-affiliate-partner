@@ -30,6 +30,8 @@ class SliderBlock
 	public function register()
 	{
 		register_block_type(KAPP()->dir('assets/blocks/slider/build'));
+
+		wp_set_script_translations(self::$handle . '-editor-script', 'khanoumi-affiliate-partner', path_join(basename(KAPP_DIR), 'languages'));
 	}
 
 	/**

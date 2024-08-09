@@ -19,6 +19,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Changed
 - Updated block's placeholder output in editor.
 - Renamed shortcode attributes: show => display, cat => category.
+### Fixed
+- Gutenberg block's translations.
 
 [Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.1.0...main
 [v1.1.0]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.1.0
