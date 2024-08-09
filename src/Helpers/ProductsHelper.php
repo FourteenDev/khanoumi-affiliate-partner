@@ -54,8 +54,11 @@ class ProductsHelper
 
 		$outputArgs = [
 			'products' => $products['data']['products']['items'],
-			'speed' => $speed,
-			'intro' => $intro,
+			'speed'    => $speed,
+			'intro'    => $intro,
+			'colors'   => [
+				'--kappCarouselPrimaryColor' => esc_attr(KAPP()->option('carousel_primary_color')),
+			]
 		];
 		$output     = KAPP()->view($display === 'grid' ? 'public.shortcodes.get-products-grid' : 'public.shortcodes.get-products-carousel', $outputArgs, false);
 
@@ -67,6 +70,7 @@ class ProductsHelper
 	 	 * 	- `products`	array	Products to display in the HTML.
 	 	 * 	- `speed`		int		Slider speed in milliseconds.
 	 	 * 	- `intro`		bool	Display first slide (introduction slide) in carousel.
+	 	 * 	- `colors`		array	Colors used in the carousel.
 		 * @param	array	$inputArgs		Input arguments (raw).
 		 */
 		return apply_filters('kapp_get_products_output', $output, $outputArgs, $inputArgs);

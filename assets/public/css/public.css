@@ -1,3 +1,10 @@
+/*************/
+/* Variables */
+/*************/
+:root {
+	--kappCarouselPrimaryColor: #DB2777;
+}
+
 /************/
 /* Carousel */
 /************/
@@ -6,7 +13,7 @@
 	position: relative;
 	padding: 16px 8px;
 	border-radius: 4px;
-	background-color: #db2777;
+	background-color: var(--kappCarouselPrimaryColor);
 }
 
 .khanoumi-carousel__content {
@@ -40,7 +47,7 @@
 	align-items: center;
 	justify-content: center;
 	border-color: transparent;
-	background-color: #db2777;
+	background-color: var(--kappCarouselPrimaryColor);
 }
 
 .khanoumi-carousel .khanoumi-carousel-intro--title {
