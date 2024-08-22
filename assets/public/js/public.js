@@ -6,7 +6,7 @@
 	{
 		var $slickArgs = {
 			rtl: true,
-			autoplay: false,
+			autoplay: true,
 			infinite: false,
 			dots: false,
 			autoplaySpeed: $parentElement.data('speed') !== undefined ? $parentElement.data('speed') : 3000,
