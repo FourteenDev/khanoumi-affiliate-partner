@@ -5,6 +5,15 @@ namespace KhanoumiAffiliatePartner\Helpers;
 class ProductsHelper
 {
 	/**
+	 * Prevents `$outputArgs` from sending `colors` parameter to the carousel view.
+	 *
+	 * This way if there are multiple carousels in one page, we won't print multiple/similar `<style>` tags.
+	 *
+	 * @var	boolean
+	 */
+	private static $areCustomStylesPrintedOnce = false;
+
+	/**
 	 * Returns Khanoumi products in carousel or grid form.
 	 *
 	 * @param	array	$inputArgs	An associative array of user defined arguments. Acceptable keys:
@@ -55,27 +64,32 @@ class ProductsHelper
 			set_transient("khanoumi_products_{$category}_{$tag}_{$brand}_{$limit}_{$page}", $products, 12 * HOUR_IN_SECONDS);
 		}
 
+		// Print a `<style>` element with user's custom colors (if it's not printed once)
+		$colors = !self::$areCustomStylesPrintedOnce ? [
+			'--kappCarouselPrimaryColor'                 => esc_attr(KAPP()->option('carousel_primary_color')),
+			'--kappCarouselItemBorderColor'              => esc_attr(KAPP()->option('carousel_item_border_color')),
+			'--kappCarouselItemBackgroundColor'          => esc_attr(KAPP()->option('carousel_item_background_color')),
+			'--kappCarouselIntroTitleColor'              => esc_attr(KAPP()->option('carousel_intro_title_color')),
+			'--kappCarouselPriceColor'                   => esc_attr(KAPP()->option('carousel_price_color')),
+			'--kappCarouselPriceStrikedColor'            => esc_attr(KAPP()->option('carousel_price_striked_color')),
+			'--kappCarouselPriceDiscountColor'           => esc_attr(KAPP()->option('carousel_price_discount_color')),
+			'--kappCarouselPriceDiscountBackgroundColor' => esc_attr(KAPP()->option('carousel_price_discount_background_color')),
+			'--kappCarouselVerticalPadding'              => intval(KAPP()->option('carousel_vertical_padding')) ? intval(KAPP()->option('carousel_vertical_padding')) . 'px' : '',
+			'--kappCarouselHorizontalPadding'            => intval(KAPP()->option('carousel_horizontal_padding')) ? intval(KAPP()->option('carousel_horizontal_padding')) . 'px' : '',
+			'--kappCarouselItemPadding'                  => intval(KAPP()->option('carousel_item_padding')) ? intval(KAPP()->option('carousel_item_padding')) . 'px' : '',
+			'--kappCarouselItemMinHeight'                => intval(KAPP()->option('carousel_item_min_height')) ? intval(KAPP()->option('carousel_item_min_height')) . 'px' : '',
+			'--kappCarouselItemMaxHeight'                => intval(KAPP()->option('carousel_item_max_height')) ? intval(KAPP()->option('carousel_item_max_height')) . 'px' : '',
+		] : [];
+
 		$outputArgs = [
 			'products' => $products['data']['products']['items'],
 			'speed'    => $speed,
 			'intro'    => $intro,
-			'colors'   => [
-				'--kappCarouselPrimaryColor'                 => esc_attr(KAPP()->option('carousel_primary_color')),
-				'--kappCarouselItemBorderColor'              => esc_attr(KAPP()->option('carousel_item_border_color')),
-				'--kappCarouselItemBackgroundColor'          => esc_attr(KAPP()->option('carousel_item_background_color')),
-				'--kappCarouselIntroTitleColor'              => esc_attr(KAPP()->option('carousel_intro_title_color')),
-				'--kappCarouselPriceColor'                   => esc_attr(KAPP()->option('carousel_price_color')),
-				'--kappCarouselPriceStrikedColor'            => esc_attr(KAPP()->option('carousel_price_striked_color')),
-				'--kappCarouselPriceDiscountColor'           => esc_attr(KAPP()->option('carousel_price_discount_color')),
-				'--kappCarouselPriceDiscountBackgroundColor' => esc_attr(KAPP()->option('carousel_price_discount_background_color')),
-				'--kappCarouselVerticalPadding'              => intval(KAPP()->option('carousel_vertical_padding')) ? intval(KAPP()->option('carousel_vertical_padding')) . 'px' : '',
-				'--kappCarouselHorizontalPadding'            => intval(KAPP()->option('carousel_horizontal_padding')) ? intval(KAPP()->option('carousel_horizontal_padding')) . 'px' : '',
-				'--kappCarouselItemPadding'                  => intval(KAPP()->option('carousel_item_padding')) ? intval(KAPP()->option('carousel_item_padding')) . 'px' : '',
-				'--kappCarouselItemMinHeight'                => intval(KAPP()->option('carousel_item_min_height')) ? intval(KAPP()->option('carousel_item_min_height')) . 'px' : '',
-				'--kappCarouselItemMaxHeight'                => intval(KAPP()->option('carousel_item_max_height')) ? intval(KAPP()->option('carousel_item_max_height')) . 'px' : '',
-			]
+			'colors'   => $colors
 		];
 		$output     = KAPP()->view($display === 'grid' ? 'public.shortcodes.get-products-grid' : 'public.shortcodes.get-products-carousel', $outputArgs, false);
+
+		if ($display !== 'grid') self::$areCustomStylesPrintedOnce = true;
 
 		/**
 		 * Filters the output of the `getProducts()` helper.
