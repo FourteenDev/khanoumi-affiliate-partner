@@ -13,7 +13,7 @@ class FiltersHelper
 	 */
 	public static function getAllBrands()
 	{
-		return self::getLocalResourceFile('brands');
+		return self::sortByKey(self::getLocalResourceFile('brands'), 'name_per');
 	}
 
 	/**
@@ -25,7 +25,7 @@ class FiltersHelper
 	 */
 	public static function getAllCategories()
 	{
-		return self::getLocalResourceFile('categories');
+		return self::sortByKey(self::getLocalResourceFile('categories'), 'name');
 	}
 
 	/**
@@ -37,13 +37,13 @@ class FiltersHelper
 	 */
 	public static function getAllTags()
 	{
-		return self::getLocalResourceFile('tags');
+		return self::sortByKey(self::getLocalResourceFile('tags'), 'name');
 	}
 
 	/**
 	 * Returns the local resource JSON file as an associative array.
 	 *
-	 * @param	$fileName	File name without `resources/` in the beginning and the `.json` in the end.
+	 * @param	string	$fileName	File name without `resources/` in the beginning and the `.json` in the end.
 	 *
 	 * @return	array
 	 *
@@ -66,5 +66,31 @@ class FiltersHelper
 		}
 
 		return $result;
+	}
+
+	/**
+	 * Sorts (Ascending) the given associative array by the selected key.
+	 *
+	 * @param	array	$array
+	 * @param	string	$key	Key to sort the array based on.
+	 *
+	 * @return	array			Sorted array.
+	 */
+	private static function sortByKey($array, $key)
+	{
+		uasort($array, function ($a, $b) use ($key) {
+            if (!isset($a[$key])) {
+                return -1;
+            }
+			if (!isset($b[$key])) {
+                return 1;
+            }
+
+            return $a[$key] <=> $b[$key];
+        });
+
+		// uasort will add an extra **string** key to each item (which shows their old index before sorting)
+		// Let's remove them since they'll cause issues in JS (in .map() function)
+		return array_values($array);
 	}
 }
