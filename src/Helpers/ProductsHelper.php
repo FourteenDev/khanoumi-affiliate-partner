@@ -36,11 +36,14 @@ class ProductsHelper
 			$products = self::fetchProductsViaAPI($category, $tag, $brand, $limit, $page);
 			if (empty($products)) return __('No products were found!', 'khanoumi-affiliate-partner');
 
-			if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']) || empty($products['data']['products']['items']))
+			if (empty($products['isSuccess']) || empty($products['data']) || empty($products['data']['products']))
 			{
 				error_log(print_r($products, true));
 				return __('Invalid products! See log file for more details.', 'khanoumi-affiliate-partner');
 			}
+
+			if (empty($products['data']['products']['items']))
+				return __('No products found with the given filters.', 'khanoumi-affiliate-partner');
 
 			$products = DeemaHelper::addProductLinksToApiResponse($products);
 			if (empty($products))
