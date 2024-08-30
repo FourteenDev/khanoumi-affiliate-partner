@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the Khanoumi Affiliate Partner Plugin plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.1.0\n"
+"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.1.1\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-08-09T21:12:09+00:00\n"
+"POT-Creation-Date: 2024-08-30T23:14:45+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: khanoumi-affiliate-partner\n"
@@ -38,15 +38,19 @@ msgstr ""
 msgid "https://Fourteen.dev/"
 msgstr ""
 
-#: src/Helpers/ProductsHelper.php:37
+#: src/Helpers/ProductsHelper.php:46
 msgid "No products were found!"
 msgstr ""
 
-#: src/Helpers/ProductsHelper.php:42
+#: src/Helpers/ProductsHelper.php:51
 msgid "Invalid products! See log file for more details."
 msgstr ""
 
-#: src/Helpers/ProductsHelper.php:49
+#: src/Helpers/ProductsHelper.php:55
+msgid "No products found with the given filters."
+msgstr ""
+
+#: src/Helpers/ProductsHelper.php:61
 msgid "Unable to process products! See log file for more details."
 msgstr ""
 

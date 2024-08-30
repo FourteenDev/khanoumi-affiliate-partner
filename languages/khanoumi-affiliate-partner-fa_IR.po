@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
-"POT-Creation-Date: 2024-08-09T21:12:09+00:00\n"
-"PO-Revision-Date: 2024-08-10 21:30+0000\n"
+"POT-Creation-Date: 2024-08-30T23:14:45+00:00\n"
+"PO-Revision-Date: 2024-08-31 02:46+0330\n"
 "Last-Translator: Koorosh14 <97566920+Koorosh14@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -40,15 +40,19 @@ msgstr "Fourteen Development"
 msgid "https://Fourteen.dev/"
 msgstr "https://Fourteen.dev/"
 
-#: src/Helpers/ProductsHelper.php:37
+#: src/Helpers/ProductsHelper.php:46
 msgid "No products were found!"
 msgstr "محصولی پیدا نشد!"
 
-#: src/Helpers/ProductsHelper.php:42
+#: src/Helpers/ProductsHelper.php:51
 msgid "Invalid products! See log file for more details."
 msgstr "محصولات نامعتبر هستند! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
 
-#: src/Helpers/ProductsHelper.php:49
+#: src/Helpers/ProductsHelper.php:55
+msgid "No products found with the given filters."
+msgstr "محصولی بر اساس فیلترهای اعمال شده پیدا نشد."
+
+#: src/Helpers/ProductsHelper.php:61
 msgid "Unable to process products! See log file for more details."
 msgstr "خطا در پردازش محصولات! برای جزییات بیشتر، فایل لاگ سرور را مشاهده کنید."
 
