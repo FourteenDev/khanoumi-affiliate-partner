@@ -7,7 +7,7 @@
 		var $slickArgs = {
 			rtl: true,
 			autoplay: true,
-			infinite: false,
+			infinite: true,
 			dots: false,
 			autoplaySpeed: $parentElement.data('speed') !== undefined ? $parentElement.data('speed') : 3000,
 			slidesToShow: 4,
@@ -22,7 +22,7 @@
 					settings: {
 						slidesToShow: 3,
 						slidesToScroll: 3,
-						infinite: false,
+						infinite: true,
 						dots: false,
 					}
 				},
@@ -31,7 +31,7 @@
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
-						infinite: false,
+						infinite: true,
 						dots: false,
 					}
 				}
