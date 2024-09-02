@@ -4,6 +4,15 @@
 	{
 		$('.khanoumi-carousel').each(function() { setProductsSlickCarousel($(this)) });
 
+		// Elementor preview mode
+		if (typeof elementorFrontend != 'undefined' && typeof elementorFrontend.hooks != 'undefined')
+		{
+			elementorFrontend.hooks.addAction('frontend/element_ready/kapp_products_carousel.default', function($scope)
+			{
+				$scope.find('.khanoumi-carousel').each(function() { setProductsSlickCarousel($(this)) });
+			});
+		}
+
 		function setProductsSlickCarousel($parentElement)
 		{
 			var $slickArgs = {
