@@ -2,6 +2,7 @@
 
 namespace KhanoumiAffiliatePartner;
 
+use KhanoumiAffiliatePartner\Widgets\ElementorCarouselWidget;
 use KhanoumiAffiliatePartner\Widgets\ProductsCarouselWidget;
 
 class Widget
@@ -17,5 +18,19 @@ class Widget
 	public function __construct()
 	{
 		new ProductsCarouselWidget();
+
+		add_action('elementor/widgets/register', [$this, 'registerElementorWidget']);
+	}
+
+	/**
+	 * Registers Elementor carousel widget.
+	 *
+	 * @param	\Elementor\Widgets_Manager	$widgetsManager		Elementor widgets manager.
+	 *
+	 * @return	void
+	 */
+	public function registerElementorWidget($widgetsManager)
+	{
+		$widgetsManager->register(new ElementorCarouselWidget());
 	}
 }
