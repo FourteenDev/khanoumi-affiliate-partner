@@ -1,5 +1,5 @@
 # Khanoumi Affiliate Partner Plugin
-`v1.1.1` ([Changelog](CHANGELOG.md))
+`v1.2.0` ([Changelog](CHANGELOG.md))
 
 Fetch [Khanoumi](https://Khanoumi.com/) products and display them in your WordPress website.
 
@@ -8,10 +8,14 @@ Fetch [Khanoumi](https://Khanoumi.com/) products and display them in your WordPr
 
 ![Gutenberg Block](screenshots/gutenberg-block.png)
 
+- With an Elementor widget: 
+
+![Widget](screenshots/elementor-widget.png)
+
 - With a shortcode: 
 
 ![Shortcode](screenshots/shortcode-generator.png)
 
-- With the classic widget: 
+- With a classic WP widget: 
 
 ![Widget](screenshots/classic-widget.png)

@@ -11,6 +11,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 ### Security
 
+## [v1.2.0] - 2024-09-04
+### Added
+- Added Elementor widget.
+### Fixed
+- Fixed Slick's missing `ajax-loader.gif`.
+
 ## [v1.1.1] - 2024-08-31
 ### Added
 - Added IranSansX font to carousel.
@@ -33,6 +39,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 - Fixed Gutenberg block's translations.
 
-[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.1.1...main
+[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.2.0...main
+[v1.2.0]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.0
 [v1.1.1]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.1.1
 [v1.1.0]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.1.0
