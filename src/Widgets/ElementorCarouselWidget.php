@@ -27,6 +27,16 @@ class ElementorCarouselWidget extends \Elementor\Widget_Base
 	}
 
 	/**
+	 * Returns widget icon.
+	 *
+	 * @return	string	Widget icon.
+	 */
+	public function get_icon()
+	{
+		return 'kapp-elementor-icon';
+	}
+
+	/**
 	 * Returns the list of categories that the widget belongs to.
 	 *
 	 * @return	array	Widget categories.

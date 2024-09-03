@@ -15,6 +15,8 @@ class Asset
 	public function __construct()
 	{
 		add_action('admin_enqueue_scripts', [$this, 'enqueueAdminScripts']);
+		add_action('elementor/editor/after_enqueue_styles', [$this, 'enqueueAdminScripts']);
+
 		add_action('wp_enqueue_scripts', [$this, 'enqueuePublicScripts']);
 	}
 

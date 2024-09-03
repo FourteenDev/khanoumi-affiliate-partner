@@ -1,3 +1,18 @@
+/*********/
+/* Fonts */
+/*********/
+@font-face {
+	font-family: "Khanoumi";
+	src: url("../fonts/khanoumi/khanoumi.eot?40997479");
+	src: url("../fonts/khanoumi/khanoumi.eot?40997479#iefix") format("embedded-opentype"),
+		url("../fonts/khanoumi/khanoumi.woff2?40997479") format("woff2"),
+		url("../fonts/khanoumi/khanoumi.woff?40997479") format("woff"),
+		url("../fonts/khanoumi/khanoumi.ttf?40997479") format("truetype"),
+		url("../fonts/khanoumi/khanoumi.svg?40997479#khanoumi") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /********************/
 /* Settings Wrapper */
 /********************/
@@ -162,4 +177,13 @@
 
 .shortcode-generator__copy-button:active {
 	background: #809ce2;
+}
+
+/*************/
+/* Elementor */
+/*************/
+
+.kapp-elementor-icon:before {
+	content: "\e800";
+	font-family: "Khanoumi";
 }
