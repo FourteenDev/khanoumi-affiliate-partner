@@ -2,6 +2,14 @@
 {
 	$(document).ready(function($)
 	{
+		let isRtl = false;
+
+		if (typeof kappPublicScriptObject != 'undefined')
+		{
+			if (typeof kappPublicScriptObject.isRtl != 'undefined')
+				isRtl = kappPublicScriptObject.isRtl == 1;
+		}
+
 		$('.khanoumi-carousel').each(function() { setProductsSlickCarousel($(this)) });
 
 		// Elementor preview mode
@@ -16,15 +24,15 @@
 		function setProductsSlickCarousel($parentElement)
 		{
 			var $slickArgs = {
-				rtl: true,
+				rtl: isRtl,
 				autoplay: true,
 				infinite: true,
 				dots: false,
 				autoplaySpeed: $parentElement.data('speed') !== undefined ? $parentElement.data('speed') : 3000,
 				slidesToShow: 4,
 				slidesToScroll: 4,
-				prevArrow: $parentElement.find('.khanoumi-carousel__control-prev'),
-				nextArrow: $parentElement.find('.khanoumi-carousel__control-next'),
+				prevArrow: isRtl ? $parentElement.find('.khanoumi-carousel__control-prev') : $parentElement.find('.khanoumi-carousel__control-next'),
+				nextArrow: isRtl ? $parentElement.find('.khanoumi-carousel__control-next') : $parentElement.find('.khanoumi-carousel__control-prev'),
 				cssEase: 'linear',
 				lazyLoad: 'anticipated',
 				responsive: [

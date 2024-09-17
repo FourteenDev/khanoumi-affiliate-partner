@@ -58,5 +58,9 @@ class Asset
 
 		wp_enqueue_script('slick', KAPP()->url('assets/public/js/slick.min.js'), ['jquery'], KAPP_VERSION, true);
 		wp_enqueue_script('kapp_public', KAPP()->url('assets/public/js/public.js'), [], KAPP_VERSION, true);
+
+		wp_localize_script('kapp_public', 'kappPublicScriptObject', [
+			'isRtl' => is_rtl(),
+		]);
 	}
 }
