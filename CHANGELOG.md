@@ -11,6 +11,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 ### Security
 
+## [v1.2.1] - 2024-09-17
+### Fixed
+- Fixed slider's RTL issue.
+
 ## [v1.2.0] - 2024-09-04
 ### Added
 - Added Elementor widget.
@@ -39,7 +43,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 - Fixed Gutenberg block's translations.
 
-[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.2.0...main
+[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.2.1...main
+[v1.2.1]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.1
 [v1.2.0]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.0
 [v1.1.1]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.1.1
 [v1.1.0]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.1.0
