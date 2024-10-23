@@ -1,5 +1,5 @@
 # Khanoumi Affiliate Partner Plugin
-`v1.2.1` ([Changelog](CHANGELOG.md))
+`v1.2.2` ([Changelog](CHANGELOG.md))
 
 Fetch [Khanoumi](https://Khanoumi.com/) products and display them in your WordPress website.
 

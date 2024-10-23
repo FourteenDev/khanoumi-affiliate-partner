@@ -11,6 +11,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 ### Security
 
+## [v1.2.2] - 2024-10-24
+### Added
+- Added custom styles for carousel's border radius.
+### Fixed
+- Fixed some responsive style issues.
+
 ## [v1.2.1] - 2024-09-17
 ### Fixed
 - Fixed slider's RTL issue.
@@ -43,7 +49,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 - Fixed Gutenberg block's translations.
 
-[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.2.1...main
+[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.2.2...main
+[v1.2.2]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.2
 [v1.2.1]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.1
 [v1.2.0]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.0
 [v1.1.1]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.1.1
