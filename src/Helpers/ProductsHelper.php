@@ -79,6 +79,8 @@ class ProductsHelper
 			'--kappCarouselItemPadding'                  => intval(KAPP()->option('carousel_item_padding')) ? intval(KAPP()->option('carousel_item_padding')) . 'px' : '',
 			'--kappCarouselItemMinHeight'                => intval(KAPP()->option('carousel_item_min_height')) ? intval(KAPP()->option('carousel_item_min_height')) . 'px' : '',
 			'--kappCarouselItemMaxHeight'                => intval(KAPP()->option('carousel_item_max_height')) ? intval(KAPP()->option('carousel_item_max_height')) . 'px' : '',
+			'--kappCarouselBorderRadius'                 => intval(KAPP()->option('carousel_border_radius')) ? intval(KAPP()->option('carousel_border_radius')) . 'px' : '',
+			'--kappCarouselItemBorderRadius'             => intval(KAPP()->option('carousel_item_border_radius')) ? intval(KAPP()->option('carousel_item_border_radius')) . 'px' : '',
 		] : [];
 
 		$outputArgs = [

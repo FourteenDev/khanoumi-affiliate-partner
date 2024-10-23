@@ -191,6 +191,26 @@ class MainSettings extends Base
 					'description' => esc_html__('Maximum height (px) for items of the carousel.', 'khanoumi-affiliate-partner'),
 				],
 			],
+			'carousel_border_radius' => [
+				'id'      => 'carousel_border_radius',
+				'label'   => esc_html__('Carousel Border Radius', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'number',
+				'default' => 4,
+				'args'    => [
+					'description' => esc_html__('Border radius (px) of the carousel.', 'khanoumi-affiliate-partner'),
+				],
+			],
+			'carousel_item_border_radius' => [
+				'id'      => 'carousel_item_border_radius',
+				'label'   => esc_html__('Carousel Item Border Radius', 'khanoumi-affiliate-partner'),
+				'section' => 'style',
+				'type'    => 'number',
+				'default' => 4,
+				'args'    => [
+					'description' => esc_html__('Border radius (px) for items of the carousel.', 'khanoumi-affiliate-partner'),
+				],
+			],
 		]);
 	}
 }
