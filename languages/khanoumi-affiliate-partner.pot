@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the Khanoumi Affiliate Partner Plugin plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.2.0\n"
+"Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.2.2\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-09-03T23:15:54+00:00\n"
+"POT-Creation-Date: 2024-10-23T22:50:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: khanoumi-affiliate-partner\n"
@@ -174,6 +174,22 @@ msgstr ""
 
 #: src/Settings/MainSettings.php:191
 msgid "Maximum height (px) for items of the carousel."
+msgstr ""
+
+#: src/Settings/MainSettings.php:196
+msgid "Carousel Border Radius"
+msgstr ""
+
+#: src/Settings/MainSettings.php:201
+msgid "Border radius (px) of the carousel."
+msgstr ""
+
+#: src/Settings/MainSettings.php:206
+msgid "Carousel Item Border Radius"
+msgstr ""
+
+#: src/Settings/MainSettings.php:211
+msgid "Border radius (px) for items of the carousel."
 msgstr ""
 
 #: src/Settings/ShortcodeGeneratorSettings.php:29

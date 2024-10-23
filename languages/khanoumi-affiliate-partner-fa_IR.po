@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Khanoumi Affiliate Partner Plugin 1.0.0\n"
-"POT-Creation-Date: 2024-09-03T23:15:54+00:00\n"
-"PO-Revision-Date: 2024-09-04 02:47+0330\n"
+"POT-Creation-Date: 2024-10-23T22:50:39+00:00\n"
+"PO-Revision-Date: 2024-10-24 02:24+0330\n"
 "Last-Translator: Koorosh14 <97566920+Koorosh14@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -176,6 +176,22 @@ msgstr "حداکثر ارتفاع آیتم‌های کروسل"
 #: src/Settings/MainSettings.php:191
 msgid "Maximum height (px) for items of the carousel."
 msgstr "حداکثر ارتفاع (به پیکسل) آیتم‌های کروسل."
+
+#: src/Settings/MainSettings.php:196
+msgid "Carousel Border Radius"
+msgstr "گردی حاشیه‌ی کروسل"
+
+#: src/Settings/MainSettings.php:201
+msgid "Border radius (px) of the carousel."
+msgstr "گردی زاویه‌های اطراف کروسل (به پیکسل)."
+
+#: src/Settings/MainSettings.php:206
+msgid "Carousel Item Border Radius"
+msgstr "گردی حاشیه‌ی آیتم‌های کروسل"
+
+#: src/Settings/MainSettings.php:211
+msgid "Border radius (px) for items of the carousel."
+msgstr "گردی زاویه‌های اطراف آیتم‌های کروسل (به پیکسل)."
 
 #: src/Settings/ShortcodeGeneratorSettings.php:29
 #: src/Settings/ShortcodeGeneratorSettings.php:30
