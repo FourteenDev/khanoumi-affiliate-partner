@@ -3,6 +3,10 @@
 
 Fetch [Khanoumi](https://Khanoumi.com/) products and display them in your WordPress website.
 
+## Installation
+
+Download the latest version from the [releases page](../../releases) and install it on your WordPress site.
+
 ## How to Use
 - With a Gutenberg block: 
 
@@ -19,3 +23,17 @@ Fetch [Khanoumi](https://Khanoumi.com/) products and display them in your WordPr
 - With a classic WP widget: 
 
 ![Widget](screenshots/classic-widget.png)
+
+## Composer Setup
+
+Run this command in the plugin root:
+```bash
+$ composer install
+```
+
+## NPM Setup
+
+Run this command in `assets/blocks/slider` folder::
+```bash
+$ npm install
+```
