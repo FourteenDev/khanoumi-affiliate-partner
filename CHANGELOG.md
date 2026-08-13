@@ -11,6 +11,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 ### Security
 
+## [v1.2.3] - 2026-08-13
+### Security
+- Updated NPM packages.
+
 ## [v1.2.2] - 2024-10-24
 ### Added
 - Added custom styles for carousel's border radius.
@@ -49,7 +53,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Fixed
 - Fixed Gutenberg block's translations.
 
-[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.2.2...main
+[Unreleased]: https://github.com/FourteenDev/khanoumi-affiliate-partner/compare/v1.2.3...main
+[v1.2.3]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.3
 [v1.2.2]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.2
 [v1.2.1]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.1
 [v1.2.0]: https://github.com/FourteenDev/khanoumi-affiliate-partner/releases/tag/v1.2.0
